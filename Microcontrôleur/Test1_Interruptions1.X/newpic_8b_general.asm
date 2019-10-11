@@ -24,8 +24,7 @@
 	bcf T0CON, PSA ; give the prescaler to TMR0
 	clrf TRISD ; PORTD is output
 	clrf PORTD ; clear PORTD
-	clrf TRISD ; PORTD is output
-	clrf PORTD ; clear PORTD
+	btfsc RBIE, TMR0
 	bsf INTCON, GIE ; activate interrupts
 	bsf INTCON, RBIE ; activate TMR0 interrupt
 	clrf TMR0 ; clear the timer
@@ -35,11 +34,4 @@
 	; --- wait for an interrupt
 	goto MAIN_LOOP
 	
-	end
-    
- 
- 
- 
- 
- 
- 
+end
