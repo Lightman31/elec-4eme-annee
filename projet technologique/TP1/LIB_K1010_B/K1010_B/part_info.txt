@@ -1,0 +1,9 @@
+Manufacturer=Cosmo
+PartNumber=K1010 B
+PartCategory=Transistor
+PackageCategory=Dual-In-Line Packages
+PinCount=4
+Version=1.1
+Released=2017-04-14 11:45:51
+Downloaded=2019-10-11 09:55:05
+3D=Y

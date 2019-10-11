@@ -1,0 +1,16 @@
+.MOC3021 :1 ;Optocoupler Triac Output, 400V, DIP6 Lite-On MOC3021 Triac Output Optocoupler, Through Hole, 6-Pin PDIP
+DIP762W60P254L730H500Q6N
+*STM IC
+*NGS
+*PLB 1="ANODE" 2="CATHODE" 3="NC" 4="MAIN TERMINAL_1" 5="SUBSTRATE" 6="MAIN TERMINAL_2"
+*MXP 6
+*DFN MOC3021
+~!Mouser Part Number (859-MOC3021)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=859-MOC3021)
+~!Manufacturer_Name (Lite-On)
+~!Manufacturer_Part_Number (MOC3021)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/MOC3021.pdf)
+~!Height (5mm)
+~!3D_Model (MOC3021)
+MOC3021
+1.1!U 2.1!U 3.1!U 6.1!U 5.1!U 4.1!U 

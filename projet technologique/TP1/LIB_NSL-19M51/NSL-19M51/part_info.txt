@@ -1,0 +1,9 @@
+Manufacturer=Luna Optoelectronics
+PartNumber=NSL-19M51
+PartCategory=Undefined or Miscellaneous
+PackageCategory=Other
+PinCount=2
+Version=1.2
+Released=2018-03-01 10:31:18
+Downloaded=2019-10-11 09:53:18
+3D=Y

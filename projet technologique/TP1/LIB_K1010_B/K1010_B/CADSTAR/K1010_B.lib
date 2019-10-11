@@ -1,0 +1,18 @@
+.K1010_B :1 ;Opto-isolator,K1010B 5000Vac/50mA DIP4 Cosmo K1010 B Transistor Output Optocoupler, Through Hole, 4-Pin DIP
+DIP762W50P254L460H390Q4N
+*STM Q
+*NGS
+*PLB 1="ANODE" 2="CATHODE" 3="EMITTER" 4="COLLECTOR"
+*MXP 4
+*DFN K1010_B
+~!Manufacturer_Name (Cosmo)
+~!Manufacturer_Part_Number (K1010 B)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!RS Part Number (3956344)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/3956344)
+~!Link Datasheet (http://www.cosmo-ic.com/object/products/k1010.pdf)
+~!Height (3.9mm)
+~!3D_Model (K1010_B)
+K1010_B
+1.1!U 2.1!U 4.1!U 3.1!U 

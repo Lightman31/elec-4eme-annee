@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP K1010_B
+D Opto-isolator,K1010B 5000Vac/50mA DIP4 Cosmo K1010 B Transistor Output Optocoupler, Through Hole, 4-Pin DIP
+K
+F http://www.cosmo-ic.com/object/products/k1010.pdf
+$ENDCMP
+#
+#End Doc Library

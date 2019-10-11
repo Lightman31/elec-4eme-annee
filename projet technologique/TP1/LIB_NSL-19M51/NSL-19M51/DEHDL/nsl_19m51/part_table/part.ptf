@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'NSL_19M51'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "ALLIED_NUMBER", "ALLIED_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT", "TJ", "TKNEE", "MTBF", "POWER", "VOLTAGE", "SLOPE", "SUBTYPE", "PACKAGE", "TOLERANCE", "DARK_RESISTANCE", "LIGHT_RESISTANCE";
+{========================================================================================}
+ "Luna Optoelectronics", "NSL-19M51" (!) = "", "NSL19M51", "Other", "", "", "9146710", "http://uk.rs-online.com/web/p/products/9146710", "70136724", "https://www.alliedelec.com/luna-optoelectronics-nsl-19m51/70136724/", "Luna Optoelectronics NSL-19M51 LDR (Light Dependent Resistor) 20 k Light, 20M Dark, 2-Pin TO-18", "http://lunainc.com/wp-content/uploads/2016/06/NSL-19M51.pdf", "1 mm", "75", "", "", "50m", "100", "", "LIGHT DEPENDENT RESISTOR THROUGH HOLE", "TO-18", "", "20M", "100K"
+END_PART
+
+END.

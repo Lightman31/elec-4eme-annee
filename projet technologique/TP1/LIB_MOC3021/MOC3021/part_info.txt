@@ -1,0 +1,9 @@
+Manufacturer=Lite-On
+PartNumber=MOC3021
+PartCategory=Integrated Circuit
+PackageCategory=Dual-In-Line Packages
+PinCount=6
+Version=1.2
+Released=2017-01-27 17:17:22
+Downloaded=2019-10-11 09:38:02
+3D=Y

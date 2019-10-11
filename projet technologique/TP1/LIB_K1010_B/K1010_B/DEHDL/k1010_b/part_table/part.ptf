@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'K1010_B'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Cosmo", "K1010 B" (!) = "", "DIP762W50P254L460H390Q4N", "Dual-In-Line Packages", "", "", "3956344", "http://uk.rs-online.com/web/p/products/3956344", "Opto-isolator,K1010B 5000Vac/50mA DIP4 Cosmo K1010 B Transistor Output Optocoupler, Through Hole, 4-Pin DIP", "http://www.cosmo-ic.com/object/products/k1010.pdf", "3.9 mm"
+END_PART
+
+END.

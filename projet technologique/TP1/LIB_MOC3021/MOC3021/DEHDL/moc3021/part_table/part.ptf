@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MOC3021'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Lite-On", "MOC3021" (!) = "", "DIP762W60P254L730H500Q6N", "Dual-In-Line Packages", "859-MOC3021", "https://www.mouser.com/Search/Refine.aspx?Keyword=859-MOC3021", "Optocoupler Triac Output, 400V, DIP6 Lite-On MOC3021 Triac Output Optocoupler, Through Hole, 6-Pin PDIP", "https://componentsearchengine.com/Datasheets/1/MOC3021.pdf", "5 mm"
+END_PART
+
+END.

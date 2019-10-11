@@ -1,0 +1,20 @@
+.NSL-19M51 :1 ;Luna Optoelectronics NSL-19M51 LDR (Light Dependent Resistor) 20 k Light, 20M Dark, 2-Pin TO-18
+NSL19M51
+*STM U
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN NSL-19M51
+~!Manufacturer_Name (Luna Optoelectronics)
+~!Manufacturer_Part_Number (NSL-19M51)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!RS Part Number (9146710)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/9146710)
+~!Allied_Number (70136724)
+~!Link Allied Price/Stock (https://www.alliedelec.com/luna-optoelectronics-nsl-19m51/70136724/)
+~!Link Datasheet (http://lunainc.com/wp-content/uploads/2016/06/NSL-19M51.pdf)
+~!Height (1mm)
+~!3D_Model (NSL-19M51)
+NSL-19M51
+1.1!U 2.1!U 

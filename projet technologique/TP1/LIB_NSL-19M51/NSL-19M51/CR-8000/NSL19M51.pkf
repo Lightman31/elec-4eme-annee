@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "NSL19M51"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "NSL19M51")
+        (spec "default")
+    )
+)

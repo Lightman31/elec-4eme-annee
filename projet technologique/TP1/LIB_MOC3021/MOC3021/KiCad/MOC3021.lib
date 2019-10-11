@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model MOC3021
+#/304519/184125/2.44/6/4/Integrated Circuit
+DEF MOC3021 IC 0 30 Y Y 1 F N
+F0 "IC" 1650 300 50 H V L CNN
+F1 "MOC3021" 1650 200 50 H V L CNN
+F2 "DIP762W60P254L730H500Q6N" 1650 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/MOC3021.pdf" 1650 0 50 H I L CNN
+F4 "Optocoupler Triac Output, 400V, DIP6 Lite-On MOC3021 Triac Output Optocoupler, Through Hole, 6-Pin PDIP" 1650 -100 50 H I L CNN "Description"
+F5 "5" 1650 -200 50 H I L CNN "Height"
+F6 "859-MOC3021" 1650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=859-MOC3021" 1650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Lite-On" 1650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "MOC3021" 1650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ANODE 1 0 0 200 R 50 50 0 0 B
+X CATHODE 2 0 -100 200 R 50 50 0 0 B
+X NC 3 0 -200 200 R 50 50 0 0 B
+X MAIN_TERMINAL_2 6 1800 0 200 L 50 50 0 0 B
+X SUBSTRATE 5 1800 -100 200 L 50 50 0 0 B
+X MAIN_TERMINAL_1 4 1800 -200 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 1600 100 1600 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
