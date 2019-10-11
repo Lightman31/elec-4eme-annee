@@ -1,0 +1,7 @@
+Warning[207] D:\DOCUMENTS\COURS\NEWPIC_8B_GENERAL.ASM 2 : Found label after column 1. (RES_VECT)
+Error[122]   D:\DOCUMENTS\COURS\NEWPIC_8B_GENERAL.ASM 2 : Illegal opcode (CODE0x0000)
+Warning[207] D:\DOCUMENTS\COURS\NEWPIC_8B_GENERAL.ASM 3 : Found label after column 1. (GOTOINIT)
+Error[150]   D:\DOCUMENTS\COURS\NEWPIC_8B_GENERAL.ASM 3 : Labels must be defined in a code or data section when making an object file
+Warning[207] D:\DOCUMENTS\COURS\NEWPIC_8B_GENERAL.ASM 5 : Found label after column 1. (MAIN_PROG)
+Warning[207] D:\DOCUMENTS\COURS\NEWPIC_8B_GENERAL.ASM 7 : Found label after column 1. (INIT)
+Warning[207] D:\DOCUMENTS\COURS\NEWPIC_8B_GENERAL.ASM 10 : Found label after column 1. (MAIN_LOOP)

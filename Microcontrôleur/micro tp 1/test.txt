@@ -1,0 +1,6 @@
+#include <p18F4550.inc>
+RES_VECT  CODE0x0000  ;
+  processor  r e s e t  vector
+GOTOINIT  ; go  to  beginning  of  program
+MAIN_PROG CODE ;  l e t  l i n k e r  place  main program
+INIT9GOTO MAIN_LOOP1011MAIN_LOOP12bsf PORTC , RC0 ;  Set  to  1  bit RC0 of PORTC (LED ON)13bcf PORTC , RC0 ;  Clear  the RC0 bit  of PORTC (LED OFF)14GOTO MAIN_LOOP ;  loop  back15END
