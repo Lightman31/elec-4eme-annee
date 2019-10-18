@@ -1,0 +1,14 @@
+Pour Copper Report
+------------------
+
+Report Written:     Friday, October 18, 2019
+Project Path:       C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\TP1\TP1.prj
+Design Path:        C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\TP1\TP1_Test1_LEO.pcb
+Design Title:       
+Created:            18/10/2019 11:52:45
+Last Saved:         18/10/2019 12:58:35
+Editing Time:       66 min
+Units:              mm (precision 3)
+
+
+End Of Report.
