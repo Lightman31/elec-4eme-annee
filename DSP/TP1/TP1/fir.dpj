@@ -108,10 +108,16 @@
 			<system-builder-component name="Project Options">
 				<property name="Compiler Multicore"><![CDATA[False]]></property>
 				<property name="Configuration"><![CDATA[Debug]]></property>
+				<property name="Full IO"><![CDATA[False]]></property>
 				<property name="Intermediate Directory"><![CDATA[.\Debug]]></property>
+				<property name="Link against MT libraries"><![CDATA[False]]></property>
 				<property name="Linker Multicore"><![CDATA[False]]></property>
 				<property name="Name"><![CDATA[fir]]></property>
+				<property name="Processor"><![CDATA[ADSP-BF533]]></property>
 				<property name="Silicon Revision"><![CDATA[Automatic]]></property>
+				<property name="Strict IEEE Floating Point Compliance"><![CDATA[False]]></property>
+				<property name="Use C++ exceptions libraries"><![CDATA[False]]></property>
+				<property name="Utility ROM"><![CDATA[True]]></property>
 			</system-builder-component>
 		</system-builder-plugin>
 	</system-builder-component-tables>
