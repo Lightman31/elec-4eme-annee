@@ -2,7 +2,7 @@
 #include <p18f4550.inc>
     CONFIG WDT = OFF
     CONFIG MCLRE = ON
-    CONFIG DEBUG = ON
+    CONFIG DEBUG = OFF
     CONFIG LVP = OFF
     CONFIG FOSC = HS
     CONFIG PBADEN = OFF
