@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATMEGA328P-PU
+D MICROCHIP - ATMEGA328P-PU. - MICROCONTROLLER MCU, 8 BIT, ATMEGA, 20MHZ, DIP-28
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf
+$ENDCMP
+#
+#End Doc Library

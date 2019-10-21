@@ -1,0 +1,21 @@
+.ATMEGA328P-PU :1 ;MICROCHIP - ATMEGA328P-PU. - MICROCONTROLLER MCU, 8 BIT, ATMEGA, 20MHZ, DIP-28
+DIP794W53P254L3467H457Q28N
+*STM IC
+*NGS
+*PLB 1="PC6 (PCINT14/'RESET)'" 2="PD0 (PCINT16/RXD)" 3="PD1 (PCINT17/TXD)" 4="PD2 (PCINT18/INT0)" 5="PD3 (PCINT19/OC2B/INT1)" 6="PD4 (PCINT20/XCK/T0)" 7="VCC" 8="GND_1" 9="PB6 (PCINT6/XTAL1/TOSC1)" 10="PB7 (PCINT7/XTAL2/TOSC2)" 11="PD5 (PCINT21/OC0B/T1)" 12="PD6 (PCINT22/OC0A/AIN0)" 13="PD7 (PCINT23/AIN1)" 14="PB0 (PCINT0/CLKO/ICP1)" 15="PB1 (OC1A/PCINT1)" 16="PB2 ('SS'/OC1B/PCINT2)" 17="PB3 (MOSI/OC2A/PCINT3)" 18="PB4 (MISO/PCINT4)" 19="PB5 (SCK/PCINT5)" &
+20="AVCC" 21="AREF" 22="GND_2" 23="PC0 (ADC0/PCINT8)" 24="PC1 (ADC1/PCINT9)" 25="PC2 (ADC2/PCINT10)" 26="PC3 (ADC3/PCINT11)" 27="PC4 (ADC4/SDA/PCINT12)" 28="PC5 (ADC5/SCL/PCINT13)"
+*MXP 28
+*DFN ATMEGA328P-PU
+~!Manufacturer_Name (Microchip)
+~!Manufacturer_Part_Number (ATMEGA328P-PU)
+~!Mouser Part Number (556-ATMEGA328P-PU)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=556-ATMEGA328P-PU)
+~!RS Part Number (9222142P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/9222142P)
+~!Allied_Number (70332157)
+~!Link Allied Price/Stock (https://www.alliedelec.com/microchiptechnologyinc-atmega328p-pu/70332157/)
+~!Link Datasheet (http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf)
+~!Height (4.572mm)
+~!3D_Model (ATMEGA328P-PU)
+ATMEGA328P-PU
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 28.1!U 27.1!U 26.1!U 25.1!U 24.1!U 23.1!U 22.1!U 21.1!U 20.1!U 19.1!U 18.1!U 17.1!U 16.1!U 15.1!U 
