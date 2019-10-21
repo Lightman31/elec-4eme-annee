@@ -1,0 +1,20 @@
+.1725656 :1 ;2 way PCB vertical mount terminal,2.54mm 2 way PCB vertical mount terminal,2.54mm
+"1725656"
+*STM J
+*NGS
+*PLB 1="1" 2="2"
+*MXP 4
+*DFN 1725656
+~!Manufacturer_Name (Phoenix Contact)
+~!Manufacturer_Part_Number (1725656)
+~!Mouser Part Number (651-1725656)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=651-1725656)
+~!RS Part Number (3909023)
+~!Link RS Price/Stock (https://uk.rs-online.com/web/p/products/3909023)
+~!Allied_Number (70054335)
+~!Link Allied Price/Stock (http://www.alliedelec.com/phoenix-contact-1725656/70054335/)
+~!Link Datasheet (https://www.phoenixcontact.com/online/portal/gb?uri=pxc-oc-itemdetail:pid=1725656&library=gben&tab=1)
+~!Height (8mm)
+~!3D_Model (1725656)
+"1725656"
+1.1!U 2.1!U 

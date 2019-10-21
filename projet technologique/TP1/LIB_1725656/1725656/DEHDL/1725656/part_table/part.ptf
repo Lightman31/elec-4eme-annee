@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '1725656'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "ALLIED_NUMBER", "ALLIED_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Phoenix Contact", "1725656" (!) = "", "1725656", "Other", "651-1725656", "https://www.mouser.com/Search/Refine.aspx?Keyword=651-1725656", "3909023", "https://uk.rs-online.com/web/p/products/3909023", "70054335", "http://www.alliedelec.com/phoenix-contact-1725656/70054335/", "2 way PCB vertical mount terminal,2.54mm 2 way PCB vertical mount terminal,2.54mm", "https://www.phoenixcontact.com/online/portal/gb?uri=pxc-oc-itemdetail:pid=1725656&library=gben&tab=1", "8 mm"
+END_PART
+
+END.
