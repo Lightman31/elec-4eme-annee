@@ -1,4 +1,4 @@
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  1
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -36,48 +36,57 @@ Warning[203]: Found opcode in column 1. (retfie)
                       00014 
 000008                00015 TMR0_interrupt ; --- TMR0 interrupt service routine
 000008 90F2           00016     bcf INTCON, RBIF
+                      00017     
 Warning[207]: Found label after column 1. (toto)
-00000A                00017     toto
-Error[128]  : Missing argument(s)
-Error[112]  : Missing operator
-00000A B000           00018     btfsc PORTB RB4
-00000C EF?? F???      00019     goto toto
-                      00020             
-000010 2A83           00021     incf PORTD
+00000A                00018     toto
+Warning[203]: Found opcode in column 1. (btfsc)
+00000A B881           00019 btfsc PORTB, RB4
+00000C EF?? F???      00020     goto toto
+Warning[203]: Found opcode in column 1. (btfsc)
+000010 BA81           00021 btfsc PORTB, RB5
+000012 EF?? F???      00022     goto toto
+Warning[203]: Found opcode in column 1. (btfsc)
+000016 BC81           00023 btfsc PORTB, RB6
+000018 EF?? F???      00024     goto toto
+Warning[203]: Found opcode in column 1. (btfsc)
+00001C BE81           00025 btfsc PORTB, RB7
+00001E EF?? F???      00026     goto toto
+                      00027             
+000022 2A83           00028     incf PORTD
 Warning[203]: Found opcode in column 1. (retfie)
-000012 0010           00022 retfie ; return from interrupt  
-                      00023 
-                      00024 
-                      00025 
-                      00026         ; REGARDER RBIE : NOM DU REGISTRE  : INTCON 
-000014                00027 prog_init  ; i n i t i a l i z e your code
-000014 6A95           00028     clrf TRISD ; PORTD is an output
-                      00029     ;clrf TRISB ; PORTD is an output
-                      00030     
-000016 8EF2           00031     bsf INTCON , GIE ; a c t i v a t e i n t e r r u p t s
-000018 86F2           00032     bsf INTCON , RBIE ; a c t i v a t e TMR0 i n t e r r u p t
-                      00033     ;bsf INTCON , GIEL ; a c t i v a t e TMR0 i n t e r r u p t
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  2
+000024 0010           00029 retfie ; return from interrupt  
+                      00030 
+                      00031 
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00034     ;clrf RB0 ; c l e a r the tim e r
-                      00035     ;clrf RBIF ; c l e a r the tim e r
-                      00036 
-Warning[203]: Found opcode in column 1. (goto)
-00001A EF?? F???      00037 goto MAIN_LOOP
-                      00038 
-                      00039 
-00001E                00040 MAIN_LOOP
-                      00041     ; --- wait for an interrupt
-Warning[203]: Found opcode in column 1. (goto)
-00001E EF?? F???      00042 goto MAIN_LOOP
+                      00032 
+                      00033         ; REGARDER RBIE : NOM DU REGISTRE  : INTCON 
+000026                00034 prog_init  ; i n i t i a l i z e your code
+000026 6A95           00035     clrf TRISD ; PORTD is an output
+                      00036     ;clrf TRISB ; PORTD is an output
+                      00037     
+000028 8EF2           00038     bsf INTCON , GIE ; a c t i v a t e i n t e r r u p t s
+00002A 86F2           00039     bsf INTCON , RBIE ; a c t i v a t e TMR0 i n t e r r u p t
+                      00040     ;bsf INTCON , GIEL ; a c t i v a t e TMR0 i n t e r r u p t
+                      00041     ;clrf RB0 ; c l e a r the tim e r
+                      00042     ;clrf RBIF ; c l e a r the tim e r
                       00043 
+Warning[203]: Found opcode in column 1. (goto)
+00002C EF?? F???      00044 goto MAIN_LOOP
+                      00045 
+                      00046 
+000030                00047 MAIN_LOOP
+                      00048     ; --- wait for an interrupt
+Warning[203]: Found opcode in column 1. (goto)
+000030 EF?? F???      00049 goto MAIN_LOOP
+                      00050 
 Warning[205]: Found directive in column 1. (end)
-                      00044 end
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  3
+                      00051 end
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  3
 
 
 SYMBOL TABLE
@@ -136,7 +145,7 @@ BRG16                             00000003
 BRGH                              00000002
 BSR                               00000FE0
 BTOEE                             00000004
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  4
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  4
 
 
 SYMBOL TABLE
@@ -195,7 +204,7 @@ CM2                               00000002
 CMCON                             00000FB4
 CMIE                              00000006
 CMIF                              00000006
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  5
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  5
 
 
 SYMBOL TABLE
@@ -254,7 +263,7 @@ EEIP                              00000004
 EEPGD                             00000007
 ENDP0                             00000003
 ENDP1                             00000004
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  6
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  6
 
 
 SYMBOL TABLE
@@ -313,7 +322,7 @@ HLVDL3                            00000003
 I2C_DAT                           00000005
 I2C_READ                          00000002
 I2C_START                         00000003
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  7
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  7
 
 
 SYMBOL TABLE
@@ -372,7 +381,7 @@ LATA6                             00000006
 LATB                              00000F8A
 LATB0                             00000000
 LATB1                             00000001
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  8
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  8
 
 
 SYMBOL TABLE
@@ -417,7 +426,7 @@ LVV0                              00000000
 LVV1                              00000001
 LVV2                              00000002
 LVV3                              00000003
-MAIN_LOOP                         0000001E
+MAIN_LOOP                         00000030
 N                                 00000004
 NOT_A                             00000005
 NOT_ADDRESS                       00000005
@@ -431,7 +440,7 @@ NOT_RI                            00000004
 NOT_T1SYNC                        00000002
 NOT_T3SYNC                        00000002
 NOT_TO                            00000003
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE  9
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE  9
 
 
 SYMBOL TABLE
@@ -490,7 +499,7 @@ PORTA                             00000F80
 PORTB                             00000F81
 PORTC                             00000F82
 PORTD                             00000F83
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 10
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 10
 
 
 SYMBOL TABLE
@@ -549,7 +558,7 @@ RC6                               00000006
 RC7                               00000007
 RCEN                              00000003
 RCIDL                             00000006
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 11
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 11
 
 
 SYMBOL TABLE
@@ -608,7 +617,7 @@ SPP2                              00000002
 SPP3                              00000003
 SPP4                              00000004
 SPP5                              00000005
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 12
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 12
 
 
 SYMBOL TABLE
@@ -667,7 +676,7 @@ T0IP                              00000002
 T0PS0                             00000000
 T0PS1                             00000001
 T0PS2                             00000002
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 13
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 13
 
 
 SYMBOL TABLE
@@ -726,7 +735,7 @@ TMR2ON                            00000002
 TMR3                              00000FB2
 TMR3CS                            00000001
 TMR3H                             00000FB3
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 14
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 14
 
 
 SYMBOL TABLE
@@ -785,7 +794,7 @@ TRISE2                            00000002
 TRMT                              00000001
 TRNIE                             00000003
 TRNIF                             00000003
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 15
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 15
 
 
 SYMBOL TABLE
@@ -844,7 +853,7 @@ USBIE                             00000005
 USBIF                             00000005
 USBIP                             00000005
 USTAT                             00000F6C
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 16
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 16
 
 
 SYMBOL TABLE
@@ -903,7 +912,7 @@ _CP3_OFF_5L                       000000FF
 _CP3_ON_5L                        000000F7
 _CPB_OFF_5H                       000000FF
 _CPB_ON_5H                        000000BF
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 17
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 17
 
 
 SYMBOL TABLE
@@ -962,7 +971,7 @@ _LVP_ON_4L                        000000FF
 _MCLRE_OFF_3H                     0000007F
 _MCLRE_ON_3H                      000000FF
 _PBADEN_OFF_3H                    000000FD
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 18
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 18
 
 
 SYMBOL TABLE
@@ -1021,17 +1030,17 @@ _XINST_OFF_4L                     000000BF
 _XINST_ON_4L                      000000FF
 __18F2450                         00000001
 irq_handle                        00000000
-MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:03:11         PAGE 19
+MPASM 5.84             NEWPIC_8B_GENERAL.ASM   10-18-2019  18:40:15         PAGE 19
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
-prog_init                         00000014
+prog_init                         00000026
 toto                              0000000A
 
-Errors   :     2
-Warnings :    10 reported,     0 suppressed
+Errors   :     0
+Warnings :    14 reported,     0 suppressed
 Messages :     1 reported,     0 suppressed
 
 

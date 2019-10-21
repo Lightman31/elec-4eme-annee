@@ -14,8 +14,15 @@ retfie ; ??? no , r e t u r n from i n t e r r u p t
 
 TMR0_interrupt ; --- TMR0 interrupt service routine
     bcf INTCON, RBIF
+    
     toto
-    btfsc PORTB RB4
+btfsc PORTB, RB4
+    goto toto
+btfsc PORTB, RB5
+    goto toto
+btfsc PORTB, RB6
+    goto toto
+btfsc PORTB, RB7
     goto toto
 	    
     incf PORTD
