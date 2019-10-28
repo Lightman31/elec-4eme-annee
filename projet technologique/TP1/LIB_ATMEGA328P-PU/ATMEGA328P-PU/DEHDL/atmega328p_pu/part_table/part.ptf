@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ATMEGA328P_PU'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "ALLIED_NUMBER", "ALLIED_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT", "TJ", "MTBF", "POWER", "SLOPE", "SUBTYPE", "PACKAGE", "RJA", "VCC_MAX", "VCC_MIN", "IOUT_MAX", "IOUT_MIN", "ICC", "IGND", "RCA", "RJC", "ICCQ", "TECHNOLOGY";
+{========================================================================================}
+ "Microchip", "ATMEGA328P-PU" (!) = "", "DIP794W53P254L3467H457Q28N", "Dual-In-Line Packages", "556-ATMEGA328P-PU", "https://www.mouser.com/Search/Refine.aspx?Keyword=556-ATMEGA328P-PU", "9222142P", "http://uk.rs-online.com/web/p/products/9222142P", "70332157", "https://www.alliedelec.com/microchiptechnologyinc-atmega328p-pu/70332157/", "MICROCHIP - ATMEGA328P-PU. - MICROCONTROLLER MCU, 8 BIT, ATMEGA, 20MHZ, DIP-28", "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf", "4.572 mm", "125", "", "", "", "MCU THROUGH HOLE", "PDIP-28", "", "6", "", "", "", "200m", "200m", "", "", "", "CMOS"
+END_PART
+
+END.

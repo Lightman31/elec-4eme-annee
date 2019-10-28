@@ -1,0 +1,13 @@
+Pour Copper Report
+------------------
+
+Report Written:     Monday, October 21, 2019
+Design Path:        C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\TP1\switch_atmegaV3.0.pcb
+Design Title:       
+Created:            21/10/2019 19:16:08
+Last Saved:         21/10/2019 19:37:54
+Editing Time:       21 min
+Units:              mm (precision 3)
+
+
+End Of Report.

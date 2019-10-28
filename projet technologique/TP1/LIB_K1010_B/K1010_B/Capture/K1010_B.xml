@@ -112,7 +112,7 @@
     </DefaultPartFieldMapping>
   </DefaultValues>
   <Package>
-    <Defn alphabeticNumbering="2" isHomogeneous="1" name="K1010_B" pcbFootprint="DIP762W50P254L460H390Q4N" pcbLib="" refdesPrefix="Q" timestamp="1570780505" timezone="1780"/>
+    <Defn alphabeticNumbering="2" isHomogeneous="1" name="K1010_B" pcbFootprint="DIP762W50P254L460H390Q4N" pcbLib="" refdesPrefix="Q" timestamp="1571387371" timezone="1780"/>
     <LibPart>
       <Defn CellName="K1010_B"/>
       <NormalView>
