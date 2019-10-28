@@ -101,7 +101,11 @@ int noteDurations[] = {
 //melody = 266 notes
 
 void setup() {
-  int melody_len = sizeof(melody)/sizeof(melody[0]);
+
+}
+
+void loop() {
+    int melody_len = sizeof(melody)/sizeof(melody[0]);
   
   for (int thisNote = 0; thisNote < melody_len; thisNote++) {
     int noteDuration = TEMPO / noteDurations[thisNote];
@@ -110,8 +114,4 @@ void setup() {
     delay(pauseBetweenNotes);
     noTone(8);
   }
-}
-
-void loop() {
-  // WORK IN PROGRESS
 }
