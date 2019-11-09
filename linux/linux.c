@@ -11,12 +11,11 @@ int main(){
     pid_t pid; 
     if(fork() == 0){
       printf("Hello\n");
-      while(1){
-      	printf("MERDE\n");
-      }
+      while(1);
     }
     else
     { 
+      printf("NSM");
     	signal(SIGUSR1, printMessage);
     //     kill(pid, SIGINT); 
     //     wait(&stat); 
