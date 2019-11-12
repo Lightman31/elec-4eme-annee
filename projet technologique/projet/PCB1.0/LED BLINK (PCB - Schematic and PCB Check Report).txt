@@ -1,0 +1,23 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Thursday, November 07, 2019
+Design Path:        C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK.pcb
+Design Title:       
+Created:            07/11/2019 18:55:41
+Last Saved:         07/11/2019 19:14:54
+Editing Time:       22 min
+Units:              mm (precision 3)
+
+
+Checking integrity of Schematic "C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK.sch" with PCB "C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK.pcb"
+==================================================================================================================================================================================================================================================================
+
+The PCB and Schematic designs do not match.
+To bring them into line, you will need to make the following changes to the PCB design:
+
+Component 'ATMEGA328P-PU' package 'DIP794W53P254L3467H457Q28N' in PCB is newer version than Schematic, use Update Component to correct this.
+Component '90120-0768' package 'HDRV8W90P0X254_1X8_2032X249X56' in PCB is newer version than Schematic, use Update Component to correct this.
+
+
+End Of Report.
