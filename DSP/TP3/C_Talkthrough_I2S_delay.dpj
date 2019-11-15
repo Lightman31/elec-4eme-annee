@@ -7,7 +7,7 @@
 		<type>Executable file</type>
 	</target>
 	<!-- Configurations -->
-	<configurations active="Debug">
+	<configurations active="Release">
 		<configuration name="Debug">
 			<intermediate-dir>.\Debug</intermediate-dir>
 			<output-dir>.\Debug</output-dir>
@@ -148,9 +148,10 @@
 			</system-builder-component>
 			<system-builder-component name="Project Options">
 				<property name="Compiler Multicore"><![CDATA[False]]></property>
-				<property name="Configuration"><![CDATA[Debug]]></property>
+				<property name="Configuration"><![CDATA[Release]]></property>
 				<property name="Full IO"><![CDATA[False]]></property>
-				<property name="Intermediate Directory"><![CDATA[.\Debug]]></property>
+				<property name="Intermediate Directory"><![CDATA[.\Release]]></property>
+				<property name="Link against MT libraries"><![CDATA[False]]></property>
 				<property name="Linker Multicore"><![CDATA[False]]></property>
 				<property name="Name"><![CDATA[C_Talkthrough_I2S_fir]]></property>
 				<property name="Processor"><![CDATA[ADSP-BF533]]></property>

@@ -20,17 +20,17 @@ void Process_Data(void)
 
 	
 	// Process loopback
-	/*
+	
 	for (i=0; i<BUFFER_SIZE; i++)
 	{
 		sChannel0RightOut[i] = sChannel0RightIn[i];
 		sChannel0LeftOut[i] = sChannel0LeftIn[i];
 	}
-	*/
+	
 	
 	// Or process FIR filter
-	fir_fr16(sChannel0RightIn, sChannel0RightOut, BUFFER_SIZE, &stateR);
+	//fir_fr16(sChannel0RightIn, sChannel0RightOut, BUFFER_SIZE, &stateR);
 	
 	
-	fir_fr16(sChannel0LeftIn, sChannel0LeftOut, BUFFER_SIZE, &stateL);
+	//fir_fr16(sChannel0LeftIn, sChannel0LeftOut, BUFFER_SIZE, &stateL);
 }
