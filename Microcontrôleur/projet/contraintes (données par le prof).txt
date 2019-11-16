@@ -1,0 +1,1 @@
+utilisation de l'easypick (certaines connections sont deja faites... : impossible d'utiliser le portB et le GLCD en meme temps...)
