@@ -80,6 +80,7 @@ Keypad customKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS
 void setup()
 {
   lcd.init();                      // initialize the lcd 
+  lcd.backlight();
   // Print a message to the LCD.
   lcd.setCursor(0,0);
   lcd.print("Hello, world!");
