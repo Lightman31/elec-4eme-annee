@@ -1,6 +1,5 @@
-//YWROBOT
-//Compatible with the Arduino IDE 1.0
-//Library version:1.1
+  
+
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 #include <SPI.h>
@@ -57,6 +56,9 @@ int noteDurations[] = {
 int melody_len = sizeof(melody)/sizeof(melody[0]);
 int here = 0;
 
+long int saisie = 0;
+int len_saisie = 0;
+
 const byte ROWS = 4; //four rows
 const byte COLS = 4; //four columns
 //define the cymbols on the buttons of the keypads
@@ -69,73 +71,98 @@ char hexaKeys[ROWS][COLS] = {
 byte rowPins[ROWS] = {2,3 ,4 ,5 }; //connect to the row pinouts of the keypad
 byte colPins[COLS] = {A0, A1, A2,A3}; //connect to the column pinouts of the keypad
 
-unsigned long saisie = 0; 
-short int len_saisie = 0;
 
-RFID monModuleRFID(10,9);
 LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
 Keypad customKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS); 
+RFID monModuleRFID(10,9);
+  
+int potVal;
+int potValTemp;
+char SerialVal;
 
-
-void setup()
+void setup() 
 {
+  Serial.begin(9600);    //start serial communication @9600 bps
+
   lcd.init();                      // initialize the lcd 
   lcd.backlight();
   // Print a message to the LCD.
   lcd.setCursor(0,0);
   lcd.print("Hello, world!");
 
-  
-  Serial.begin(9600);
-
-  
-    SPI.begin();
+  SPI.begin();
   monModuleRFID.init();  
 
-}
-
+  
+ }
 
 void loop()
 {
-    char customKey = customKeypad.getKey();
+  
+  // READ
+  if(Serial.available()) // serial data is available to read
+  {  
+    SerialVal = Serial.read();
+
+  switch(SerialVal)
+   {
+   case '0':
+    badcard();  
+   break;
+   case '1':
+    here = bilibip(here);
+   break;
+   case '2':
+    lcd.setCursor(0,0);
+    lcd.print("                      ");
+    lcd.setCursor(0,0);
+   break;
+   case '3':
+    lcd.setCursor(0,1);
+    lcd.print("                      ");
+    lcd.setCursor(0,1);
+   break;
+   case '4':
+   break;
+   case '5':
+   break;
+   case '6':
+   break;
+   case '7':
+   break;
+   case '8':
+   break;
+   case '9':
+   break; 
+   default :
+   lcd.print(SerialVal);
+  }
+  }
+
+// capteur RFID
+
+if (monModuleRFID.isCard()) {  
+  if (monModuleRFID.readCardSerial()) {     
+     for(int i=0;i<=4;i++)
+     {
+     UID[i]=monModuleRFID.serNum[i];
+     }
+       Serial.write(UID[0]);     
+     }   
+     monModuleRFID.halt();
+  }
+  delay(1);   
+
+
+  char customKey = customKeypad.getKey();
   
   if (customKey){
     board (customKey);
-    Serial.println(customKey);
   }
-             
-      if (monModuleRFID.isCard()) {  
-          if (monModuleRFID.readCardSerial()) { 
-                            for(int i=0;i<=4;i++)
-                {
-UID[i]=monModuleRFID.serNum[i];
-                }
-            
-             if (UID[0] == 13){
-              lcd.setCursor(0,0);   
-                 lcd.print("Leo                  ");
-              lcd.setCursor(0,1);   
-                 lcd.print("                     ");
-                 here = bilibip(here);
-             }
-             else {
-              lcd.setCursor(0,0);   
-              lcd.print("carte non reconnue");
-                  lcd.setCursor(0,1);   
-                for(int i=0;i<=4;i++)
-                {
-                    
-                    lcd.print(UID[i],DEC);
-                    lcd.print(".");
-                }
-                badcard();
-          
-            }       
-          }   
-          monModuleRFID.halt();
-    }
-    delay(1);    
+
+  
 }
+
 
 
 int bilibip(int here)
@@ -227,10 +254,13 @@ void board(char customKey)
    lcd.setCursor(0,1);   
    lcd.print(saisie);
    lcd.print("                       ");
-
+   Serial.write(saisie);  
    saisie = 0;
    len_saisie = 0;
     
    }
   
 }
+
+
+  
