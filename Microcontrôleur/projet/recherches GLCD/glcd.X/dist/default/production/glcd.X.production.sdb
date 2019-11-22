@@ -1,0 +1,169 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"401 C:\Users\adria\MPLABXProjects\glcd.X\glcd.c
+[v _glcd_Init glcd_Init `(v  1 e 1 0 ]
+"441
+[v _glcd_WriteByte glcd_WriteByte `(v  1 e 1 0 ]
+"475
+[v _glcd_FillScreen glcd_FillScreen `(v  1 e 1 0 ]
+"499
+[v _glcd_Image glcd_Image `(v  1 e 1 0 ]
+"534
+[v _glcd_ReadByte glcd_ReadByte `(uc  1 e 1 0 ]
+"635
+[v _glcd_WriteChar8X8 glcd_WriteChar8X8 `(v  1 e 1 0 ]
+"683
+[v _glcd_WriteChar3x6 glcd_WriteChar3x6 `(v  1 e 1 0 ]
+"4 C:\Users\adria\MPLABXProjects\glcd.X\init.c
+[v _initMyPIC18F initMyPIC18F `(v  1 e 1 0 ]
+"18 C:\Users\adria\MPLABXProjects\glcd.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+"2571 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic18f4550.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"2709
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"2818
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"2962
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"3082
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+[s S49 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3417
+[s S58 . 1 `uc 1 LB0 1 0 :1:0 
+]
+[s S60 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+]
+[s S63 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LB2 1 0 :1:2 
+]
+[s S66 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LB3 1 0 :1:3 
+]
+[s S69 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LB4 1 0 :1:4 
+]
+[s S72 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LB5 1 0 :1:5 
+]
+[s S75 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LB6 1 0 :1:6 
+]
+[s S78 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S81 . 1 `S49 1 . 1 0 `S58 1 . 1 0 `S60 1 . 1 0 `S63 1 . 1 0 `S66 1 . 1 0 `S69 1 . 1 0 `S72 1 . 1 0 `S75 1 . 1 0 `S78 1 . 1 0 ]
+[v _LATBbits LATBbits `VES81  1 e 1 @3978 ]
+"3589
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3778
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3975
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4196
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"4349
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4570
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"6957
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"7047
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"4 C:\Users\adria\MPLABXProjects\glcd.X\glcd.c
+[v _acceuil acceuil `C[1024]uc  1 e 1024 0 ]
+"77
+[v _Font3x6 Font3x6 `C[65][3]uc  1 e 195 0 ]
+"149
+[v _Font8x8 Font8x8 `C[2048]uc  1 e 2048 0 ]
+"395
+[v _x x `uc  1 e 1 0 ]
+[v _y y `uc  1 e 1 0 ]
+"18 C:\Users\adria\MPLABXProjects\glcd.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"30
+} 0
+"4 C:\Users\adria\MPLABXProjects\glcd.X\init.c
+[v _initMyPIC18F initMyPIC18F `(v  1 e 1 0 ]
+{
+"26
+} 0
+"401 C:\Users\adria\MPLABXProjects\glcd.X\glcd.c
+[v _glcd_Init glcd_Init `(v  1 e 1 0 ]
+{
+[v glcd_Init@mode mode `uc  1 a 1 wreg ]
+[v glcd_Init@mode mode `uc  1 a 1 wreg ]
+"405
+[v glcd_Init@mode mode `uc  1 a 1 5 ]
+"436
+} 0
+"475
+[v _glcd_FillScreen glcd_FillScreen `(v  1 e 1 0 ]
+{
+[v glcd_FillScreen@color color `uc  1 a 1 wreg ]
+"477
+[v glcd_FillScreen@i i `uc  1 a 1 4 ]
+[v glcd_FillScreen@j j `uc  1 a 1 3 ]
+"475
+[v glcd_FillScreen@color color `uc  1 a 1 wreg ]
+"479
+[v glcd_FillScreen@color color `uc  1 a 1 2 ]
+"495
+} 0
+"499
+[v _glcd_Image glcd_Image `(v  1 e 1 0 ]
+{
+"502
+[v glcd_Image@ptr ptr `i  1 a 2 2 ]
+"501
+[v glcd_Image@cs cs `uc  1 a 1 6 ]
+"504
+[v glcd_Image@i i `uc  1 a 1 5 ]
+[v glcd_Image@j j `uc  1 a 1 4 ]
+"529
+} 0
+"441
+[v _glcd_WriteByte glcd_WriteByte `(v  1 e 1 0 ]
+{
+[v glcd_WriteByte@side side `uc  1 a 1 wreg ]
+[v glcd_WriteByte@side side `uc  1 a 1 wreg ]
+[v glcd_WriteByte@data data `uc  1 p 1 0 ]
+"443
+[v glcd_WriteByte@side side `uc  1 a 1 1 ]
+"469
+} 0
