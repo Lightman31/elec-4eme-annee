@@ -244,8 +244,8 @@ void board(char customKey)
    lcd.print(saisie);
    lcd.print("                       ");
    lcd.setCursor(0,1);   
-   lcd.print(len_saisie);
-   lcd.print("                     ");
+   //lcd.print(len_saisie);
+   lcd.print("                       ");
 
    if (len_saisie == 6)
    {

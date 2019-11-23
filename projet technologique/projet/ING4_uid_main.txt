@@ -1,0 +1,5 @@
+id	Nom	Prenom	TD	NumEtudiant	UID
+1	Guicharnaud	Leo	2	106459	13044059091065
+2	Buot	Adrien	2	107225	93191066091251
+3	Sabatey	Clara	2	107199	221156070091092
+4	Martinski	Alexandre	2		54060092053099
