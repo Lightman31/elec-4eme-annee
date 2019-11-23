@@ -99,7 +99,7 @@ static void __exit gpio_button_work_led_blinker_exit(void)
 }
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Last1, First1 and Last2, First2 (and Last3, First3)");
+MODULE_AUTHOR("Buot, Adrien and Guicharnaud, Léo and Sabatey, Clara");
 MODULE_DESCRIPTION("Press-button LED blinker using deferrable workqueues");
 
 module_init(gpio_button_work_led_blinker_init);
