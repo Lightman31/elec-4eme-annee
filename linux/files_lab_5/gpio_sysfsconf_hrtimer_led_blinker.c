@@ -26,13 +26,12 @@ ktime_t blink_period_ns = 1000000000; //TODO Vérifier
 // declare a global variable "current_pin":
 //  - it is to be updated when requested by the sysfs interface (e.g., when the device attribute "pin" is updated)
 //  - set it by default to PIN1 
-/* typevar */ current_pin = PIN1;
+int current_pin = PIN1;
 
 // declare a global high-resolution timer hr_timer 
 struct hrtimer hr_timer;
 
 // other global declarations may be added here 
-  dev_t fmaj; //major number of dev
 
 
 // "hr_timer" blink callback
@@ -83,6 +82,8 @@ static struct device *dobj;
 
 // declare the device attributes "period" and "pin", and attach them resp. to "set_period_callback" and "set_pin_callback"
 // - use the macro DEVICE_ATTR
+DEVICE_ATTR(dev_attr_period, 664, NULL, set_period_callback); //TODO vérifier, surement faux
+  DEVICE_ATTR(dev_attr_pin, 664, NULL, set_pin_callback); //TODO vérifier, surement faux
 
 
 static int __init gpio_sysfsconf_hrtimer_led_blinker_init(void)
@@ -91,8 +92,6 @@ static int __init gpio_sysfsconf_hrtimer_led_blinker_init(void)
   int ret = 0; 
   
   // local variables are to be declared here
-  struct class *clse; //TODO vérifier
-  struct device *kobj; //TODO vérifer
   printk(KERN_INFO "%s\n", __func__);
 
 
@@ -120,33 +119,33 @@ static int __init gpio_sysfsconf_hrtimer_led_blinker_init(void)
 
 
   // allocate dynamically a major number for "dev", and set its minor count 
-  ret = alloc_chrdev_region(&fmaj, 0, 1, "dev");
+  ret = alloc_chrdev_region(&dev, 0, 1, "dev");
   if(ret < 0){
   	printk(KERN_ERR "dev wasn't allocated, err: %d\n", ret);
     return ret;
   }
 
   // create a sysfs class "ext_leds", and register it in "clse"
-  clse = class_create("clse", "ext_leds"); //TODO vérifier, surement faux
+  class_create(clse, "ext_leds"); //TODO vérifier
   // error case 
   BUG_ON(IS_ERR(clse));
 
 
   // create a sysfs device object "blinker" under "ext_leds", register it in "kobj", and attach it to "dev":
   // => a /dev file "blinker" will be created                                            ==================   
-  kobj = device_create(clse,  NULL, /*jsp,*/ "blinker"); //TODO vérifier, surement faux
+  device_create(clse, dev, dobj, "blinker"); //TODO vérifier, surement faux
   // error case
-  BUG_ON(IS_ERR(kobj));
+  BUG_ON(IS_ERR(dobj));
 
 
   // attach the attribute "dev_attr_period" to "kobj"
-  DEVICE_ATTR("dev_attr_period", /*jsp, jsp, jsp*/); //TODO vérifier, surement faux
+  ret = device_create_file(&dobj, dev_attr_period);
   // error case
   BUG_ON(ret < 0);
 
 
   // attach the attribute "dev_attr_pin" to "kobj"
-  DEVICE_ATTR("dev_attr_pin", /*jsp, jsp, jsp*/); //TODO vérifier, surement faux
+  ret = device_create_file(&dobj, dev_attr_pin);
 
   // error case
   BUG_ON(ret < 0);
@@ -163,12 +162,12 @@ static void __exit gpio_sysfsconf_hrtimer_led_blinker_exit(void)
   printk(KERN_INFO "%s\n", __func__);
 
   // remove the sysFS "ext_leds" (start first by removing attributes, and device objects)
-  device_remove_file(&kobj, "dev_attr_pin");
-  device_remove_file(&kobj, "dev_attr_period");
-	device_destroy (&clse, kobj);
+  device_remove_file(&dobj, dev_attr_pin);
+  device_remove_file(&dobj, dev_attr_period);
+	device_destroy (&clse, dobj);
 	class_destroy(&clse);
   // unregister "dev" 
-  unregister_chrdev_region(fmaj, 1);
+  unregister_chrdev_region(dev, 1);
 
   // cancel "hr_timer"
   ret = hrtimer_cancel(&hr_timer);
