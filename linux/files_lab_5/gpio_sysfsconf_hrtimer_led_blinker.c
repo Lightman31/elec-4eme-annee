@@ -21,12 +21,12 @@
 // declare a global variable "blink_period_ns" (in nanoseconds):
 //  - it is to be updated when requested by the sysfs interface (e.g., when the device attribute "period" is update)
 //  - set it by default to 1 second
-ktime_t blink_period_ns = 1000000000; //TODO Vérifier
+unsigned long blink_period_ns = 1e9; //TODO Vérifier
 
 // declare a global variable "current_pin":
 //  - it is to be updated when requested by the sysfs interface (e.g., when the device attribute "pin" is updated)
 //  - set it by default to PIN1 
-int current_pin = PIN1;
+unsigned int current_pin = PIN1;
 
 // declare a global high-resolution timer hr_timer 
 struct hrtimer hr_timer;
@@ -38,40 +38,57 @@ struct hrtimer hr_timer;
 enum hrtimer_restart blink_callback(struct hrtimer *timer_restart)
 {
   // forward the time expiry for "hr_timer"
-	hrtimer_forward(&hr_timer, hrtimer_cb_get_time(hr_timer), blink_period_ns); //Franchement là j'suis sûr de rien TODO vérifier
+	hrtimer_forward(&hr_timer, ktime_get(), ktime_set(0,blink_period_ns)); //TODO peut être (surement) utiliser timer_restart
   // change the blinking LED when requested by the sysfs interface 
-
+  gpio_set_value(current_pin, !gpio_get_value(current_pin)); 
   return HRTIMER_RESTART;
 }
 
+static ssize_t show_period_callback(struct device* dev,
+                                    struct device_attribute* attr,
+                                    char* buf)
+{
+  return sprintf(buf, "%ld\n", blink_period_ns);
+}
 static ssize_t set_period_callback(struct device* dev, 
                                    struct device_attribute* attr, 
                                    const char* buf, 
                                    size_t count)
 {
+  unsigned long new_blink_period_ns = 0;
   // convert the string newly written in the device attribute "period" to an "unsigned long" integer
   // - use a temporary variable to store the converted value
   //   ========================
   // - if the value is lesser than 10, raise an error -EINVAL
-  
+  sscanf(buf,"%ld", &new_blink_period_ns);
   // set the new value of "blink_period_ns"
-  
+  blink_period_ns = new_blink_period_ns;
   return count;
 }
-
+static ssize_t show_pin_callback(struct device* dev,
+                                 struct device_attribute* attr,
+                                 char* buf)
+{
+  return sprintf(buf, "%d\n", current_pin);
+}
 static ssize_t set_pin_callback(struct device* dev, 
                                 struct device_attribute* attr, 
                                 const char* buf, 
                                 size_t count)
 {
+  unsigned int new_pin = 0;
   // convert the string newly written in the device attribute "pin" to an "unsigned" integer
   // - use a temporary variable to store the converted value
   //   ========================
   // - if the value is different of PIN1 and PIN2, raise an error -EINVAL
+  sscanf(buf,"%d", &new_pin);
+  if(new_pin != PIN1 && new_pin != PIN2){
+    printk(KERN_ERR "wrong pin used, %d", EINVAL);
+  }
 
-  
+  gpio_set_value(current_pin, 0); 
   // set the new value of "current_pin"
-  
+  current_pin = new_pin;
   return count;
 }
 
@@ -82,8 +99,8 @@ static struct device *dobj;
 
 // declare the device attributes "period" and "pin", and attach them resp. to "set_period_callback" and "set_pin_callback"
 // - use the macro DEVICE_ATTR
-DEVICE_ATTR(dev_attr_period, 664, NULL, set_period_callback); //TODO vérifier, surement faux
-  DEVICE_ATTR(dev_attr_pin, 664, NULL, set_pin_callback); //TODO vérifier, surement faux
+static DEVICE_ATTR(period, 0664, show_period_callback, set_period_callback); //TODO vérifier, surement faux
+static DEVICE_ATTR(pin, 0664, show_pin_callback, set_pin_callback); //TODO vérifier, surement faux
 
 
 static int __init gpio_sysfsconf_hrtimer_led_blinker_init(void)
@@ -115,8 +132,9 @@ static int __init gpio_sysfsconf_hrtimer_led_blinker_init(void)
 
 
   // set "hr_timer" as CLOCK_MONOTONIC, attach it to "blink_callback", and launch it
-  hrtimer_init(&hr_timer, CLOCK_MONOTONIC,HRTIMER MODE REL);
-
+  hrtimer_init(&hr_timer, CLOCK_MONOTONIC, HRTIMER_MODE_REL);
+  hr_timer.function = blink_callback;
+  hrtimer_start(&hr_timer, ktime_set(0,blink_period_ns), HRTIMER_MODE_REL);
 
   // allocate dynamically a major number for "dev", and set its minor count 
   ret = alloc_chrdev_region(&dev, 0, 1, "dev");
@@ -126,26 +144,26 @@ static int __init gpio_sysfsconf_hrtimer_led_blinker_init(void)
   }
 
   // create a sysfs class "ext_leds", and register it in "clse"
-  class_create(clse, "ext_leds"); //TODO vérifier
+  clse = class_create(THIS_MODULE, "ext_leds"); //TODO vérifier
   // error case 
   BUG_ON(IS_ERR(clse));
 
 
   // create a sysfs device object "blinker" under "ext_leds", register it in "kobj", and attach it to "dev":
   // => a /dev file "blinker" will be created                                            ==================   
-  device_create(clse, dev, dobj, "blinker"); //TODO vérifier, surement faux
+  dobj = device_create(clse, NULL, dev, NULL, "blinker"); //TODO vérifier, surement faux
   // error case
   BUG_ON(IS_ERR(dobj));
 
 
   // attach the attribute "dev_attr_period" to "kobj"
-  ret = device_create_file(&dobj, dev_attr_period);
+  ret = device_create_file(dobj, &dev_attr_period);
   // error case
   BUG_ON(ret < 0);
 
 
   // attach the attribute "dev_attr_pin" to "kobj"
-  ret = device_create_file(&dobj, dev_attr_pin);
+  ret = device_create_file(dobj, &dev_attr_pin);
 
   // error case
   BUG_ON(ret < 0);
@@ -162,10 +180,10 @@ static void __exit gpio_sysfsconf_hrtimer_led_blinker_exit(void)
   printk(KERN_INFO "%s\n", __func__);
 
   // remove the sysFS "ext_leds" (start first by removing attributes, and device objects)
-  device_remove_file(&dobj, dev_attr_pin);
-  device_remove_file(&dobj, dev_attr_period);
-	device_destroy (&clse, dobj);
-	class_destroy(&clse);
+  device_remove_file(dobj, &dev_attr_pin);
+  device_remove_file(dobj, &dev_attr_period);
+	device_destroy (clse, dev); 
+	class_destroy(clse);
   // unregister "dev" 
   unregister_chrdev_region(dev, 1);
 
@@ -173,7 +191,6 @@ static void __exit gpio_sysfsconf_hrtimer_led_blinker_exit(void)
   ret = hrtimer_cancel(&hr_timer);
   if(ret){
   	printk(KERN_ERR "hr_timer couldn't be canceled, %d", ret);
-  	return ret;
   }
 
   // release PIN1 and PIN2 properly
