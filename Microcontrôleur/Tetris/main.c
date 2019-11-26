@@ -14,14 +14,13 @@ int main(){
 	unsigned short formeEnCours = FALSE;
 	unsigned short typeForme = 0;
 	unsigned short choix = 0;
-	while(verif == FALSE){
+	while(!verif){
 		if(!formeEnCours){
 			x = 0, y = 4;
 			typeForme = rand() % 7;
 			position = 0;
 			formeEnCours = TRUE;
 		}else{
-			x++;
 			printf("1. Gauche\n2. Droite\n3. Rotate\n4.Nothing");
 			scanf("%hu", &choix);
 			if(choix == 1)
@@ -47,12 +46,13 @@ int main(){
 			for(unsigned short line = 0; line < HEIGHT_TAB; line++)
 				if(checkLine(tab, line))
 					eraseLine(tab, line);
-
-			for(unsigned short i = 0; i < WIDTH_TAB; i++)
-				if(tab[0][i] ==  1)
-					verif = TRUE;
+			
+			x++;
 		}
 		display(tabAffichage);
+		for(unsigned short i = 0; i < WIDTH_TAB; i++)
+				if(tab[0][i] ==  1)
+					verif = TRUE;
 	}
 	return 0;
 }
