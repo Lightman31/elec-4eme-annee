@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "data.h"
 
-void makeForme(int forme[4][2], int i);
+void makeForme(unsigned short forme[4][2], unsigned short i);
 
-void transformForm(int forme[4][2], int x, int y, int position);
+void transformForm(unsigned short forme[4][2], unsigned short x, unsigned short y, unsigned short position);
 
-void changePos(int *position);
+void changePos(unsigned short *position);
