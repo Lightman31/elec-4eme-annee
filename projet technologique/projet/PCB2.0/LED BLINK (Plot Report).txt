@@ -1,0 +1,203 @@
+Plot Report
+-----------
+
+Report Written:     Thursday, November 07, 2019
+Design Path:        C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK.pcb
+Design Title:       
+Created:            07/11/2019 18:55:41
+Last Saved:         07/11/2019 19:44:22
+Editing Time:       52 min
+Units:              mm (precision 3)
+
+
+Device Settings
+===============
+
+
+Gerber Settings
+===============
+
+    Leading zero suppression.
+    G01 assumed throughout.
+    Line termination <*> <CR> <LF>.
+    3.5 format absolute inches.
+    Format commands defined in Gerber file.
+    Aperture table defined in Gerber file.
+    Hardware arcs allowed.
+
+
+Drill Settings
+==============
+
+    Excellon Format 1    Format 3.5 absolute in inches.
+    Zero suppression Leading
+
+
+PDF Settings
+============
+
+Combine Plots Yes
+Use Bookmarks Yes
+Component Details Yes
+Symbol Details Yes
+Link Net Names Yes
+View PDF Yes
+All Colors Black No
+Embed Fonts Yes
+
+
+
+Plots Output
+============
+
+    Plot Job: "C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK.mop"
+
+
+PDF Output
+==========
+
+    Layer
+    ------------------
+    Bottom Copper
+    Bottom Silkscreen
+
+
+Gerber Output
+=============
+
+C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK - Documentation.gbr
+
+    Layers:
+    -----------------
+    Documentation
+
+    D-Code Shape  (thou)
+    -----------------------
+    D10    Round 1.97
+
+Gerber Output
+=============
+
+C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK - Bottom Copper.gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D11    Round 5.00
+    D12    Round 10.00
+    D13    Square 44.61
+    D14    Round 44.61
+    D15    Round 60.00
+    D16    Round 44.49
+    D17    Round 61.02
+    D18    Round 55.51
+    D19    Rectangle 60.00 X 80.00  Rotation 90
+    D70    Square 64.96
+    D71    Round 64.96
+    D20    Round 31.50
+    D21    Round 15.75
+
+Gerber Output
+=============
+
+C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK - Bottom Copper (Resist).gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D22    Square 54.61
+    D23    Round 54.61
+    D24    Round 70.00
+    D25    Round 54.49
+    D26    Round 71.02
+    D27    Round 65.51
+    D28    Rectangle 70.00 X 90.00  Rotation 90
+    D29    Square 74.96
+    D72    Round 74.96
+
+Gerber Output
+=============
+
+C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK - Bottom Copper (Paste).gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    -----------------------
+
+NC Drill Output
+===============
+
+C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK - Drill Data - [Through Hole].drl
+
+    Output:
+    ---------------------------
+    Plated Round Drill Holes
+    Plated Slots
+
+    Tool  Size           Count   ID
+    --------------------------------------
+    T001  0.02480 inches 2     C
+    T002  0.02886 inches 28    A
+    T003  0.03000 inches 2     F
+    T004  0.03200 inches 10    B
+    T005  0.03500 inches 1     H
+    T006  0.03583 inches 2     E
+    T007  0.03937 inches 4     D
+    T008  0.04331 inches 48    G
+    --------------------------------------
+    Total                97
+    --------------------------------------
+
+C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK - Drill Data - [Through Hole] (Unplated).drl
+
+    Output:
+    -----------------------------
+    Unplated Round Drill Holes
+    Unplated Slots
+
+    Tool  Size Count   ID
+    ----------------------------
+    ----------------------------
+    Total      0
+    ----------------------------
+
+
+Gerber Output
+=============
+
+C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK - Drill Ident Drawing - [Through Hole].gbr
+
+    Layers:
+    ------------------
+    [Through Hole]
+
+
+Drill Ident Drawing
+===================
+
+    Drill Plated Size Shape ID
+    -----------------------------------
+    29    Y      100  Round A
+    32    Y      100  Round B
+    25    Y      100  Round C
+    39    Y      100  Round D
+    36    Y      100  Round E
+    30    Y      100  Round F
+    43    Y      100  Round G
+    35    Y      100  Round H
+
+    D-Code Shape  (thou)
+    -----------------------
+    D11    Round 5.00
+    D73    Round 100.00
+
+End Of Report.
