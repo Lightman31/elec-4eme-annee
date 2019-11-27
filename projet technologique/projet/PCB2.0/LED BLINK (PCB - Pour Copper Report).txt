@@ -1,0 +1,13 @@
+Pour Copper Report
+------------------
+
+Report Written:     Thursday, November 07, 2019
+Design Path:        C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB1.0\LED BLINK.pcb
+Design Title:       
+Created:            07/11/2019 18:55:41
+Last Saved:         07/11/2019 19:44:22
+Editing Time:       51 min
+Units:              mm (precision 3)
+
+
+End Of Report.

@@ -1,0 +1,69 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Wednesday, November 27, 2019
+Project Path:       C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB2.0\LED BLINK.prj
+Design Path:        C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB2.0\LED BLINK.pcb
+Design Title:       
+Created:            07/11/2019 18:55:41
+Last Saved:         26/11/2019 13:32:21
+Editing Time:       1496 min
+Units:              mm (precision 3)
+
+
+Checking integrity of Schematic and Pcb designs in project "LED BLINK"
+======================================================================
+
+The PCB and Schematic designs do not match.
+To bring them into line, you will need to make the following changes to the PCB design:
+
+Disconnect Pin ATMEGA-4 from Net "N0054"
+Disconnect Pin ATMEGA-5 from Net "N0055"
+Disconnect Pin ATMEGA-6 from Net "N0056"
+Disconnect Pin ATMEGA-7 from Net "+5V"
+Disconnect Pin ATMEGA-11 from Net "N0057"
+Disconnect Pin S1-1 from Net "+5V"
+Disconnect Pin R2-2 from Net "+5V"
+Disconnect Pin FTDI-3 from Net "+5V"
+Disconnect Pin Digital0-1 from Net "N0044"
+Disconnect Pin Digital0-2 from Net "N0045"
+Disconnect Pin Digital0-3 from Net "N0054"
+Disconnect Pin Digital0-4 from Net "N0055"
+Disconnect Pin Digital0-5 from Net "N0056"
+Disconnect Pin Digital0-6 from Net "N0057"
+Disconnect Pin I2C-3 from Net "+5V"
+Disconnect Pin Cdecouplage-2 from Net "+5V"
+
+Delete Net "N0054"
+Delete Net "N0055"
+Delete Net "N0056"
+Delete Net "N0057"
+
+Component 'ATMEGA328P-PU' package 'DIP794W53P254L3467H457Q28N' in PCB is newer version than Schematic, use Update Component to correct this.
+Component '90120-0768' package 'HDRV8W90P0X254_1X8_2032X249X56' in PCB is newer version than Schematic, use Update Component to correct this.
+
+Add Net "+3.3V"
+Add Net "N0122"
+Add Net "N0123"
+Add Net "N0125"
+
+Connect Pin ATMEGA-4 to Net "N0122"
+Connect Pin ATMEGA-5 to Net "N0123"
+Connect Pin ATMEGA-6 to Net "N0125"
+Connect Pin ATMEGA-7 to Net "+3.3V"
+Connect Pin S1-1 to Net "N0012"
+Connect Pin S1-3 to Net "0V"
+Connect Pin S1-4 to Net "0V"
+Connect Pin R2-2 to Net "+3.3V"
+Connect Pin FTDI-3 to Net "+3.3V"
+Connect Pin Digital0-4 to Net "N0125"
+Connect Pin Digital0-5 to Net "N0123"
+Connect Pin Digital0-6 to Net "N0122"
+Connect Pin Digital0-7 to Net "N0045"
+Connect Pin Digital0-8 to Net "N0044"
+Connect Pin I2C-3 to Net "+3.3V"
+Connect Pin I2C-5 to Net "+5V"
+Connect Pin Cdecouplage-2 to Net "+3.3V"
+
+
+End Of Report.
