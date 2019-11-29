@@ -1,0 +1,3775 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"2705 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2705: extern volatile unsigned char PORTD __attribute__((address(0xF83)));
+[v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
+"3079
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3079:     struct {
+[s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S130 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"3089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3089:     struct {
+[s S131 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S131 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"3078
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3078: typedef union {
+[u S129 `S130 1 `S131 1 ]
+[n S129 . . . ]
+"3100
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3100: extern volatile LATBbits_t LATBbits __attribute__((address(0xF8A)));
+[v _LATBbits `VS129 ~T0 @X0 0 e@3978 ]
+[v F3152 `(v ~T0 @X0 1 tf1`ul ]
+"187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
+[v __delay `JF3152 ~T0 @X0 0 e ]
+[p i __delay ]
+"47 ./glcd.h
+[; ;./glcd.h: 47: extern void glcd_WriteByte(unsigned char side, unsigned char data);
+[v _glcd_WriteByte `(v ~T0 @X0 0 ef2`uc`uc ]
+"51
+[; ;./glcd.h: 51: extern void glcd_FillScreen(unsigned char color);
+[v _glcd_FillScreen `(v ~T0 @X0 0 ef1`uc ]
+"4001 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4001: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"3263
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3263: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+[v F3251 `uc ~T0 @X0 -> 22 `i t ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
+[; <" SPPDATA equ 0F62h ;# ">
+"74
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 74: __asm("SPPCFG equ 0F63h");
+[; <" SPPCFG equ 0F63h ;# ">
+"151
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 151: __asm("SPPEPS equ 0F64h");
+[; <" SPPEPS equ 0F64h ;# ">
+"225
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 225: __asm("SPPCON equ 0F65h");
+[; <" SPPCON equ 0F65h ;# ">
+"251
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 251: __asm("UFRM equ 0F66h");
+[; <" UFRM equ 0F66h ;# ">
+"258
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 258: __asm("UFRML equ 0F66h");
+[; <" UFRML equ 0F66h ;# ">
+"336
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 336: __asm("UFRMH equ 0F67h");
+[; <" UFRMH equ 0F67h ;# ">
+"376
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 376: __asm("UIR equ 0F68h");
+[; <" UIR equ 0F68h ;# ">
+"432
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 432: __asm("UIE equ 0F69h");
+[; <" UIE equ 0F69h ;# ">
+"488
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 488: __asm("UEIR equ 0F6Ah");
+[; <" UEIR equ 0F6Ah ;# ">
+"539
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 539: __asm("UEIE equ 0F6Bh");
+[; <" UEIE equ 0F6Bh ;# ">
+"590
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 590: __asm("USTAT equ 0F6Ch");
+[; <" USTAT equ 0F6Ch ;# ">
+"650
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 650: __asm("UCON equ 0F6Dh");
+[; <" UCON equ 0F6Dh ;# ">
+"701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 701: __asm("UADDR equ 0F6Eh");
+[; <" UADDR equ 0F6Eh ;# ">
+"765
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 765: __asm("UCFG equ 0F6Fh");
+[; <" UCFG equ 0F6Fh ;# ">
+"844
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 844: __asm("UEP0 equ 0F70h");
+[; <" UEP0 equ 0F70h ;# ">
+"952
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 952: __asm("UEP1 equ 0F71h");
+[; <" UEP1 equ 0F71h ;# ">
+"1060
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1060: __asm("UEP2 equ 0F72h");
+[; <" UEP2 equ 0F72h ;# ">
+"1168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1168: __asm("UEP3 equ 0F73h");
+[; <" UEP3 equ 0F73h ;# ">
+"1276
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1276: __asm("UEP4 equ 0F74h");
+[; <" UEP4 equ 0F74h ;# ">
+"1384
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1384: __asm("UEP5 equ 0F75h");
+[; <" UEP5 equ 0F75h ;# ">
+"1492
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1492: __asm("UEP6 equ 0F76h");
+[; <" UEP6 equ 0F76h ;# ">
+"1600
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1600: __asm("UEP7 equ 0F77h");
+[; <" UEP7 equ 0F77h ;# ">
+"1708
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1708: __asm("UEP8 equ 0F78h");
+[; <" UEP8 equ 0F78h ;# ">
+"1784
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1784: __asm("UEP9 equ 0F79h");
+[; <" UEP9 equ 0F79h ;# ">
+"1860
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1860: __asm("UEP10 equ 0F7Ah");
+[; <" UEP10 equ 0F7Ah ;# ">
+"1936
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 1936: __asm("UEP11 equ 0F7Bh");
+[; <" UEP11 equ 0F7Bh ;# ">
+"2012
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2012: __asm("UEP12 equ 0F7Ch");
+[; <" UEP12 equ 0F7Ch ;# ">
+"2088
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2088: __asm("UEP13 equ 0F7Dh");
+[; <" UEP13 equ 0F7Dh ;# ">
+"2164
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2164: __asm("UEP14 equ 0F7Eh");
+[; <" UEP14 equ 0F7Eh ;# ">
+"2240
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2240: __asm("UEP15 equ 0F7Fh");
+[; <" UEP15 equ 0F7Fh ;# ">
+"2316
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2316: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"2455
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2455: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"2565
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2565: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"2707
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2707: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"2828
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2828: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"2975
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2975: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"3075
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3075: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"3187
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3187: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"3265
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3265: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"3377
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3377: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"3429
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3429: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"3434
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3434: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"3627
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3627: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"3632
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3632: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"3849
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3849: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"3854
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3854: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"4003
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4003: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"4008
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4008: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"4225
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4225: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"4230
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4230: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"4327
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4327: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"4386
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4386: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"4470
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4470: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"4554
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4554: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"4638
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4638: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"4709
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4709: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"4780
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4780: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"4851
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4851: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"4917
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4917: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"4924
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4924: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"4931
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4931: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"4938
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4938: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"4943
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4943: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"5148
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5148: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"5153
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5153: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"5404
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5404: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"5409
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5409: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"5416
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5416: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"5421
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5421: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"5428
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5428: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"5433
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5433: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"5440
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5440: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"5447
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5447: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"5568
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5568: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"5575
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5575: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"5582
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5582: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"5589
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5589: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"5679
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5679: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"5764
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5764: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"5769
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5769: __asm("CCP1AS equ 0FB6h");
+[; <" CCP1AS equ 0FB6h ;# ">
+"5926
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5926: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"5931
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5931: __asm("CCP1DEL equ 0FB7h");
+[; <" CCP1DEL equ 0FB7h ;# ">
+"6064
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6064: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"6069
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6069: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"6244
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6244: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"6308
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6308: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"6315
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6315: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"6322
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6322: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"6329
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6329: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"6334
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6334: __asm("ECCP1CON equ 0FBDh");
+[; <" ECCP1CON equ 0FBDh ;# ">
+"6491
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6491: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"6498
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6498: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"6505
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6505: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"6512
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6512: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"6583
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6583: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"6668
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6668: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"6787
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6787: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"6794
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6794: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"6801
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6801: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"6808
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6808: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"6870
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6870: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"6940
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6940: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"7188
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7188: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"7195
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7195: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"7202
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7202: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"7300
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7300: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"7305
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7305: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"7410
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7410: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"7417
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7417: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"7520
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7520: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"7527
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7527: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"7534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7534: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"7541
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7541: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"7690
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7690: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"7718
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7718: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"7723
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7723: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"7988
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7988: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"8071
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8071: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"8141
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8141: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"8148
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8148: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"8155
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8155: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"8162
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8162: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"8233
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8233: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"8240
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8240: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"8247
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8247: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"8254
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8254: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"8261
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8261: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"8268
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8268: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"8275
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8275: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"8282
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8282: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"8289
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8289: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"8296
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8296: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"8303
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8303: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"8310
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8310: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"8317
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8317: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"8324
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8324: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"8331
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8331: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"8338
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8338: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"8345
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8345: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"8352
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8352: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"8359
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8359: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"8366
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8366: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"8373
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8373: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"8380
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8380: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"8387
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8387: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"8394
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8394: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"8401
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8401: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"8408
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8408: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"8415
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8415: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"8507
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8507: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"8584
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8584: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"8701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8701: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"8708
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8708: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"8715
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8715: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"8722
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8722: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"8731
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8731: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"8738
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8738: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"8745
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8745: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"8752
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8752: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"8761
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8761: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"8768
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8768: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"8775
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8775: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"8782
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8782: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"8789
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8789: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"8796
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8796: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"8872
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8872: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"8879
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8879: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"8886
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8886: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"8893
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+[v F3197 `Cuc ~T0 @X0 -> 3 `i t ]
+"10 glcd.c
+[; ;glcd.c: 10: const unsigned char Font3x6[65][3]={
+[v _Font3x6 `F3197 ~T0 @X0 -> 65 `i e ]
+[i _Font3x6
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 92 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 12 `i `uc
+-> -> 0 `i `uc
+-> -> 12 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 40 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 68 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 36 `i `uc
+-> -> 16 `i `uc
+-> -> 72 `i `uc
+..
+:U ..
+-> -> 40 `i `uc
+-> -> 84 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 12 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 56 `i `uc
+-> -> 68 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 68 `i `uc
+-> -> 56 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 32 `i `uc
+-> -> 16 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 16 `i `uc
+-> -> 56 `i `uc
+-> -> 16 `i `uc
+..
+:U ..
+-> -> 128 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 32 `i `uc
+-> -> 16 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 56 `i `uc
+-> -> 68 `i `uc
+-> -> 56 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 124 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 100 `i `uc
+-> -> 84 `i `uc
+-> -> 72 `i `uc
+..
+:U ..
+-> -> 68 `i `uc
+-> -> 84 `i `uc
+-> -> 40 `i `uc
+..
+:U ..
+-> -> 28 `i `uc
+-> -> 16 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 76 `i `uc
+-> -> 84 `i `uc
+-> -> 36 `i `uc
+..
+:U ..
+-> -> 56 `i `uc
+-> -> 84 `i `uc
+-> -> 32 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> -> 116 `i `uc
+-> -> 12 `i `uc
+..
+:U ..
+-> -> 40 `i `uc
+-> -> 84 `i `uc
+-> -> 40 `i `uc
+..
+:U ..
+-> -> 8 `i `uc
+-> -> 84 `i `uc
+-> -> 56 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 80 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 128 `i `uc
+-> -> 80 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 16 `i `uc
+-> -> 40 `i `uc
+-> -> 68 `i `uc
+..
+:U ..
+-> -> 40 `i `uc
+-> -> 40 `i `uc
+-> -> 40 `i `uc
+..
+:U ..
+-> -> 68 `i `uc
+-> -> 40 `i `uc
+-> -> 16 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> -> 84 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 56 `i `uc
+-> -> 76 `i `uc
+-> -> 92 `i `uc
+..
+:U ..
+-> -> 120 `i `uc
+-> -> 20 `i `uc
+-> -> 120 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 84 `i `uc
+-> -> 40 `i `uc
+..
+:U ..
+-> -> 56 `i `uc
+-> -> 68 `i `uc
+-> -> 68 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 68 `i `uc
+-> -> 56 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 84 `i `uc
+-> -> 68 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 20 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 56 `i `uc
+-> -> 68 `i `uc
+-> -> 52 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 16 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 124 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 32 `i `uc
+-> -> 64 `i `uc
+-> -> 60 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 16 `i `uc
+-> -> 108 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 8 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 4 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 68 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 20 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 56 `i `uc
+-> -> 68 `i `uc
+-> -> 120 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 20 `i `uc
+-> -> 104 `i `uc
+..
+:U ..
+-> -> 72 `i `uc
+-> -> 84 `i `uc
+-> -> 36 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> -> 124 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 64 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 60 `i `uc
+-> -> 64 `i `uc
+-> -> 60 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 32 `i `uc
+-> -> 124 `i `uc
+..
+:U ..
+-> -> 108 `i `uc
+-> -> 16 `i `uc
+-> -> 108 `i `uc
+..
+:U ..
+-> -> 28 `i `uc
+-> -> 96 `i `uc
+-> -> 28 `i `uc
+..
+:U ..
+-> -> 100 `i `uc
+-> -> 84 `i `uc
+-> -> 76 `i `uc
+..
+:U ..
+-> -> 124 `i `uc
+-> -> 68 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 8 `i `uc
+-> -> 16 `i `uc
+-> -> 32 `i `uc
+..
+:U ..
+-> -> 68 `i `uc
+-> -> 124 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 8 `i `uc
+-> -> 4 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+..
+..
+]
+"82
+[; ;glcd.c: 82: const unsigned char Font8x8[2048] =
+[v _Font8x8 `Cuc ~T0 @X0 -> 2048 `i e ]
+[i _Font8x8
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 6 `i `uc
+-> -> 95 `i `uc
+-> -> 95 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 7 `i `uc
+-> -> 7 `i `uc
+-> -> 0 `i `uc
+-> -> 7 `i `uc
+-> -> 7 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 20 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 20 `i `uc
+-> -> 0 `i `uc
+-> -> 36 `i `uc
+-> -> 46 `i `uc
+-> -> 107 `i `uc
+-> -> 107 `i `uc
+-> -> 58 `i `uc
+-> -> 18 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 70 `i `uc
+-> -> 102 `i `uc
+-> -> 48 `i `uc
+-> -> 24 `i `uc
+-> -> 12 `i `uc
+-> -> 102 `i `uc
+-> -> 98 `i `uc
+-> -> 0 `i `uc
+-> -> 48 `i `uc
+-> -> 122 `i `uc
+-> -> 79 `i `uc
+-> -> 93 `i `uc
+-> -> 55 `i `uc
+-> -> 122 `i `uc
+-> -> 72 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 7 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 62 `i `uc
+-> -> 99 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 99 `i `uc
+-> -> 62 `i `uc
+-> -> 28 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 42 `i `uc
+-> -> 62 `i `uc
+-> -> 28 `i `uc
+-> -> 28 `i `uc
+-> -> 62 `i `uc
+-> -> 42 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 62 `i `uc
+-> -> 62 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 128 `i `uc
+-> -> 224 `i `uc
+-> -> 96 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 96 `i `uc
+-> -> 96 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 96 `i `uc
+-> -> 48 `i `uc
+-> -> 24 `i `uc
+-> -> 12 `i `uc
+-> -> 6 `i `uc
+-> -> 3 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 62 `i `uc
+-> -> 127 `i `uc
+-> -> 113 `i `uc
+-> -> 89 `i `uc
+-> -> 77 `i `uc
+-> -> 127 `i `uc
+-> -> 62 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 66 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 98 `i `uc
+-> -> 115 `i `uc
+-> -> 89 `i `uc
+-> -> 73 `i `uc
+-> -> 111 `i `uc
+-> -> 102 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 34 `i `uc
+-> -> 99 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 127 `i `uc
+-> -> 54 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 24 `i `uc
+-> -> 28 `i `uc
+-> -> 22 `i `uc
+-> -> 83 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 80 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 103 `i `uc
+-> -> 69 `i `uc
+-> -> 69 `i `uc
+-> -> 125 `i `uc
+-> -> 57 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 60 `i `uc
+-> -> 126 `i `uc
+-> -> 75 `i `uc
+-> -> 73 `i `uc
+-> -> 121 `i `uc
+-> -> 48 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 3 `i `uc
+-> -> 113 `i `uc
+-> -> 121 `i `uc
+-> -> 15 `i `uc
+-> -> 7 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 54 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 127 `i `uc
+-> -> 54 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 6 `i `uc
+-> -> 79 `i `uc
+-> -> 73 `i `uc
+-> -> 105 `i `uc
+-> -> 63 `i `uc
+-> -> 30 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 102 `i `uc
+-> -> 102 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 128 `i `uc
+-> -> 230 `i `uc
+-> -> 102 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 28 `i `uc
+-> -> 54 `i `uc
+-> -> 99 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 36 `i `uc
+-> -> 36 `i `uc
+-> -> 36 `i `uc
+-> -> 36 `i `uc
+-> -> 36 `i `uc
+-> -> 36 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 99 `i `uc
+-> -> 54 `i `uc
+-> -> 28 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 81 `i `uc
+-> -> 89 `i `uc
+-> -> 15 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 62 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 93 `i `uc
+-> -> 93 `i `uc
+-> -> 31 `i `uc
+-> -> 30 `i `uc
+-> -> 0 `i `uc
+-> -> 124 `i `uc
+-> -> 126 `i `uc
+-> -> 19 `i `uc
+-> -> 19 `i `uc
+-> -> 126 `i `uc
+-> -> 124 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 127 `i `uc
+-> -> 54 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 62 `i `uc
+-> -> 99 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 99 `i `uc
+-> -> 34 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 99 `i `uc
+-> -> 62 `i `uc
+-> -> 28 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 93 `i `uc
+-> -> 65 `i `uc
+-> -> 99 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 29 `i `uc
+-> -> 1 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 62 `i `uc
+-> -> 99 `i `uc
+-> -> 65 `i `uc
+-> -> 81 `i `uc
+-> -> 115 `i `uc
+-> -> 114 `i `uc
+-> -> 0 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 48 `i `uc
+-> -> 112 `i `uc
+-> -> 64 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 63 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 8 `i `uc
+-> -> 28 `i `uc
+-> -> 119 `i `uc
+-> -> 99 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 64 `i `uc
+-> -> 96 `i `uc
+-> -> 112 `i `uc
+-> -> 0 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 14 `i `uc
+-> -> 28 `i `uc
+-> -> 14 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 6 `i `uc
+-> -> 12 `i `uc
+-> -> 24 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 62 `i `uc
+-> -> 99 `i `uc
+-> -> 65 `i `uc
+-> -> 99 `i `uc
+-> -> 62 `i `uc
+-> -> 28 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 9 `i `uc
+-> -> 15 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 30 `i `uc
+-> -> 63 `i `uc
+-> -> 33 `i `uc
+-> -> 113 `i `uc
+-> -> 127 `i `uc
+-> -> 94 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 9 `i `uc
+-> -> 25 `i `uc
+-> -> 127 `i `uc
+-> -> 102 `i `uc
+-> -> 0 `i `uc
+-> -> 38 `i `uc
+-> -> 111 `i `uc
+-> -> 77 `i `uc
+-> -> 89 `i `uc
+-> -> 115 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 63 `i `uc
+-> -> 96 `i `uc
+-> -> 96 `i `uc
+-> -> 63 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 48 `i `uc
+-> -> 24 `i `uc
+-> -> 48 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
+-> -> 67 `i `uc
+-> -> 103 `i `uc
+-> -> 60 `i `uc
+-> -> 24 `i `uc
+-> -> 60 `i `uc
+-> -> 103 `i `uc
+-> -> 67 `i `uc
+-> -> 0 `i `uc
+-> -> 7 `i `uc
+-> -> 79 `i `uc
+-> -> 120 `i `uc
+-> -> 120 `i `uc
+-> -> 79 `i `uc
+-> -> 7 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 71 `i `uc
+-> -> 99 `i `uc
+-> -> 113 `i `uc
+-> -> 89 `i `uc
+-> -> 77 `i `uc
+-> -> 103 `i `uc
+-> -> 115 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 12 `i `uc
+-> -> 24 `i `uc
+-> -> 48 `i `uc
+-> -> 96 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 12 `i `uc
+-> -> 6 `i `uc
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 12 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 32 `i `uc
+-> -> 116 `i `uc
+-> -> 84 `i `uc
+-> -> 84 `i `uc
+-> -> 60 `i `uc
+-> -> 120 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 63 `i `uc
+-> -> 72 `i `uc
+-> -> 72 `i `uc
+-> -> 120 `i `uc
+-> -> 48 `i `uc
+-> -> 0 `i `uc
+-> -> 56 `i `uc
+-> -> 124 `i `uc
+-> -> 68 `i `uc
+-> -> 68 `i `uc
+-> -> 108 `i `uc
+-> -> 40 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 48 `i `uc
+-> -> 120 `i `uc
+-> -> 72 `i `uc
+-> -> 73 `i `uc
+-> -> 63 `i `uc
+-> -> 127 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 56 `i `uc
+-> -> 124 `i `uc
+-> -> 84 `i `uc
+-> -> 84 `i `uc
+-> -> 92 `i `uc
+-> -> 24 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 72 `i `uc
+-> -> 126 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 3 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 152 `i `uc
+-> -> 188 `i `uc
+-> -> 164 `i `uc
+-> -> 164 `i `uc
+-> -> 248 `i `uc
+-> -> 124 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 8 `i `uc
+-> -> 4 `i `uc
+-> -> 124 `i `uc
+-> -> 120 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 68 `i `uc
+-> -> 125 `i `uc
+-> -> 125 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 96 `i `uc
+-> -> 224 `i `uc
+-> -> 128 `i `uc
+-> -> 128 `i `uc
+-> -> 253 `i `uc
+-> -> 125 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 16 `i `uc
+-> -> 56 `i `uc
+-> -> 108 `i `uc
+-> -> 68 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 124 `i `uc
+-> -> 124 `i `uc
+-> -> 24 `i `uc
+-> -> 56 `i `uc
+-> -> 28 `i `uc
+-> -> 124 `i `uc
+-> -> 120 `i `uc
+-> -> 0 `i `uc
+-> -> 124 `i `uc
+-> -> 124 `i `uc
+-> -> 4 `i `uc
+-> -> 4 `i `uc
+-> -> 124 `i `uc
+-> -> 120 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 56 `i `uc
+-> -> 124 `i `uc
+-> -> 68 `i `uc
+-> -> 68 `i `uc
+-> -> 124 `i `uc
+-> -> 56 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 132 `i `uc
+-> -> 252 `i `uc
+-> -> 248 `i `uc
+-> -> 164 `i `uc
+-> -> 36 `i `uc
+-> -> 60 `i `uc
+-> -> 24 `i `uc
+-> -> 0 `i `uc
+-> -> 24 `i `uc
+-> -> 60 `i `uc
+-> -> 36 `i `uc
+-> -> 164 `i `uc
+-> -> 248 `i `uc
+-> -> 252 `i `uc
+-> -> 132 `i `uc
+-> -> 0 `i `uc
+-> -> 68 `i `uc
+-> -> 124 `i `uc
+-> -> 120 `i `uc
+-> -> 76 `i `uc
+-> -> 4 `i `uc
+-> -> 28 `i `uc
+-> -> 24 `i `uc
+-> -> 0 `i `uc
+-> -> 72 `i `uc
+-> -> 92 `i `uc
+-> -> 84 `i `uc
+-> -> 84 `i `uc
+-> -> 116 `i `uc
+-> -> 36 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 62 `i `uc
+-> -> 127 `i `uc
+-> -> 68 `i `uc
+-> -> 36 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 60 `i `uc
+-> -> 124 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 60 `i `uc
+-> -> 124 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 60 `i `uc
+-> -> 96 `i `uc
+-> -> 96 `i `uc
+-> -> 60 `i `uc
+-> -> 28 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 60 `i `uc
+-> -> 124 `i `uc
+-> -> 112 `i `uc
+-> -> 56 `i `uc
+-> -> 112 `i `uc
+-> -> 124 `i `uc
+-> -> 60 `i `uc
+-> -> 0 `i `uc
+-> -> 68 `i `uc
+-> -> 108 `i `uc
+-> -> 56 `i `uc
+-> -> 16 `i `uc
+-> -> 56 `i `uc
+-> -> 108 `i `uc
+-> -> 68 `i `uc
+-> -> 0 `i `uc
+-> -> 156 `i `uc
+-> -> 188 `i `uc
+-> -> 160 `i `uc
+-> -> 160 `i `uc
+-> -> 252 `i `uc
+-> -> 124 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 76 `i `uc
+-> -> 100 `i `uc
+-> -> 116 `i `uc
+-> -> 92 `i `uc
+-> -> 76 `i `uc
+-> -> 100 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 62 `i `uc
+-> -> 119 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 119 `i `uc
+-> -> 119 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 119 `i `uc
+-> -> 62 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 1 `i `uc
+-> -> 3 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 112 `i `uc
+-> -> 120 `i `uc
+-> -> 76 `i `uc
+-> -> 70 `i `uc
+-> -> 76 `i `uc
+-> -> 120 `i `uc
+-> -> 112 `i `uc
+-> -> 0 `i `uc
+-> -> 14 `i `uc
+-> -> 159 `i `uc
+-> -> 145 `i `uc
+-> -> 177 `i `uc
+-> -> 251 `i `uc
+-> -> 74 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 58 `i `uc
+-> -> 122 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 122 `i `uc
+-> -> 122 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 56 `i `uc
+-> -> 124 `i `uc
+-> -> 84 `i `uc
+-> -> 85 `i `uc
+-> -> 93 `i `uc
+-> -> 25 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 35 `i `uc
+-> -> 117 `i `uc
+-> -> 85 `i `uc
+-> -> 85 `i `uc
+-> -> 125 `i `uc
+-> -> 123 `i `uc
+-> -> 66 `i `uc
+-> -> 33 `i `uc
+-> -> 117 `i `uc
+-> -> 84 `i `uc
+-> -> 84 `i `uc
+-> -> 125 `i `uc
+-> -> 121 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 33 `i `uc
+-> -> 117 `i `uc
+-> -> 85 `i `uc
+-> -> 84 `i `uc
+-> -> 124 `i `uc
+-> -> 120 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 32 `i `uc
+-> -> 116 `i `uc
+-> -> 87 `i `uc
+-> -> 87 `i `uc
+-> -> 124 `i `uc
+-> -> 120 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 24 `i `uc
+-> -> 60 `i `uc
+-> -> 164 `i `uc
+-> -> 164 `i `uc
+-> -> 228 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 59 `i `uc
+-> -> 125 `i `uc
+-> -> 85 `i `uc
+-> -> 85 `i `uc
+-> -> 93 `i `uc
+-> -> 27 `i `uc
+-> -> 2 `i `uc
+-> -> 57 `i `uc
+-> -> 125 `i `uc
+-> -> 84 `i `uc
+-> -> 84 `i `uc
+-> -> 93 `i `uc
+-> -> 25 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 57 `i `uc
+-> -> 125 `i `uc
+-> -> 85 `i `uc
+-> -> 84 `i `uc
+-> -> 92 `i `uc
+-> -> 24 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 69 `i `uc
+-> -> 124 `i `uc
+-> -> 124 `i `uc
+-> -> 65 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 69 `i `uc
+-> -> 125 `i `uc
+-> -> 125 `i `uc
+-> -> 67 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 69 `i `uc
+-> -> 125 `i `uc
+-> -> 124 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 121 `i `uc
+-> -> 125 `i `uc
+-> -> 22 `i `uc
+-> -> 18 `i `uc
+-> -> 22 `i `uc
+-> -> 125 `i `uc
+-> -> 121 `i `uc
+-> -> 0 `i `uc
+-> -> 112 `i `uc
+-> -> 120 `i `uc
+-> -> 43 `i `uc
+-> -> 43 `i `uc
+-> -> 120 `i `uc
+-> -> 112 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 68 `i `uc
+-> -> 124 `i `uc
+-> -> 124 `i `uc
+-> -> 85 `i `uc
+-> -> 85 `i `uc
+-> -> 69 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 32 `i `uc
+-> -> 116 `i `uc
+-> -> 84 `i `uc
+-> -> 84 `i `uc
+-> -> 124 `i `uc
+-> -> 124 `i `uc
+-> -> 84 `i `uc
+-> -> 84 `i `uc
+-> -> 124 `i `uc
+-> -> 126 `i `uc
+-> -> 11 `i `uc
+-> -> 9 `i `uc
+-> -> 127 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 0 `i `uc
+-> -> 50 `i `uc
+-> -> 123 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 123 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 50 `i `uc
+-> -> 122 `i `uc
+-> -> 72 `i `uc
+-> -> 72 `i `uc
+-> -> 122 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 50 `i `uc
+-> -> 122 `i `uc
+-> -> 74 `i `uc
+-> -> 72 `i `uc
+-> -> 120 `i `uc
+-> -> 48 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 58 `i `uc
+-> -> 123 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 123 `i `uc
+-> -> 122 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 58 `i `uc
+-> -> 122 `i `uc
+-> -> 66 `i `uc
+-> -> 64 `i `uc
+-> -> 120 `i `uc
+-> -> 120 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 154 `i `uc
+-> -> 186 `i `uc
+-> -> 160 `i `uc
+-> -> 160 `i `uc
+-> -> 250 `i `uc
+-> -> 122 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 25 `i `uc
+-> -> 60 `i `uc
+-> -> 102 `i `uc
+-> -> 102 `i `uc
+-> -> 60 `i `uc
+-> -> 25 `i `uc
+-> -> 1 `i `uc
+-> -> 61 `i `uc
+-> -> 125 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 125 `i `uc
+-> -> 61 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 24 `i `uc
+-> -> 60 `i `uc
+-> -> 36 `i `uc
+-> -> 231 `i `uc
+-> -> 231 `i `uc
+-> -> 36 `i `uc
+-> -> 36 `i `uc
+-> -> 0 `i `uc
+-> -> 104 `i `uc
+-> -> 126 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 67 `i `uc
+-> -> 102 `i `uc
+-> -> 32 `i `uc
+-> -> 0 `i `uc
+-> -> 43 `i `uc
+-> -> 47 `i `uc
+-> -> 252 `i `uc
+-> -> 252 `i `uc
+-> -> 47 `i `uc
+-> -> 43 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 9 `i `uc
+-> -> 9 `i `uc
+-> -> 47 `i `uc
+-> -> 246 `i `uc
+-> -> 248 `i `uc
+-> -> 160 `i `uc
+-> -> 64 `i `uc
+-> -> 192 `i `uc
+-> -> 136 `i `uc
+-> -> 254 `i `uc
+-> -> 127 `i `uc
+-> -> 9 `i `uc
+-> -> 3 `i `uc
+-> -> 2 `i `uc
+-> -> 32 `i `uc
+-> -> 116 `i `uc
+-> -> 84 `i `uc
+-> -> 85 `i `uc
+-> -> 125 `i `uc
+-> -> 121 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 68 `i `uc
+-> -> 125 `i `uc
+-> -> 125 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 48 `i `uc
+-> -> 120 `i `uc
+-> -> 72 `i `uc
+-> -> 74 `i `uc
+-> -> 122 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 56 `i `uc
+-> -> 120 `i `uc
+-> -> 64 `i `uc
+-> -> 66 `i `uc
+-> -> 122 `i `uc
+-> -> 122 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 122 `i `uc
+-> -> 122 `i `uc
+-> -> 10 `i `uc
+-> -> 10 `i `uc
+-> -> 122 `i `uc
+-> -> 112 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 125 `i `uc
+-> -> 125 `i `uc
+-> -> 25 `i `uc
+-> -> 49 `i `uc
+-> -> 125 `i `uc
+-> -> 125 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 38 `i `uc
+-> -> 47 `i `uc
+-> -> 41 `i `uc
+-> -> 47 `i `uc
+-> -> 47 `i `uc
+-> -> 40 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 38 `i `uc
+-> -> 47 `i `uc
+-> -> 41 `i `uc
+-> -> 47 `i `uc
+-> -> 38 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 48 `i `uc
+-> -> 120 `i `uc
+-> -> 77 `i `uc
+-> -> 69 `i `uc
+-> -> 96 `i `uc
+-> -> 32 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 56 `i `uc
+-> -> 56 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 56 `i `uc
+-> -> 56 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 79 `i `uc
+-> -> 111 `i `uc
+-> -> 48 `i `uc
+-> -> 24 `i `uc
+-> -> 204 `i `uc
+-> -> 238 `i `uc
+-> -> 187 `i `uc
+-> -> 145 `i `uc
+-> -> 79 `i `uc
+-> -> 111 `i `uc
+-> -> 48 `i `uc
+-> -> 24 `i `uc
+-> -> 108 `i `uc
+-> -> 118 `i `uc
+-> -> 251 `i `uc
+-> -> 249 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 123 `i `uc
+-> -> 123 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 28 `i `uc
+-> -> 54 `i `uc
+-> -> 34 `i `uc
+-> -> 8 `i `uc
+-> -> 28 `i `uc
+-> -> 54 `i `uc
+-> -> 34 `i `uc
+-> -> 34 `i `uc
+-> -> 54 `i `uc
+-> -> 28 `i `uc
+-> -> 8 `i `uc
+-> -> 34 `i `uc
+-> -> 54 `i `uc
+-> -> 28 `i `uc
+-> -> 8 `i `uc
+-> -> 170 `i `uc
+-> -> 0 `i `uc
+-> -> 85 `i `uc
+-> -> 0 `i `uc
+-> -> 170 `i `uc
+-> -> 0 `i `uc
+-> -> 85 `i `uc
+-> -> 0 `i `uc
+-> -> 170 `i `uc
+-> -> 85 `i `uc
+-> -> 170 `i `uc
+-> -> 85 `i `uc
+-> -> 170 `i `uc
+-> -> 85 `i `uc
+-> -> 170 `i `uc
+-> -> 85 `i `uc
+-> -> 221 `i `uc
+-> -> 255 `i `uc
+-> -> 170 `i `uc
+-> -> 119 `i `uc
+-> -> 221 `i `uc
+-> -> 170 `i `uc
+-> -> 255 `i `uc
+-> -> 119 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 16 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 252 `i `uc
+-> -> 252 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 247 `i `uc
+-> -> 247 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 244 `i `uc
+-> -> 244 `i `uc
+-> -> 4 `i `uc
+-> -> 252 `i `uc
+-> -> 252 `i `uc
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 23 `i `uc
+-> -> 23 `i `uc
+-> -> 16 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 16 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 16 `i `uc
+-> -> 23 `i `uc
+-> -> 23 `i `uc
+-> -> 20 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 252 `i `uc
+-> -> 252 `i `uc
+-> -> 4 `i `uc
+-> -> 244 `i `uc
+-> -> 244 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 23 `i `uc
+-> -> 23 `i `uc
+-> -> 16 `i `uc
+-> -> 23 `i `uc
+-> -> 23 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 244 `i `uc
+-> -> 244 `i `uc
+-> -> 4 `i `uc
+-> -> 244 `i `uc
+-> -> 244 `i `uc
+-> -> 20 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 247 `i `uc
+-> -> 247 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 247 `i `uc
+-> -> 247 `i `uc
+-> -> 0 `i `uc
+-> -> 247 `i `uc
+-> -> 247 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 23 `i `uc
+-> -> 23 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 16 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 16 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 244 `i `uc
+-> -> 244 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 16 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 16 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 252 `i `uc
+-> -> 252 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 16 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 16 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 16 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 240 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 15 `i `uc
+-> -> 15 `i `uc
+-> -> 15 `i `uc
+-> -> 15 `i `uc
+-> -> 15 `i `uc
+-> -> 15 `i `uc
+-> -> 15 `i `uc
+-> -> 15 `i `uc
+-> -> 56 `i `uc
+-> -> 124 `i `uc
+-> -> 68 `i `uc
+-> -> 108 `i `uc
+-> -> 56 `i `uc
+-> -> 108 `i `uc
+-> -> 68 `i `uc
+-> -> 0 `i `uc
+-> -> 252 `i `uc
+-> -> 254 `i `uc
+-> -> 42 `i `uc
+-> -> 42 `i `uc
+-> -> 62 `i `uc
+-> -> 20 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 126 `i `uc
+-> -> 126 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 6 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 126 `i `uc
+-> -> 126 `i `uc
+-> -> 2 `i `uc
+-> -> 126 `i `uc
+-> -> 126 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 99 `i `uc
+-> -> 119 `i `uc
+-> -> 93 `i `uc
+-> -> 73 `i `uc
+-> -> 99 `i `uc
+-> -> 99 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 56 `i `uc
+-> -> 124 `i `uc
+-> -> 68 `i `uc
+-> -> 124 `i `uc
+-> -> 60 `i `uc
+-> -> 4 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 128 `i `uc
+-> -> 254 `i `uc
+-> -> 126 `i `uc
+-> -> 32 `i `uc
+-> -> 32 `i `uc
+-> -> 62 `i `uc
+-> -> 30 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 6 `i `uc
+-> -> 2 `i `uc
+-> -> 126 `i `uc
+-> -> 124 `i `uc
+-> -> 6 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 153 `i `uc
+-> -> 189 `i `uc
+-> -> 231 `i `uc
+-> -> 231 `i `uc
+-> -> 189 `i `uc
+-> -> 153 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 62 `i `uc
+-> -> 107 `i `uc
+-> -> 73 `i `uc
+-> -> 107 `i `uc
+-> -> 62 `i `uc
+-> -> 28 `i `uc
+-> -> 0 `i `uc
+-> -> 76 `i `uc
+-> -> 126 `i `uc
+-> -> 115 `i `uc
+-> -> 1 `i `uc
+-> -> 115 `i `uc
+-> -> 126 `i `uc
+-> -> 76 `i `uc
+-> -> 0 `i `uc
+-> -> 48 `i `uc
+-> -> 120 `i `uc
+-> -> 74 `i `uc
+-> -> 79 `i `uc
+-> -> 125 `i `uc
+-> -> 57 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 24 `i `uc
+-> -> 60 `i `uc
+-> -> 36 `i `uc
+-> -> 60 `i `uc
+-> -> 60 `i `uc
+-> -> 36 `i `uc
+-> -> 60 `i `uc
+-> -> 24 `i `uc
+-> -> 152 `i `uc
+-> -> 252 `i `uc
+-> -> 100 `i `uc
+-> -> 60 `i `uc
+-> -> 62 `i `uc
+-> -> 39 `i `uc
+-> -> 61 `i `uc
+-> -> 24 `i `uc
+..
+]
+"328
+[; ;glcd.c: 328: unsigned char x,y;
+[v _x `uc ~T0 @X0 1 e ]
+[v _y `uc ~T0 @X0 1 e ]
+"334
+[; ;glcd.c: 334: void glcd_Init(unsigned char mode)
+[v _glcd_Init `(v ~T0 @X0 1 ef1`uc ]
+"335
+[; ;glcd.c: 335: {
+{
+[e :U _glcd_Init ]
+"334
+[; ;glcd.c: 334: void glcd_Init(unsigned char mode)
+[v _mode `uc ~T0 @X0 1 r1 ]
+"335
+[; ;glcd.c: 335: {
+[f ]
+"338
+[; ;glcd.c: 338:  PORTD = 0x00;
+[e = _PORTD -> -> 0 `i `uc ]
+"339
+[; ;glcd.c: 339:  LATBbits.LATB5 = 0;
+[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+"340
+[; ;glcd.c: 340:  _delay((unsigned long)((50)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"341
+[; ;glcd.c: 341:  LATBbits.LATB5 = 1;
+[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+"343
+[; ;glcd.c: 343:  LATBbits.LATB4=0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"344
+[; ;glcd.c: 344:  LATBbits.LATB0=0;
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
+"345
+[; ;glcd.c: 345:  LATBbits.LATB1=0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"346
+[; ;glcd.c: 346:  LATBbits.LATB2=0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"347
+[; ;glcd.c: 347:  _delay((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"349
+[; ;glcd.c: 349:   glcd_WriteByte(0, 0xC0);
+[e ( _glcd_WriteByte (2 , -> -> 0 `i `uc -> -> 192 `i `uc ]
+"350
+[; ;glcd.c: 350:    glcd_WriteByte(1, 0xC0);
+[e ( _glcd_WriteByte (2 , -> -> 1 `i `uc -> -> 192 `i `uc ]
+"351
+[; ;glcd.c: 351:     glcd_WriteByte(0, 0x40);
+[e ( _glcd_WriteByte (2 , -> -> 0 `i `uc -> -> 64 `i `uc ]
+"352
+[; ;glcd.c: 352:     glcd_WriteByte(1, 0x40);
+[e ( _glcd_WriteByte (2 , -> -> 1 `i `uc -> -> 64 `i `uc ]
+"353
+[; ;glcd.c: 353:     glcd_WriteByte(0, 0xB8);
+[e ( _glcd_WriteByte (2 , -> -> 0 `i `uc -> -> 184 `i `uc ]
+"354
+[; ;glcd.c: 354:     glcd_WriteByte(1, 0xB8);
+[e ( _glcd_WriteByte (2 , -> -> 1 `i `uc -> -> 184 `i `uc ]
+"356
+[; ;glcd.c: 356:  if(mode == 1)
+[e $ ! == -> _mode `i -> 1 `i 368  ]
+"357
+[; ;glcd.c: 357:   {
+{
+"358
+[; ;glcd.c: 358:       glcd_WriteByte(0, 0x3F);
+[e ( _glcd_WriteByte (2 , -> -> 0 `i `uc -> -> 63 `i `uc ]
+"359
+[; ;glcd.c: 359:       glcd_WriteByte(1, 0x3F);
+[e ( _glcd_WriteByte (2 , -> -> 1 `i `uc -> -> 63 `i `uc ]
+"360
+[; ;glcd.c: 360:   }
+}
+[e $U 369  ]
+"361
+[; ;glcd.c: 361:    else
+[e :U 368 ]
+"362
+[; ;glcd.c: 362:   {
+{
+"363
+[; ;glcd.c: 363:       glcd_WriteByte(0, 0x3E);
+[e ( _glcd_WriteByte (2 , -> -> 0 `i `uc -> -> 62 `i `uc ]
+"364
+[; ;glcd.c: 364:       glcd_WriteByte(1, 0x3E);
+[e ( _glcd_WriteByte (2 , -> -> 1 `i `uc -> -> 62 `i `uc ]
+"365
+[; ;glcd.c: 365:    }
+}
+[e :U 369 ]
+"367
+[; ;glcd.c: 367:  glcd_FillScreen(0);
+[e ( _glcd_FillScreen (1 -> -> 0 `i `uc ]
+"369
+[; ;glcd.c: 369: }
+[e :UE 367 ]
+}
+"374
+[; ;glcd.c: 374: void glcd_WriteByte(unsigned char side, unsigned char data)
+[v _glcd_WriteByte `(v ~T0 @X0 1 ef2`uc`uc ]
+"375
+[; ;glcd.c: 375: {
+{
+[e :U _glcd_WriteByte ]
+"374
+[; ;glcd.c: 374: void glcd_WriteByte(unsigned char side, unsigned char data)
+[v _side `uc ~T0 @X0 1 r1 ]
+[v _data `uc ~T0 @X0 1 r2 ]
+"375
+[; ;glcd.c: 375: {
+[f ]
+"376
+[; ;glcd.c: 376:  if(side)
+[e $ ! != -> _side `i -> 0 `i 371  ]
+"377
+[; ;glcd.c: 377:  {
+{
+"378
+[; ;glcd.c: 378:       LATBbits.LATB0 = 1;
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+"379
+[; ;glcd.c: 379:   LATBbits.LATB1 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"380
+[; ;glcd.c: 380:  }
+}
+[e $U 372  ]
+"381
+[; ;glcd.c: 381:     else
+[e :U 371 ]
+"382
+[; ;glcd.c: 382:  {
+{
+"383
+[; ;glcd.c: 383:   LATBbits.LATB1 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"384
+[; ;glcd.c: 384:        LATBbits.LATB1 = 1;
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+"385
+[; ;glcd.c: 385:  }
+}
+[e :U 372 ]
+"387
+[; ;glcd.c: 387:  TRISD=0;
+[e = _TRISD -> -> 0 `i `uc ]
+"388
+[; ;glcd.c: 388:  LATBbits.LATB3=0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"390
+[; ;glcd.c: 390:  LATD = data;
+[e = _LATD _data ]
+"394
+[; ;glcd.c: 394:  LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"395
+[; ;glcd.c: 395:  _delay((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"396
+[; ;glcd.c: 396:  LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"397
+[; ;glcd.c: 397:  _delay((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"400
+[; ;glcd.c: 400:  LATBbits.LATB0 = 0;
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
+"401
+[; ;glcd.c: 401:  LATBbits.LATB1 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"402
+[; ;glcd.c: 402: }
+[e :UE 370 ]
+}
+"408
+[; ;glcd.c: 408: void glcd_FillScreen(unsigned char color)
+[v _glcd_FillScreen `(v ~T0 @X0 1 ef1`uc ]
+"409
+[; ;glcd.c: 409: {
+{
+[e :U _glcd_FillScreen ]
+"408
+[; ;glcd.c: 408: void glcd_FillScreen(unsigned char color)
+[v _color `uc ~T0 @X0 1 r1 ]
+"409
+[; ;glcd.c: 409: {
+[f ]
+"410
+[; ;glcd.c: 410: unsigned char i, j;
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+"412
+[; ;glcd.c: 412:  for(i = 0; i < 8; i ++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 374  ]
+[e $U 375  ]
+[e :U 374 ]
+"413
+[; ;glcd.c: 413:  {
+{
+"414
+[; ;glcd.c: 414:   LATBbits.LATB2=0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"415
+[; ;glcd.c: 415:        glcd_WriteByte(0, 0b01000000);
+[e ( _glcd_WriteByte (2 , -> -> 0 `i `uc -> -> 64 `i `uc ]
+"416
+[; ;glcd.c: 416:        glcd_WriteByte(1, 0b01000000);
+[e ( _glcd_WriteByte (2 , -> -> 1 `i `uc -> -> 64 `i `uc ]
+"417
+[; ;glcd.c: 417:        glcd_WriteByte(0, i | 0b10111000);
+[e ( _glcd_WriteByte (2 , -> -> 0 `i `uc -> | -> _i `i -> 184 `i `uc ]
+"418
+[; ;glcd.c: 418:        glcd_WriteByte(1, i | 0b10111000);
+[e ( _glcd_WriteByte (2 , -> -> 1 `i `uc -> | -> _i `i -> 184 `i `uc ]
+"419
+[; ;glcd.c: 419:        LATBbits.LATB2=1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"421
+[; ;glcd.c: 421:    for(j = 0; j < 64; j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 64 `i 377  ]
+[e $U 378  ]
+[e :U 377 ]
+"422
+[; ;glcd.c: 422:    {
+{
+"423
+[; ;glcd.c: 423:     glcd_WriteByte(0, 0xFF*color);
+[e ( _glcd_WriteByte (2 , -> -> 0 `i `uc -> * -> 255 `i -> _color `i `uc ]
+"424
+[; ;glcd.c: 424:            glcd_WriteByte(1, 0xFF*color);
+[e ( _glcd_WriteByte (2 , -> -> 1 `i `uc -> * -> 255 `i -> _color `i `uc ]
+"425
+[; ;glcd.c: 425:    }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 64 `i 377  ]
+[e :U 378 ]
+}
+"427
+[; ;glcd.c: 427:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 374  ]
+[e :U 375 ]
+}
+"428
+[; ;glcd.c: 428: }
+[e :UE 373 ]
+}
+"433
+[; ;glcd.c: 433: unsigned char glcd_ReadByte(unsigned char side)
+[v _glcd_ReadByte `(uc ~T0 @X0 1 ef1`uc ]
+"434
+[; ;glcd.c: 434: {
+{
+[e :U _glcd_ReadByte ]
+"433
+[; ;glcd.c: 433: unsigned char glcd_ReadByte(unsigned char side)
+[v _side `uc ~T0 @X0 1 r1 ]
+"434
+[; ;glcd.c: 434: {
+[f ]
+"435
+[; ;glcd.c: 435: unsigned char data;
+[v _data `uc ~T0 @X0 1 a ]
+"437
+[; ;glcd.c: 437:  if(side)
+[e $ ! != -> _side `i -> 0 `i 381  ]
+"438
+[; ;glcd.c: 438:  {
+{
+"439
+[; ;glcd.c: 439:       LATBbits.LATB0 = 1;
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+"440
+[; ;glcd.c: 440:   LATBbits.LATB1 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"441
+[; ;glcd.c: 441:  }
+}
+[e $U 382  ]
+"442
+[; ;glcd.c: 442:     else
+[e :U 381 ]
+"443
+[; ;glcd.c: 443:  {
+{
+"444
+[; ;glcd.c: 444:   LATBbits.LATB1 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"445
+[; ;glcd.c: 445:        LATBbits.LATB1 = 1;
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+"446
+[; ;glcd.c: 446:  }
+}
+[e :U 382 ]
+"448
+[; ;glcd.c: 448:  TRISD = 0xFF;
+[e = _TRISD -> -> 255 `i `uc ]
+"449
+[; ;glcd.c: 449:  LATBbits.LATB3 = 1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"453
+[; ;glcd.c: 453:  LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"454
+[; ;glcd.c: 454:  _delay((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"456
+[; ;glcd.c: 456:  data = PORTD;
+[e = _data _PORTD ]
+"457
+[; ;glcd.c: 457:  LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"458
+[; ;glcd.c: 458:  _delay((unsigned long)((1)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"460
+[; ;glcd.c: 460:  LATBbits.LATB0 = 0;
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
+"461
+[; ;glcd.c: 461:  LATBbits.LATB1 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"463
+[; ;glcd.c: 463:  return data;
+[e ) _data ]
+[e $UE 380  ]
+"464
+[; ;glcd.c: 464: }
+[e :UE 380 ]
+}
+"469
+[; ;glcd.c: 469: void glcd_PlotPixel(unsigned char xpos, unsigned char ypos, unsigned char color)
+[v _glcd_PlotPixel `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+"470
+[; ;glcd.c: 470: {
+{
+[e :U _glcd_PlotPixel ]
+"469
+[; ;glcd.c: 469: void glcd_PlotPixel(unsigned char xpos, unsigned char ypos, unsigned char color)
+[v _xpos `uc ~T0 @X0 1 r1 ]
+[v _ypos `uc ~T0 @X0 1 r2 ]
+[v _color `uc ~T0 @X0 1 r3 ]
+"470
+[; ;glcd.c: 470: {
+[f ]
+"471
+[; ;glcd.c: 471:     unsigned char data;
+[v _data `uc ~T0 @X0 1 a ]
+"472
+[; ;glcd.c: 472:     unsigned char side = 0;
+[v _side `uc ~T0 @X0 1 a ]
+[e = _side -> -> 0 `i `uc ]
+"474
+[; ;glcd.c: 474:     if(xpos > 63)
+[e $ ! > -> _xpos `i -> 63 `i 384  ]
+"475
+[; ;glcd.c: 475:     {
+{
+"476
+[; ;glcd.c: 476:        xpos -= 64;
+[e =- _xpos -> -> 64 `i `uc ]
+"477
+[; ;glcd.c: 477:        side = 1;
+[e = _side -> -> 1 `i `uc ]
+"478
+[; ;glcd.c: 478:     }
+}
+[e :U 384 ]
+"479
+[; ;glcd.c: 479:     LATBbits.LATB2=0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"481
+[; ;glcd.c: 481:  xpos &=0b01111111;
+[e =& _xpos -> -> 127 `i `uc ]
+"482
+[; ;glcd.c: 482:  xpos |=0b01000000;
+[e =| _xpos -> -> 64 `i `uc ]
+"483
+[; ;glcd.c: 483:  glcd_WriteByte(side, (xpos));
+[e ( _glcd_WriteByte (2 , _side _xpos ]
+"484
+[; ;glcd.c: 484:  glcd_WriteByte(side, (((ypos/8)) & 0xBF) | 0xB8);
+[e ( _glcd_WriteByte (2 , _side -> | & / -> _ypos `i -> 8 `i -> 191 `i -> 184 `i `uc ]
+"486
+[; ;glcd.c: 486:  LATBbits.LATB2=1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"488
+[; ;glcd.c: 488:  glcd_ReadByte(side);
+[e ( _glcd_ReadByte (1 _side ]
+"489
+[; ;glcd.c: 489:  data = glcd_ReadByte(side);
+[e = _data ( _glcd_ReadByte (1 _side ]
+"491
+[; ;glcd.c: 491:  LATBbits.LATB2=0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"493
+[; ;glcd.c: 493:  glcd_WriteByte(side, xpos);
+[e ( _glcd_WriteByte (2 , _side _xpos ]
+"495
+[; ;glcd.c: 495:  if(color)
+[e $ ! != -> _color `i -> 0 `i 385  ]
+"496
+[; ;glcd.c: 496:   data=(data)|(1<<(ypos%8));
+[e = _data -> | -> _data `i << -> 1 `i % -> _ypos `i -> 8 `i `uc ]
+[e $U 386  ]
+"497
+[; ;glcd.c: 497:  else
+[e :U 385 ]
+"498
+[; ;glcd.c: 498:   data =(data)&(~(1<<(ypos%8)));
+[e = _data -> & -> _data `i ~ << -> 1 `i % -> _ypos `i -> 8 `i `uc ]
+[e :U 386 ]
+"500
+[; ;glcd.c: 500:  LATBbits.LATB2=1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"502
+[; ;glcd.c: 502:  glcd_WriteByte(side, data);
+[e ( _glcd_WriteByte (2 , _side _data ]
+"503
+[; ;glcd.c: 503: }
+[e :UE 383 ]
+}
+"508
+[; ;glcd.c: 508: void glcd_SetCursor(unsigned char xpos,unsigned char ypos)
+[v _glcd_SetCursor `(v ~T0 @X0 1 ef2`uc`uc ]
+"509
+[; ;glcd.c: 509: {
+{
+[e :U _glcd_SetCursor ]
+"508
+[; ;glcd.c: 508: void glcd_SetCursor(unsigned char xpos,unsigned char ypos)
+[v _xpos `uc ~T0 @X0 1 r1 ]
+[v _ypos `uc ~T0 @X0 1 r2 ]
+"509
+[; ;glcd.c: 509: {
+[f ]
+"510
+[; ;glcd.c: 510:  unsigned char side = 0;
+[v _side `uc ~T0 @X0 1 a ]
+[e = _side -> -> 0 `i `uc ]
+"512
+[; ;glcd.c: 512:  if(xpos > 127 | ypos > 7)
+[e $ ! | > -> _xpos `i -> 127 `i > -> _ypos `i -> 7 `i 388  ]
+"513
+[; ;glcd.c: 513:   return;
+[e $UE 387  ]
+[e :U 388 ]
+"515
+[; ;glcd.c: 515:  x = xpos;
+[e = _x _xpos ]
+"516
+[; ;glcd.c: 516:  y = ypos;
+[e = _y _ypos ]
+"518
+[; ;glcd.c: 518:     if(xpos > 63)
+[e $ ! > -> _xpos `i -> 63 `i 389  ]
+"519
+[; ;glcd.c: 519:     {
+{
+"520
+[; ;glcd.c: 520:       xpos -= 64;
+[e =- _xpos -> -> 64 `i `uc ]
+"521
+[; ;glcd.c: 521:       side = 1;
+[e = _side -> -> 1 `i `uc ]
+"522
+[; ;glcd.c: 522:     }
+}
+[e :U 389 ]
+"524
+[; ;glcd.c: 524:  LATBbits.LATB2=0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"525
+[; ;glcd.c: 525:   glcd_WriteByte(side, 0x40 | xpos);
+[e ( _glcd_WriteByte (2 , _side -> | -> 64 `i -> _xpos `i `uc ]
+"526
+[; ;glcd.c: 526:   glcd_WriteByte(side, 0xB8 | ypos);
+[e ( _glcd_WriteByte (2 , _side -> | -> 184 `i -> _ypos `i `uc ]
+"527
+[; ;glcd.c: 527:  LATBbits.LATB2=1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"528
+[; ;glcd.c: 528: }
+[e :UE 387 ]
+}
+"534
+[; ;glcd.c: 534: void glcd_WriteChar8X8(unsigned char ch, unsigned char color)
+[v _glcd_WriteChar8X8 `(v ~T0 @X0 1 ef2`uc`uc ]
+"535
+[; ;glcd.c: 535: {
+{
+[e :U _glcd_WriteChar8X8 ]
+"534
+[; ;glcd.c: 534: void glcd_WriteChar8X8(unsigned char ch, unsigned char color)
+[v _ch `uc ~T0 @X0 1 r1 ]
+[v _color `uc ~T0 @X0 1 r2 ]
+"535
+[; ;glcd.c: 535: {
+[f ]
+"536
+[; ;glcd.c: 536:  unsigned char i,xpos;
+[v _i `uc ~T0 @X0 1 a ]
+[v _xpos `uc ~T0 @X0 1 a ]
+"537
+[; ;glcd.c: 537:  unsigned char side = 0;
+[v _side `uc ~T0 @X0 1 a ]
+[e = _side -> -> 0 `i `uc ]
+"538
+[; ;glcd.c: 538:  unsigned int chr;
+[v _chr `ui ~T0 @X0 1 a ]
+"540
+[; ;glcd.c: 540:  if (ch=='\n')
+[e $ ! == -> _ch `ui -> 10 `ui 391  ]
+"541
+[; ;glcd.c: 541:  {
+{
+"542
+[; ;glcd.c: 542:   x=0;
+[e = _x -> -> 0 `i `uc ]
+"543
+[; ;glcd.c: 543:   y++;
+[e ++ _y -> -> 1 `i `uc ]
+"544
+[; ;glcd.c: 544:   return;
+[e $UE 390  ]
+"545
+[; ;glcd.c: 545:  }
+}
+[e :U 391 ]
+"547
+[; ;glcd.c: 547:  if(x > 63)
+[e $ ! > -> _x `i -> 63 `i 392  ]
+"548
+[; ;glcd.c: 548:         {
+{
+"549
+[; ;glcd.c: 549:   side = 1;
+[e = _side -> -> 1 `i `uc ]
+"550
+[; ;glcd.c: 550:   xpos=x-64;
+[e = _xpos -> - -> _x `i -> 64 `i `uc ]
+"551
+[; ;glcd.c: 551:   }
+}
+[e $U 393  ]
+"552
+[; ;glcd.c: 552:  else
+[e :U 392 ]
+"553
+[; ;glcd.c: 553:      xpos=x;
+[e = _xpos _x ]
+[e :U 393 ]
+"555
+[; ;glcd.c: 555:  chr = (int)ch*8;
+[e = _chr -> * -> _ch `i -> 8 `i `ui ]
+"557
+[; ;glcd.c: 557:  for(i = 0; i < 8; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 394  ]
+[e $U 395  ]
+[e :U 394 ]
+"558
+[; ;glcd.c: 558:  {
+{
+"560
+[; ;glcd.c: 560:  if(xpos > 63)
+[e $ ! > -> _xpos `i -> 63 `i 397  ]
+"561
+[; ;glcd.c: 561:   {
+{
+"562
+[; ;glcd.c: 562:        xpos -= 64;
+[e =- _xpos -> -> 64 `i `uc ]
+"563
+[; ;glcd.c: 563:        side = 1;
+[e = _side -> -> 1 `i `uc ]
+"564
+[; ;glcd.c: 564:     LATBbits.LATB2=0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"565
+[; ;glcd.c: 565:     glcd_WriteByte(side, 0x40 | xpos);
+[e ( _glcd_WriteByte (2 , _side -> | -> 64 `i -> _xpos `i `uc ]
+"566
+[; ;glcd.c: 566:     glcd_WriteByte(side, 0xB8 | y);
+[e ( _glcd_WriteByte (2 , _side -> | -> 184 `i -> _y `i `uc ]
+"567
+[; ;glcd.c: 567:     LATBbits.LATB2=1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"568
+[; ;glcd.c: 568:      }
+}
+[e :U 397 ]
+"569
+[; ;glcd.c: 569:  if(color)
+[e $ ! != -> _color `i -> 0 `i 398  ]
+"570
+[; ;glcd.c: 570:   glcd_WriteByte(side,Font8x8[chr+i]);
+[e ( _glcd_WriteByte (2 , _side *U + &U _Font8x8 * -> + _chr -> _i `ui `ux -> -> # *U &U _Font8x8 `ui `ux ]
+[e $U 399  ]
+"571
+[; ;glcd.c: 571:  else
+[e :U 398 ]
+"572
+[; ;glcd.c: 572:   glcd_WriteByte(side,~(Font8x8[chr+i]));
+[e ( _glcd_WriteByte (2 , _side -> ~ -> *U + &U _Font8x8 * -> + _chr -> _i `ui `ux -> -> # *U &U _Font8x8 `ui `ux `i `uc ]
+[e :U 399 ]
+"573
+[; ;glcd.c: 573:  xpos++;
+[e ++ _xpos -> -> 1 `i `uc ]
+"574
+[; ;glcd.c: 574:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 394  ]
+[e :U 395 ]
+}
+"575
+[; ;glcd.c: 575:  x+=8;
+[e =+ _x -> -> 8 `i `uc ]
+"576
+[; ;glcd.c: 576: }
+[e :UE 390 ]
+}
+"582
+[; ;glcd.c: 582: void glcd_WriteChar3x6(unsigned char ch, unsigned char color)
+[v _glcd_WriteChar3x6 `(v ~T0 @X0 1 ef2`uc`uc ]
+"583
+[; ;glcd.c: 583: {
+{
+[e :U _glcd_WriteChar3x6 ]
+"582
+[; ;glcd.c: 582: void glcd_WriteChar3x6(unsigned char ch, unsigned char color)
+[v _ch `uc ~T0 @X0 1 r1 ]
+[v _color `uc ~T0 @X0 1 r2 ]
+"583
+[; ;glcd.c: 583: {
+[f ]
+"584
+[; ;glcd.c: 584:  unsigned char i,xpos;
+[v _i `uc ~T0 @X0 1 a ]
+[v _xpos `uc ~T0 @X0 1 a ]
+"585
+[; ;glcd.c: 585:  unsigned char side = 0;
+[v _side `uc ~T0 @X0 1 a ]
+[e = _side -> -> 0 `i `uc ]
+"587
+[; ;glcd.c: 587:  if (ch=='\n')
+[e $ ! == -> _ch `ui -> 10 `ui 401  ]
+"588
+[; ;glcd.c: 588:  {
+{
+"589
+[; ;glcd.c: 589:   x=0;
+[e = _x -> -> 0 `i `uc ]
+"590
+[; ;glcd.c: 590:   y++;
+[e ++ _y -> -> 1 `i `uc ]
+"591
+[; ;glcd.c: 591:   return;
+[e $UE 400  ]
+"592
+[; ;glcd.c: 592:  }
+}
+[e :U 401 ]
+"594
+[; ;glcd.c: 594:  if(x > 63)
+[e $ ! > -> _x `i -> 63 `i 402  ]
+"595
+[; ;glcd.c: 595:         {
+{
+"596
+[; ;glcd.c: 596:   side = 1;
+[e = _side -> -> 1 `i `uc ]
+"597
+[; ;glcd.c: 597:   xpos=x-64;
+[e = _xpos -> - -> _x `i -> 64 `i `uc ]
+"598
+[; ;glcd.c: 598:   }
+}
+[e $U 403  ]
+"599
+[; ;glcd.c: 599:  else
+[e :U 402 ]
+"600
+[; ;glcd.c: 600:      xpos=x;
+[e = _xpos _x ]
+[e :U 403 ]
+"602
+[; ;glcd.c: 602:  ch -= 32;
+[e =- _ch -> -> 32 `i `uc ]
+"604
+[; ;glcd.c: 604:  for(i = 0; i < 3; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 3 `i 404  ]
+[e $U 405  ]
+[e :U 404 ]
+"605
+[; ;glcd.c: 605:  {
+{
+"606
+[; ;glcd.c: 606:   if(xpos > 63)
+[e $ ! > -> _xpos `i -> 63 `i 407  ]
+"607
+[; ;glcd.c: 607:   {
+{
+"608
+[; ;glcd.c: 608:    xpos -= 64;
+[e =- _xpos -> -> 64 `i `uc ]
+"609
+[; ;glcd.c: 609:    side = 1;
+[e = _side -> -> 1 `i `uc ]
+"610
+[; ;glcd.c: 610:    LATBbits.LATB2=0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"611
+[; ;glcd.c: 611:    glcd_WriteByte(side, 0x40 | xpos);
+[e ( _glcd_WriteByte (2 , _side -> | -> 64 `i -> _xpos `i `uc ]
+"612
+[; ;glcd.c: 612:    glcd_WriteByte(side, 0xB8 | y);
+[e ( _glcd_WriteByte (2 , _side -> | -> 184 `i -> _y `i `uc ]
+"613
+[; ;glcd.c: 613:    LATBbits.LATB2=1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"614
+[; ;glcd.c: 614:   }
+}
+[e :U 407 ]
+"615
+[; ;glcd.c: 615:   if(color)
+[e $ ! != -> _color `i -> 0 `i 408  ]
+"616
+[; ;glcd.c: 616:    glcd_WriteByte(side,Font3x6[ch][i]);
+[e ( _glcd_WriteByte (2 , _side *U + &U *U + &U _Font3x6 * -> _ch `ux -> * -> # *U &U *U &U _Font3x6 `ui -> -> 3 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _Font3x6 * -> _ch `ux -> * -> # *U &U *U &U _Font3x6 `ui -> -> 3 `i `ui `ux `ui `ux ]
+[e $U 409  ]
+"617
+[; ;glcd.c: 617:   else
+[e :U 408 ]
+"618
+[; ;glcd.c: 618:    glcd_WriteByte(side,~(Font3x6[ch][i]));
+[e ( _glcd_WriteByte (2 , _side -> ~ -> *U + &U *U + &U _Font3x6 * -> _ch `ux -> * -> # *U &U *U &U _Font3x6 `ui -> -> 3 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _Font3x6 * -> _ch `ux -> * -> # *U &U *U &U _Font3x6 `ui -> -> 3 `i `ui `ux `ui `ux `i `uc ]
+[e :U 409 ]
+"619
+[; ;glcd.c: 619:   xpos++;
+[e ++ _xpos -> -> 1 `i `uc ]
+"620
+[; ;glcd.c: 620:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 3 `i 404  ]
+[e :U 405 ]
+}
+"621
+[; ;glcd.c: 621:  x+=5;
+[e =+ _x -> -> 5 `i `uc ]
+"622
+[; ;glcd.c: 622: }
+[e :UE 400 ]
+}
+"627
+[; ;glcd.c: 627: void glcd_WriteString(unsigned char str[],unsigned char font,unsigned char color)
+[v _glcd_WriteString `(v ~T0 @X0 1 ef3`*uc`uc`uc ]
+"628
+[; ;glcd.c: 628: {
+{
+[e :U _glcd_WriteString ]
+"627
+[; ;glcd.c: 627: void glcd_WriteString(unsigned char str[],unsigned char font,unsigned char color)
+[v _str `*uc ~T0 @X0 1 r1 ]
+[v _font `uc ~T0 @X0 1 r2 ]
+[v _color `uc ~T0 @X0 1 r3 ]
+"628
+[; ;glcd.c: 628: {
+[f ]
+"629
+[; ;glcd.c: 629:  while(*str)
+[e $U 411  ]
+[e :U 412 ]
+"630
+[; ;glcd.c: 630:  {
+{
+"631
+[; ;glcd.c: 631:   if(font)
+[e $ ! != -> _font `i -> 0 `i 414  ]
+"632
+[; ;glcd.c: 632:    glcd_WriteChar8X8(*str, color);
+[e ( _glcd_WriteChar8X8 (2 , *U _str _color ]
+[e $U 415  ]
+"633
+[; ;glcd.c: 633:   else
+[e :U 414 ]
+"634
+[; ;glcd.c: 634:    glcd_WriteChar3x6(*str, color);
+[e ( _glcd_WriteChar3x6 (2 , *U _str _color ]
+[e :U 415 ]
+"635
+[; ;glcd.c: 635:   str++;
+[e ++ _str * -> -> 1 `i `x -> -> # *U _str `i `x ]
+"636
+[; ;glcd.c: 636:  }
+}
+[e :U 411 ]
+"629
+[; ;glcd.c: 629:  while(*str)
+[e $ != -> *U _str `i -> 0 `i 412  ]
+[e :U 413 ]
+"637
+[; ;glcd.c: 637: }
+[e :UE 410 ]
+}
+"643
+[; ;glcd.c: 643: void glcd_Rect(unsigned char xs, unsigned char ys, unsigned char xe ,unsigned char ye,unsigned char color)
+[v _glcd_Rect `(v ~T0 @X0 1 ef5`uc`uc`uc`uc`uc ]
+"644
+[; ;glcd.c: 644: {
+{
+[e :U _glcd_Rect ]
+"643
+[; ;glcd.c: 643: void glcd_Rect(unsigned char xs, unsigned char ys, unsigned char xe ,unsigned char ye,unsigned char color)
+[v _xs `uc ~T0 @X0 1 r1 ]
+[v _ys `uc ~T0 @X0 1 r2 ]
+[v _xe `uc ~T0 @X0 1 r3 ]
+[v _ye `uc ~T0 @X0 1 r4 ]
+[v _color `uc ~T0 @X0 1 r5 ]
+"644
+[; ;glcd.c: 644: {
+[f ]
+"645
+[; ;glcd.c: 645:    unsigned char i,j;
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+"646
+[; ;glcd.c: 646:    if (ys>ye) return;
+[e $ ! > -> _ys `i -> _ye `i 417  ]
+[e $UE 416  ]
+[e :U 417 ]
+"647
+[; ;glcd.c: 647:    if (xs>xe) return;
+[e $ ! > -> _xs `i -> _xe `i 418  ]
+[e $UE 416  ]
+[e :U 418 ]
+"649
+[; ;glcd.c: 649:    for(i=xs;i<=xe;i++)
+{
+[e = _i _xs ]
+[e $U 422  ]
+[e :U 419 ]
+"650
+[; ;glcd.c: 650:      {
+{
+"651
+[; ;glcd.c: 651:         for(j=ys;j<=ye;j++)
+{
+[e = _j _ys ]
+[e $U 426  ]
+[e :U 423 ]
+"652
+[; ;glcd.c: 652:           {
+{
+"653
+[; ;glcd.c: 653:              if( i == xs || i ==xe || j == ye || j == ys )
+[e $ ! || || || == -> _i `i -> _xs `i == -> _i `i -> _xe `i == -> _j `i -> _ye `i == -> _j `i -> _ys `i 427  ]
+"654
+[; ;glcd.c: 654:                glcd_PlotPixel(i,j,color);
+[e ( _glcd_PlotPixel (3 , , _i _j _color ]
+[e :U 427 ]
+"655
+[; ;glcd.c: 655:           }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 426 ]
+[e $ <= -> _j `i -> _ye `i 423  ]
+[e :U 424 ]
+}
+"656
+[; ;glcd.c: 656:      }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 422 ]
+[e $ <= -> _i `i -> _xe `i 419  ]
+[e :U 420 ]
+}
+"657
+[; ;glcd.c: 657: }
+[e :UE 416 ]
+}
+"660
+[; ;glcd.c: 660: void glcd_print_tab(unsigned char ecran[10][22])
+[v _glcd_print_tab `(v ~T0 @X0 1 ef1`*F3251 ]
+"661
+[; ;glcd.c: 661: {
+{
+[e :U _glcd_print_tab ]
+[v F3253 `uc ~T0 @X0 -> 22 `i t ]
+"660
+[; ;glcd.c: 660: void glcd_print_tab(unsigned char ecran[10][22])
+[v _ecran `*F3253 ~T0 @X0 1 r1 ]
+"661
+[; ;glcd.c: 661: {
+[f ]
+"662
+[; ;glcd.c: 662:    unsigned char i,j;
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+"664
+[; ;glcd.c: 664:    for(i=0;i<=9;i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ <= -> _i `i -> 9 `i 429  ]
+[e $U 430  ]
+[e :U 429 ]
+"665
+[; ;glcd.c: 665:      {
+{
+"666
+[; ;glcd.c: 666:         for(j=0;j<=21;j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ <= -> _j `i -> 21 `i 432  ]
+[e $U 433  ]
+[e :U 432 ]
+"667
+[; ;glcd.c: 667:           {
+{
+"668
+[; ;glcd.c: 668:              if( ecran[i][j] == 1)
+[e $ ! == -> *U + &U *U + _ecran * -> _i `ux -> * -> # *U &U *U _ecran `ui -> -> 22 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _ecran * -> _i `ux -> * -> # *U &U *U _ecran `ui -> -> 22 `i `ui `ux `ui `ux `i -> 1 `i 435  ]
+"669
+[; ;glcd.c: 669:              {
+{
+"670
+[; ;glcd.c: 670:                 glcd_Rect(4*(j+1) - 2, 61 - 4*i - 3 , 4*(j+1) + 1 , 61 - 4*i ,1);
+[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _j `i -> 1 `i -> 2 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 3 `i `uc -> + * -> 4 `i + -> _j `i -> 1 `i -> 1 `i `uc -> - -> 61 `i * -> 4 `i -> _i `i `uc -> -> 1 `i `uc ]
+"671
+[; ;glcd.c: 671:                 glcd_Rect(4*(j+1) - 1, 61 - 4*i - 2 , 4*(j+1) , 61 - 4*i - 1 ,1);
+[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _j `i -> 1 `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 2 `i `uc -> * -> 4 `i + -> _j `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 1 `i `uc -> -> 1 `i `uc ]
+"672
+[; ;glcd.c: 672:              }
+}
+[e :U 435 ]
+"673
+[; ;glcd.c: 673:              if( ecran[i][j] == 0)
+[e $ ! == -> *U + &U *U + _ecran * -> _i `ux -> * -> # *U &U *U _ecran `ui -> -> 22 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _ecran * -> _i `ux -> * -> # *U &U *U _ecran `ui -> -> 22 `i `ui `ux `ui `ux `i -> 0 `i 436  ]
+"674
+[; ;glcd.c: 674:              {
+{
+"675
+[; ;glcd.c: 675:                 glcd_Rect(4*(j+1) - 2, 61 - 4*i - 3 , 4*(j+1) + 1 , 61 - 4*i ,0);
+[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _j `i -> 1 `i -> 2 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 3 `i `uc -> + * -> 4 `i + -> _j `i -> 1 `i -> 1 `i `uc -> - -> 61 `i * -> 4 `i -> _i `i `uc -> -> 0 `i `uc ]
+"676
+[; ;glcd.c: 676:                 glcd_Rect(4*(j+1) - 1, 61 - 4*i - 2 , 4*(j+1) , 61 - 4*i - 1 ,0);
+[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _j `i -> 1 `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 2 `i `uc -> * -> 4 `i + -> _j `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 1 `i `uc -> -> 0 `i `uc ]
+"677
+[; ;glcd.c: 677:              }
+}
+[e :U 436 ]
+"678
+[; ;glcd.c: 678:           }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ <= -> _j `i -> 21 `i 432  ]
+[e :U 433 ]
+}
+"679
+[; ;glcd.c: 679:      }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ <= -> _i `i -> 9 `i 429  ]
+[e :U 430 ]
+}
+"680
+[; ;glcd.c: 680: }
+[e :UE 428 ]
+}
