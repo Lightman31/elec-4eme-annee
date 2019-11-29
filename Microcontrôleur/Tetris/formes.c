@@ -22,7 +22,7 @@ void makeForme(unsigned char forme[4][2], unsigned short i){
 			for(unsigned short i = 0; i < 3; i++){
 					for(unsigned short j = 0; j < 2; j++){
 						if(!((i == 0 && j == 1) || (i == 2 && j == 1)))
-							forme[i][j] = 1-CHARTRUE;
+							forme[i][j] = CHARTRUE;
 					}
 				}
 			break;
