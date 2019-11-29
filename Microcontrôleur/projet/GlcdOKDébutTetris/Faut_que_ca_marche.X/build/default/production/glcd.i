@@ -6329,18 +6329,14 @@ void glcd_draw_cube(unsigned char y, unsigned char x, unsigned char color)
 void glcd_draw_shape(unsigned char forme[4][2], unsigned char color)
 {
 
-unsigned char i,j;
+    unsigned char i,j;
 
 
-    for(i=0;i<=1;i++)
+
+    for(j=0;j<=3;j++)
       {
-         for(j=0;j<=3;j++)
-           {
-              if( forme[i][j] == 1)
-              {
-                 glcd_draw_cube(i,j,color);
-              }
-           }
+        glcd_draw_cube(forme[j][0],forme[j][1],color);
       }
+
 
 }

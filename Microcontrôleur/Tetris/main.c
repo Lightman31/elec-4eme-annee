@@ -1,13 +1,13 @@
 #include "collisions.h"
 #include "formes.h"
 
-void display(unsigned short tabAffichage[HEIGHT_TAB][WIDTH_TAB]);
+void display(unsigned char tabAffichage[HEIGHT_TAB][WIDTH_TAB]);
 
 int main(){
 	srand(time(NULL));
-	unsigned short forme[4][2] = {FALSE};
-	unsigned short tab[HEIGHT_TAB][WIDTH_TAB] = {FALSE};
-	unsigned short tabAffichage[HEIGHT_TAB][WIDTH_TAB] = {FALSE};
+	unsigned char forme[4][2] = {CHARFALSE};
+	unsigned char tab[HEIGHT_TAB][WIDTH_TAB] = {CHARFALSE};
+	unsigned char tabAffichage[HEIGHT_TAB][WIDTH_TAB] = {CHARFALSE};
 	unsigned short position = 0;
 	unsigned short x = 0, y = 0;
 	unsigned short verif = FALSE;
@@ -38,7 +38,7 @@ int main(){
 					tabAffichage[i][j] = tab[i][j];
 			//Charger l'affichage de la piece
 			for(unsigned short i = 0; i < 4; i++)
-				tabAffichage[forme[i][0]][forme[i][1]] = TRUE;
+				tabAffichage[forme[i][0]][forme[i][1]] = CHARTRUE;
 			//Check s'il faut fixer la piece
 			if(checkCollision(tab, forme))
 				putPiece(tab, forme), formeEnCours = FALSE;
@@ -57,10 +57,10 @@ int main(){
 	return 0;
 }
 
-void display(unsigned short tabAffichage[HEIGHT_TAB][WIDTH_TAB]){
+void display(unsigned char tabAffichage[HEIGHT_TAB][WIDTH_TAB]){
 	for(unsigned short i = 0; i < HEIGHT_TAB; i++){
 		for(unsigned short j = 0; j < WIDTH_TAB; j++){
-			if(tabAffichage[i][j])
+			if(tabAffichage[i][j] == CHARTRUE)
 				printf("‡");
 			else
 				printf(" ");

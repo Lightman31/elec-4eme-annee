@@ -3812,57 +3812,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;glcd.c: 690: {
 [f ]
 "692
-[; ;glcd.c: 692: unsigned char i,j;
+[; ;glcd.c: 692:     unsigned char i,j;
 [v _i `uc ~T0 @X0 1 a ]
 [v _j `uc ~T0 @X0 1 a ]
-"695
-[; ;glcd.c: 695:     for(i=0;i<=1;i++)
-{
-[e = _i -> -> 0 `i `uc ]
-[e $ <= -> _i `i -> 1 `i 439  ]
-[e $U 440  ]
-[e :U 439 ]
 "696
-[; ;glcd.c: 696:       {
-{
-"697
-[; ;glcd.c: 697:          for(j=0;j<=3;j++)
+[; ;glcd.c: 696:     for(j=0;j<=3;j++)
 {
 [e = _j -> -> 0 `i `uc ]
-[e $ <= -> _j `i -> 3 `i 442  ]
-[e $U 443  ]
-[e :U 442 ]
+[e $ <= -> _j `i -> 3 `i 439  ]
+[e $U 440  ]
+[e :U 439 ]
+"697
+[; ;glcd.c: 697:       {
+{
 "698
-[; ;glcd.c: 698:            {
-{
+[; ;glcd.c: 698:         glcd_draw_cube(forme[j][0],forme[j][1],color);
+[e ( _glcd_draw_cube (3 , , *U + &U *U + _forme * -> _j `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 0 `i `x -> -> # *U &U *U + _forme * -> _j `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x *U + &U *U + _forme * -> _j `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 1 `i `x -> -> # *U &U *U + _forme * -> _j `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x _color ]
 "699
-[; ;glcd.c: 699:               if( forme[i][j] == 1)
-[e $ ! == -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux `i -> 1 `i 445  ]
-"700
-[; ;glcd.c: 700:               {
-{
-"701
-[; ;glcd.c: 701:                  glcd_draw_cube(i,j,color);
-[e ( _glcd_draw_cube (3 , , _i _j _color ]
-"702
-[; ;glcd.c: 702:               }
-}
-[e :U 445 ]
-"703
-[; ;glcd.c: 703:            }
+[; ;glcd.c: 699:       }
 }
 [e ++ _j -> -> 1 `i `uc ]
-[e $ <= -> _j `i -> 3 `i 442  ]
-[e :U 443 ]
-}
-"704
-[; ;glcd.c: 704:       }
-}
-[e ++ _i -> -> 1 `i `uc ]
-[e $ <= -> _i `i -> 1 `i 439  ]
+[e $ <= -> _j `i -> 3 `i 439  ]
 [e :U 440 ]
 }
-"706
-[; ;glcd.c: 706: }
+"702
+[; ;glcd.c: 702: }
 [e :UE 438 ]
 }

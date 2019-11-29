@@ -5814,11 +5814,14 @@ void main (void)
     ecran[1][21] = 1;
     ecran[0][0] = 1;
 
-    forme[0][0] = 1;
-    forme[1][0] = 1;
-    forme[2][0] = 1;
-    forme[3][0] = 1;
-    forme[3][1] = 1;
+    forme[0][0] = 5;
+    forme[1][0] = 6;
+    forme[2][0] = 7;
+    forme[3][0] = 7;
+    forme[0][1] = 5;
+    forme[1][1] = 5;
+    forme[2][1] = 5;
+    forme[3][1] = 6;
 
 
 
@@ -5857,13 +5860,7 @@ void main (void)
       }
 
 
-        forme[i][0] = 1;
-        forme[i+1][0] = 1;
-        forme[i+2][0] = 1;
-        forme[i+3][0] = 1;
-        forme[i+3][1] = 1;
-
-        if (i == 21) i = 0;
+        if (i == 18) i = 0;
         _delay((unsigned long)((1000000)*(8000000/4000000.0)));
     }
 
