@@ -5637,6 +5637,8 @@ extern void glcd_WriteString(unsigned char str[],unsigned char font,unsigned cha
 
 void glcd_Rect(unsigned char xs, unsigned char ys, unsigned char xe ,unsigned char ye,unsigned char color);
 void glcd_print_tab(unsigned char ecran[10][22]);
+void glcd_draw_cube(unsigned char x, unsigned char y, unsigned char color);
+void glcd_draw_shape(unsigned char forme[4][2], unsigned char color);
 # 3 "glcd.c" 2
 
 
@@ -6297,22 +6299,48 @@ void glcd_Rect(unsigned char xs, unsigned char ys, unsigned char xe ,unsigned ch
 
 void glcd_print_tab(unsigned char ecran[10][22])
 {
-   unsigned char i,j;
+    unsigned char i,j;
 
-   for(i=0;i<=9;i++)
-     {
-        for(j=0;j<=21;j++)
-          {
-             if( ecran[i][j] == 1)
-             {
-                glcd_Rect(4*(j+1) - 2, 61 - 4*i - 3 , 4*(j+1) + 1 , 61 - 4*i ,1);
-                glcd_Rect(4*(j+1) - 1, 61 - 4*i - 2 , 4*(j+1) , 61 - 4*i - 1 ,1);
-             }
-             if( ecran[i][j] == 0)
-             {
-                glcd_Rect(4*(j+1) - 2, 61 - 4*i - 3 , 4*(j+1) + 1 , 61 - 4*i ,0);
-                glcd_Rect(4*(j+1) - 1, 61 - 4*i - 2 , 4*(j+1) , 61 - 4*i - 1 ,0);
-             }
-          }
-     }
+    for(i=0;i<=9;i++)
+      {
+         for(j=0;j<=21;j++)
+           {
+              if( ecran[i][j] == 1)
+              {
+                 glcd_draw_cube(i,j,1);
+              }
+              if( ecran[i][j] == 0)
+              {
+                 glcd_draw_cube(i,j,0);
+              }
+           }
+      }
+    }
+
+
+void glcd_draw_cube(unsigned char y, unsigned char x, unsigned char color)
+{
+
+    glcd_Rect(4*(x+1) - 2, 61 - 4*y - 3 , 4*(x+1) + 1 , 61 - 4*y ,color);
+    glcd_Rect(4*(x+1) - 1, 61 - 4*y - 2 , 4*(x+1) , 61 - 4*y - 1 ,color);
+
+}
+
+void glcd_draw_shape(unsigned char forme[4][2], unsigned char color)
+{
+
+unsigned char i,j;
+
+
+    for(i=0;i<=1;i++)
+      {
+         for(j=0;j<=3;j++)
+           {
+              if( forme[i][j] == 1)
+              {
+                 glcd_draw_cube(i,j,color);
+              }
+           }
+      }
+
 }

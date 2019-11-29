@@ -16,6 +16,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "57
 [; ;./glcd.h: 57: void glcd_print_tab(unsigned char ecran[10][22]);
 [v _glcd_print_tab `(v ~T0 @X0 0 ef1`*F3511 ]
+[v F3519 `uc ~T0 @X0 -> 2 `i t ]
+"59
+[; ;./glcd.h: 59: void glcd_draw_shape(unsigned char forme[4][2], unsigned char color);
+[v _glcd_draw_shape `(v ~T0 @X0 0 ef2`*F3519`uc ]
+[v F3470 `(v ~T0 @X0 1 tf1`ul ]
+"187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
+[v __delay `JF3470 ~T0 @X0 0 e ]
+[p i __delay ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -527,108 +535,205 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 "10 newmain1.c
-[; ;newmain1.c: 10: 
+[; ;newmain1.c: 10:     int x,y;
 [p x FOSC = HS ]
 "11
-[; ;newmain1.c: 11:     ecran[0][21] = 1;
+[; ;newmain1.c: 11:     unsigned char ecran[10][22] = {0};
 [p x PWRT = OFF ]
 "12
-[; ;newmain1.c: 12:     ecran[9][21] = 1;
+[; ;newmain1.c: 12:     unsigned char forme[4][2] = {0};
 [p x BOR = OFF ]
 "13
-[; ;newmain1.c: 13:     ecran[1][21] = 1;
+[; ;newmain1.c: 13:     unsigned char previous_forme[4][2] = {0};
 [p x WDT = OFF ]
 "14
-[; ;newmain1.c: 14:     ecran[0][0] = 1;
+[; ;newmain1.c: 14: 
 [p x LVP = OFF ]
 "15
-[; ;newmain1.c: 15: 
+[; ;newmain1.c: 15:     ecran[0][21] = 1;
 [p x DEBUG = ON ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "18
-[; ;newmain1.c: 18:     ecran[5][10] = 1;
+[; ;newmain1.c: 18:     ecran[0][0] = 1;
 [v _main `(v ~T0 @X0 1 ef ]
 "19
-[; ;newmain1.c: 19:     ecran[5][11] = 1;
+[; ;newmain1.c: 19: 
 {
 [e :U _main ]
 [f ]
 "21
-[; ;newmain1.c: 21:     ecran[6][12] = 1;
+[; ;newmain1.c: 21:     forme[1][0] = 1;
 [e ( _initMyPIC18F ..  ]
 "22
-[; ;newmain1.c: 22: 
+[; ;newmain1.c: 22:     forme[2][0] = 1;
 [e ( _glcd_Init (1 -> -> 1 `i `uc ]
 "25
 [; ;newmain1.c: 25: 
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[v F3518 `uc ~T0 @X0 -> 22 `i t ]
-[v F3517 `F3518 ~T0 @X0 -> 10 `i s ]
-[i F3517
+"27
+[; ;newmain1.c: 27: 
+[v _x `i ~T0 @X0 1 a ]
+[v _y `i ~T0 @X0 1 a ]
+[v F3529 `uc ~T0 @X0 -> 22 `i t ]
+[v F3528 `F3529 ~T0 @X0 -> 10 `i s ]
+[i F3528
 :U ..
 :U ..
-"26
-[; ;newmain1.c: 26:     glcd_SetCursor(1, 0);
+"28
+[; ;newmain1.c: 28:     ecran[5][10] = 1;
 -> -> 0 `i `uc
 ..
 ..
 ]
-[v F3520 `uc ~T0 @X0 -> 22 `i t ]
-[v _ecran `F3520 ~T0 @X0 -> 10 `i a ]
-[e = _ecran F3517 ]
-"28
-[; ;newmain1.c: 28: 
-[e = *U + &U *U + &U _ecran * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 21 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[v F3531 `uc ~T0 @X0 -> 22 `i t ]
+[v _ecran `F3531 ~T0 @X0 -> 10 `i a ]
+[e = _ecran F3528 ]
+[v F3533 `uc ~T0 @X0 -> 2 `i t ]
+[v F3532 `F3533 ~T0 @X0 -> 4 `i s ]
+[i F3532
+:U ..
+:U ..
 "29
-[; ;newmain1.c: 29: 
-[e = *U + &U *U + &U _ecran * -> -> -> 9 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 21 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 9 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[; ;newmain1.c: 29:     ecran[5][11] = 1;
+-> -> 0 `i `uc
+..
+..
+]
+[v F3535 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `F3535 ~T0 @X0 -> 4 `i a ]
+[e = _forme F3532 ]
+[v F3537 `uc ~T0 @X0 -> 2 `i t ]
+[v F3536 `F3537 ~T0 @X0 -> 4 `i s ]
+[i F3536
+:U ..
+:U ..
 "30
-[; ;newmain1.c: 30: 
+[; ;newmain1.c: 30:     ecran[5][12] = 1;
+-> -> 0 `i `uc
+..
+..
+]
+[v F3539 `uc ~T0 @X0 -> 2 `i t ]
+[v _previous_forme `F3539 ~T0 @X0 -> 4 `i a ]
+[e = _previous_forme F3536 ]
+"32
+[; ;newmain1.c: 32: 
+[e = *U + &U *U + &U _ecran * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 21 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"33
+[; ;newmain1.c: 33: 
+[e = *U + &U *U + &U _ecran * -> -> -> 9 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 21 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 9 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"34
+[; ;newmain1.c: 34: 
 [e = *U + &U *U + &U _ecran * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 21 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
-"31
-[; ;newmain1.c: 31: 
-[e = *U + &U *U + &U _ecran * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
 "35
-[; ;newmain1.c: 35:     while(1)
-[e = *U + &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 10 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
-"36
-[; ;newmain1.c: 36:     {
-[e = *U + &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 11 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[; ;newmain1.c: 35: 
+[e = *U + &U *U + &U _ecran * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
 "37
-[; ;newmain1.c: 37:         ecran[i][i] = 1;
-[e = *U + &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 12 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[; ;newmain1.c: 37: 
+[e = *U + &U *U + &U _forme * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
 "38
 [; ;newmain1.c: 38: 
+[e = *U + &U *U + &U _forme * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"39
+[; ;newmain1.c: 39: 
+[e = *U + &U *U + &U _forme * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"40
+[; ;newmain1.c: 40: 
+[e = *U + &U *U + &U _forme * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"41
+[; ;newmain1.c: 41: 
+[e = *U + &U *U + &U _forme * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"45
+[; ;newmain1.c: 45:     while(1)
+[e = *U + &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 10 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"46
+[; ;newmain1.c: 46:     {
+[e = *U + &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 11 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"47
+[; ;newmain1.c: 47:         glcd_draw_shape(previous_forme,0);
+[e = *U + &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 12 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"48
+[; ;newmain1.c: 48:             i++;
 [e = *U + &U *U + &U _ecran * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> -> 12 `i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
-"43
-[; ;newmain1.c: 43:         if (i == 10) i = 0;
-[e ( _glcd_SetCursor (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
-"49
-[e ( _glcd_Rect (4 , , , , -> -> 1 `i `uc -> -> 21 `i `uc -> -> 90 `i `uc -> -> 62 `i `uc -> -> 1 `i `uc ]
-"50
-[e ( _glcd_print_tab (1 &U _ecran ]
-"52
-[e :U 371 ]
 "53
-{
-"54
-[e = *U + &U *U + &U _ecran * -> -> _i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> _i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
-"56
-[e ( _glcd_print_tab (1 &U _ecran ]
-"58
-[e = *U + &U *U + &U _ecran * -> -> _i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _ecran * -> -> _i `ui `ux -> * -> # *U &U *U &U _ecran `ui -> -> 22 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
+[; ;newmain1.c: 53: 
+[e ( _glcd_SetCursor (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 "59
-[e ++ _i -> 1 `i ]
+[; ;newmain1.c: 59:            }
+[e ( _glcd_Rect (4 , , , , -> -> 1 `i `uc -> -> 21 `i `uc -> -> 90 `i `uc -> -> 62 `i `uc -> -> 1 `i `uc ]
 "60
-[e $ ! == _i -> 10 `i 373  ]
-[e = _i -> 0 `i ]
+[; ;newmain1.c: 60:       }
+[e ( _glcd_print_tab (1 &U _ecran ]
+"62
+[; ;newmain1.c: 62: 
+[e :U 371 ]
+"63
+[; ;newmain1.c: 63:         forme[i][0] = 1;
+{
+"64
+[; ;newmain1.c: 64:         forme[i+1][0] = 1;
+[e ( _glcd_draw_shape (2 , &U _previous_forme -> -> 0 `i `uc ]
+"65
+[; ;newmain1.c: 65:         forme[i+2][0] = 1;
+[e ++ _i -> 1 `i ]
+"66
+[; ;newmain1.c: 66:         forme[i+3][0] = 1;
+[e ( _glcd_draw_shape (2 , &U _forme -> -> 1 `i `uc ]
+"71
+[; ;newmain1.c: 71:     }
+{
+[e = _x -> 0 `i ]
+[e $ <= _x -> 1 `i 373  ]
+[e $U 374  ]
 [e :U 373 ]
-"61
+"72
+[; ;newmain1.c: 72: 
+{
+"73
+[; ;newmain1.c: 73: }
+{
+[e = _y -> 0 `i ]
+[e $ <= _y -> 3 `i 376  ]
+[e $U 377  ]
+[e :U 376 ]
+"74
+{
+"75
+[e = *U + &U *U + &U _previous_forme * -> -> _y `ui `ux -> * -> # *U &U *U &U _previous_forme `ui -> -> 2 `i `ui `ux * -> -> _x `ui `ux -> -> # *U &U *U + &U _previous_forme * -> -> _y `ui `ux -> * -> # *U &U *U &U _previous_forme `ui -> -> 2 `i `ui `ux `ui `ux *U + &U *U + &U _forme * -> -> _y `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> _x `ui `ux -> -> # *U &U *U + &U _forme * -> -> _y `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux ]
+"76
+}
+[e ++ _y -> 1 `i ]
+[e $ <= _y -> 3 `i 376  ]
+[e :U 377 ]
+}
+"77
+}
+[e ++ _x -> 1 `i ]
+[e $ <= _x -> 1 `i 373  ]
+[e :U 374 ]
+}
+"80
+[e = *U + &U *U + &U _forme * -> -> _i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> _i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"81
+[e = *U + &U *U + &U _forme * -> -> + _i -> 1 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> + _i -> 1 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"82
+[e = *U + &U *U + &U _forme * -> -> + _i -> 2 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> + _i -> 2 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"83
+[e = *U + &U *U + &U _forme * -> -> + _i -> 3 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> + _i -> 3 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"84
+[e = *U + &U *U + &U _forme * -> -> + _i -> 3 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _forme * -> -> + _i -> 3 `i `ui `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"86
+[e $ ! == _i -> 21 `i 379  ]
+[e = _i -> 0 `i ]
+[e :U 379 ]
+"87
+[e ( __delay (1 -> * -> -> 1000000 `l `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"88
 }
 [e :U 370 ]
 [e $U 371  ]
 [e :U 372 ]
-"63
+"90
 [e :UE 369 ]
 }

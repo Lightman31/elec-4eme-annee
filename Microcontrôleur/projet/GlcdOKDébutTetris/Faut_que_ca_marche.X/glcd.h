@@ -55,6 +55,8 @@ extern void glcd_WriteString(unsigned char str[],unsigned char font,unsigned cha
 
 void glcd_Rect(unsigned char xs, unsigned char ys, unsigned char xe ,unsigned char ye,unsigned char color);
 void glcd_print_tab(unsigned char ecran[10][22]);
+void glcd_draw_cube(unsigned char x, unsigned char y, unsigned char color);
+void glcd_draw_shape(unsigned char forme[4][2], unsigned char color);
 
 #endif	/* GLCD_H */
 

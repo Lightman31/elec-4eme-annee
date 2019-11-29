@@ -23,12 +23,22 @@ void main (void)
     //glcd_PlotPixel( 2, 2, 0xFF);
     
     int i = 0;
+                
+    int x,y;
     unsigned char ecran[10][22] = {0};
+    unsigned char forme[4][2] = {0};
+    unsigned char previous_forme[4][2] = {0};
     
     ecran[0][21] = 1;
     ecran[9][21] = 1;
     ecran[1][21] = 1;
     ecran[0][0] = 1;
+    
+    forme[0][0] = 1;
+    forme[1][0] = 1;
+    forme[2][0] = 1;
+    forme[3][0] = 1;
+    forme[3][1] = 1;
     
     
     
@@ -51,13 +61,30 @@ void main (void)
     
     while(1)
     {
-        ecran[i][i] = 1;
+        glcd_draw_shape(previous_forme,0);
+            i++;
+        glcd_draw_shape(forme,1);
+              
+  
+
+
+    for(x=0;x<=1;x++)
+      {
+         for(y=0;y<=3;y++)
+           {
+               previous_forme[y][x] =  forme[y][x];
+           }
+      }
         
-    glcd_print_tab(ecran);
-            
-        ecran[i][i] = 0;
-        i++;
-        if (i == 10) i = 0;
+        
+        forme[i][0] = 1;
+        forme[i+1][0] = 1;
+        forme[i+2][0] = 1;
+        forme[i+3][0] = 1;
+        forme[i+3][1] = 1;
+        
+        if (i == 21) i = 0;
+        __delay_us(1000000);
     }
 
 }// end of the main function

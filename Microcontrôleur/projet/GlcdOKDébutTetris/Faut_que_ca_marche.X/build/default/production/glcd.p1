@@ -33,7 +33,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3263
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3263: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
 [v _LATD `Vuc ~T0 @X0 0 e@3980 ]
-[v F3251 `uc ~T0 @X0 -> 22 `i t ]
+[v F3260 `uc ~T0 @X0 -> 22 `i t ]
+"58 ./glcd.h
+[; ;./glcd.h: 58: void glcd_draw_cube(unsigned char x, unsigned char y, unsigned char color);
+[v _glcd_draw_cube `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+[v F3270 `uc ~T0 @X0 -> 2 `i t ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -544,10 +548,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8893
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-[v F3197 `Cuc ~T0 @X0 -> 3 `i t ]
+[v F3206 `Cuc ~T0 @X0 -> 3 `i t ]
 "10 glcd.c
 [; ;glcd.c: 10: const unsigned char Font3x6[65][3]={
-[v _Font3x6 `F3197 ~T0 @X0 -> 65 `i e ]
+[v _Font3x6 `F3206 ~T0 @X0 -> 65 `i e ]
 [i _Font3x6
 :U ..
 :U ..
@@ -3687,89 +3691,178 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "660
 [; ;glcd.c: 660: void glcd_print_tab(unsigned char ecran[10][22])
-[v _glcd_print_tab `(v ~T0 @X0 1 ef1`*F3251 ]
+[v _glcd_print_tab `(v ~T0 @X0 1 ef1`*F3260 ]
 "661
 [; ;glcd.c: 661: {
 {
 [e :U _glcd_print_tab ]
-[v F3253 `uc ~T0 @X0 -> 22 `i t ]
+[v F3262 `uc ~T0 @X0 -> 22 `i t ]
 "660
 [; ;glcd.c: 660: void glcd_print_tab(unsigned char ecran[10][22])
-[v _ecran `*F3253 ~T0 @X0 1 r1 ]
+[v _ecran `*F3262 ~T0 @X0 1 r1 ]
 "661
 [; ;glcd.c: 661: {
 [f ]
 "662
-[; ;glcd.c: 662:    unsigned char i,j;
+[; ;glcd.c: 662:     unsigned char i,j;
 [v _i `uc ~T0 @X0 1 a ]
 [v _j `uc ~T0 @X0 1 a ]
 "664
-[; ;glcd.c: 664:    for(i=0;i<=9;i++)
+[; ;glcd.c: 664:     for(i=0;i<=9;i++)
 {
 [e = _i -> -> 0 `i `uc ]
 [e $ <= -> _i `i -> 9 `i 429  ]
 [e $U 430  ]
 [e :U 429 ]
 "665
-[; ;glcd.c: 665:      {
+[; ;glcd.c: 665:       {
 {
 "666
-[; ;glcd.c: 666:         for(j=0;j<=21;j++)
+[; ;glcd.c: 666:          for(j=0;j<=21;j++)
 {
 [e = _j -> -> 0 `i `uc ]
 [e $ <= -> _j `i -> 21 `i 432  ]
 [e $U 433  ]
 [e :U 432 ]
 "667
-[; ;glcd.c: 667:           {
+[; ;glcd.c: 667:            {
 {
 "668
-[; ;glcd.c: 668:              if( ecran[i][j] == 1)
+[; ;glcd.c: 668:               if( ecran[i][j] == 1)
 [e $ ! == -> *U + &U *U + _ecran * -> _i `ux -> * -> # *U &U *U _ecran `ui -> -> 22 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _ecran * -> _i `ux -> * -> # *U &U *U _ecran `ui -> -> 22 `i `ui `ux `ui `ux `i -> 1 `i 435  ]
 "669
-[; ;glcd.c: 669:              {
+[; ;glcd.c: 669:               {
 {
 "670
-[; ;glcd.c: 670:                 glcd_Rect(4*(j+1) - 2, 61 - 4*i - 3 , 4*(j+1) + 1 , 61 - 4*i ,1);
-[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _j `i -> 1 `i -> 2 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 3 `i `uc -> + * -> 4 `i + -> _j `i -> 1 `i -> 1 `i `uc -> - -> 61 `i * -> 4 `i -> _i `i `uc -> -> 1 `i `uc ]
+[; ;glcd.c: 670:                  glcd_draw_cube(i,j,1);
+[e ( _glcd_draw_cube (3 , , _i _j -> -> 1 `i `uc ]
 "671
-[; ;glcd.c: 671:                 glcd_Rect(4*(j+1) - 1, 61 - 4*i - 2 , 4*(j+1) , 61 - 4*i - 1 ,1);
-[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _j `i -> 1 `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 2 `i `uc -> * -> 4 `i + -> _j `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 1 `i `uc -> -> 1 `i `uc ]
-"672
-[; ;glcd.c: 672:              }
+[; ;glcd.c: 671:               }
 }
 [e :U 435 ]
-"673
-[; ;glcd.c: 673:              if( ecran[i][j] == 0)
+"672
+[; ;glcd.c: 672:               if( ecran[i][j] == 0)
 [e $ ! == -> *U + &U *U + _ecran * -> _i `ux -> * -> # *U &U *U _ecran `ui -> -> 22 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _ecran * -> _i `ux -> * -> # *U &U *U _ecran `ui -> -> 22 `i `ui `ux `ui `ux `i -> 0 `i 436  ]
-"674
-[; ;glcd.c: 674:              {
+"673
+[; ;glcd.c: 673:               {
 {
+"674
+[; ;glcd.c: 674:                  glcd_draw_cube(i,j,0);
+[e ( _glcd_draw_cube (3 , , _i _j -> -> 0 `i `uc ]
 "675
-[; ;glcd.c: 675:                 glcd_Rect(4*(j+1) - 2, 61 - 4*i - 3 , 4*(j+1) + 1 , 61 - 4*i ,0);
-[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _j `i -> 1 `i -> 2 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 3 `i `uc -> + * -> 4 `i + -> _j `i -> 1 `i -> 1 `i `uc -> - -> 61 `i * -> 4 `i -> _i `i `uc -> -> 0 `i `uc ]
-"676
-[; ;glcd.c: 676:                 glcd_Rect(4*(j+1) - 1, 61 - 4*i - 2 , 4*(j+1) , 61 - 4*i - 1 ,0);
-[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _j `i -> 1 `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 2 `i `uc -> * -> 4 `i + -> _j `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _i `i -> 1 `i `uc -> -> 0 `i `uc ]
-"677
-[; ;glcd.c: 677:              }
+[; ;glcd.c: 675:               }
 }
 [e :U 436 ]
-"678
-[; ;glcd.c: 678:           }
+"676
+[; ;glcd.c: 676:            }
 }
 [e ++ _j -> -> 1 `i `uc ]
 [e $ <= -> _j `i -> 21 `i 432  ]
 [e :U 433 ]
 }
-"679
-[; ;glcd.c: 679:      }
+"677
+[; ;glcd.c: 677:       }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ <= -> _i `i -> 9 `i 429  ]
 [e :U 430 ]
 }
-"680
-[; ;glcd.c: 680: }
+"678
+[; ;glcd.c: 678:     }
 [e :UE 428 ]
+}
+"681
+[; ;glcd.c: 681: void glcd_draw_cube(unsigned char y, unsigned char x, unsigned char color)
+[v _glcd_draw_cube `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+"682
+[; ;glcd.c: 682: {
+{
+[e :U _glcd_draw_cube ]
+"681
+[; ;glcd.c: 681: void glcd_draw_cube(unsigned char y, unsigned char x, unsigned char color)
+[v _y `uc ~T0 @X0 1 r1 ]
+[v _x `uc ~T0 @X0 1 r2 ]
+[v _color `uc ~T0 @X0 1 r3 ]
+"682
+[; ;glcd.c: 682: {
+[f ]
+"684
+[; ;glcd.c: 684:     glcd_Rect(4*(x+1) - 2, 61 - 4*y - 3 , 4*(x+1) + 1 , 61 - 4*y ,color);
+[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _x `i -> 1 `i -> 2 `i `uc -> - - -> 61 `i * -> 4 `i -> _y `i -> 3 `i `uc -> + * -> 4 `i + -> _x `i -> 1 `i -> 1 `i `uc -> - -> 61 `i * -> 4 `i -> _y `i `uc _color ]
+"685
+[; ;glcd.c: 685:     glcd_Rect(4*(x+1) - 1, 61 - 4*y - 2 , 4*(x+1) , 61 - 4*y - 1 ,color);
+[e ( _glcd_Rect (4 , , , , -> - * -> 4 `i + -> _x `i -> 1 `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _y `i -> 2 `i `uc -> * -> 4 `i + -> _x `i -> 1 `i `uc -> - - -> 61 `i * -> 4 `i -> _y `i -> 1 `i `uc _color ]
+"687
+[; ;glcd.c: 687: }
+[e :UE 437 ]
+}
+"689
+[; ;glcd.c: 689: void glcd_draw_shape(unsigned char forme[4][2], unsigned char color)
+[v _glcd_draw_shape `(v ~T0 @X0 1 ef2`*F3270`uc ]
+"690
+[; ;glcd.c: 690: {
+{
+[e :U _glcd_draw_shape ]
+[v F3272 `uc ~T0 @X0 -> 2 `i t ]
+"689
+[; ;glcd.c: 689: void glcd_draw_shape(unsigned char forme[4][2], unsigned char color)
+[v _forme `*F3272 ~T0 @X0 1 r1 ]
+[v _color `uc ~T0 @X0 1 r2 ]
+"690
+[; ;glcd.c: 690: {
+[f ]
+"692
+[; ;glcd.c: 692: unsigned char i,j;
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+"695
+[; ;glcd.c: 695:     for(i=0;i<=1;i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ <= -> _i `i -> 1 `i 439  ]
+[e $U 440  ]
+[e :U 439 ]
+"696
+[; ;glcd.c: 696:       {
+{
+"697
+[; ;glcd.c: 697:          for(j=0;j<=3;j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ <= -> _j `i -> 3 `i 442  ]
+[e $U 443  ]
+[e :U 442 ]
+"698
+[; ;glcd.c: 698:            {
+{
+"699
+[; ;glcd.c: 699:               if( forme[i][j] == 1)
+[e $ ! == -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux `i -> 1 `i 445  ]
+"700
+[; ;glcd.c: 700:               {
+{
+"701
+[; ;glcd.c: 701:                  glcd_draw_cube(i,j,color);
+[e ( _glcd_draw_cube (3 , , _i _j _color ]
+"702
+[; ;glcd.c: 702:               }
+}
+[e :U 445 ]
+"703
+[; ;glcd.c: 703:            }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ <= -> _j `i -> 3 `i 442  ]
+[e :U 443 ]
+}
+"704
+[; ;glcd.c: 704:       }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ <= -> _i `i -> 1 `i 439  ]
+[e :U 440 ]
+}
+"706
+[; ;glcd.c: 706: }
+[e :UE 438 ]
 }

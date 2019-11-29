@@ -5776,6 +5776,8 @@ extern void glcd_WriteString(unsigned char str[],unsigned char font,unsigned cha
 
 void glcd_Rect(unsigned char xs, unsigned char ys, unsigned char xe ,unsigned char ye,unsigned char color);
 void glcd_print_tab(unsigned char ecran[10][22]);
+void glcd_draw_cube(unsigned char x, unsigned char y, unsigned char color);
+void glcd_draw_shape(unsigned char forme[4][2], unsigned char color);
 # 14 "./main.h" 2
 
 # 1 "./init.h" 1
@@ -5801,12 +5803,22 @@ void main (void)
 
 
     int i = 0;
+
+    int x,y;
     unsigned char ecran[10][22] = {0};
+    unsigned char forme[4][2] = {0};
+    unsigned char previous_forme[4][2] = {0};
 
     ecran[0][21] = 1;
     ecran[9][21] = 1;
     ecran[1][21] = 1;
     ecran[0][0] = 1;
+
+    forme[0][0] = 1;
+    forme[1][0] = 1;
+    forme[2][0] = 1;
+    forme[3][0] = 1;
+    forme[3][1] = 1;
 
 
 
@@ -5829,13 +5841,30 @@ void main (void)
 
     while(1)
     {
-        ecran[i][i] = 1;
+        glcd_draw_shape(previous_forme,0);
+            i++;
+        glcd_draw_shape(forme,1);
 
-    glcd_print_tab(ecran);
 
-        ecran[i][i] = 0;
-        i++;
-        if (i == 10) i = 0;
+
+
+    for(x=0;x<=1;x++)
+      {
+         for(y=0;y<=3;y++)
+           {
+               previous_forme[y][x] = forme[y][x];
+           }
+      }
+
+
+        forme[i][0] = 1;
+        forme[i+1][0] = 1;
+        forme[i+2][0] = 1;
+        forme[i+3][0] = 1;
+        forme[i+3][1] = 1;
+
+        if (i == 21) i = 0;
+        _delay((unsigned long)((1000000)*(8000000/4000000.0)));
     }
 
 }
