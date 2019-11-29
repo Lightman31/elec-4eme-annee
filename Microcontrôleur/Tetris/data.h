@@ -7,3 +7,5 @@
 #define GRAVITY 1
 #define TRUE 1
 #define FALSE 0
+#define CHARTRUE '1'
+#define CHARFALSE '0'

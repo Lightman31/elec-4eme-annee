@@ -1,20 +1,20 @@
 #include "formes.h"
 
-void makeForme(unsigned short forme[4][2], unsigned short i){
+void makeForme(unsigned char forme[4][2], unsigned short i){
 	for(unsigned short i = 0; i < 4; i++){
 		for(unsigned short j = 0; j < 2; j++)
-			forme[i][j] = 0;
+			forme[i][j] = CHARFALSE;
 	}
 	switch(i){
 		case 0:
 			for(unsigned short i = 0; i < 4; i++)
-				forme[i][0] = 1;
+				forme[i][0] = CHARTRUE;
 			break;
 
 		case 1:
 			for(unsigned short i = 0; i < 2; i++){
 				for(unsigned short j = 0; j < 2; j++)
-					forme[i][j] = 1;
+					forme[i][j] = CHARTRUE;
 			}
 			break;
 
@@ -22,7 +22,7 @@ void makeForme(unsigned short forme[4][2], unsigned short i){
 			for(unsigned short i = 0; i < 3; i++){
 					for(unsigned short j = 0; j < 2; j++){
 						if(!((i == 0 && j == 1) || (i == 2 && j == 1)))
-							forme[i][j] = 1;
+							forme[i][j] = 1-CHARTRUE;
 					}
 				}
 			break;
@@ -31,7 +31,7 @@ void makeForme(unsigned short forme[4][2], unsigned short i){
 			for(unsigned short i = 0; i < 3; i++){
 				for(unsigned short j = 0; j < 2; j++){
 					if(!((i == 1 && j == 1) || (i == 2 && j == 1)))
-						forme[i][j] = 1;
+						forme[i][j] = CHARTRUE;
 				}
 			}
 			break;
@@ -40,7 +40,7 @@ void makeForme(unsigned short forme[4][2], unsigned short i){
 			for(unsigned short i = 0; i < 3; i++){
 				for(unsigned short j = 0; j < 2; j++){
 					if(!((i == 1 && j == 0) || (i == 2 && j == 0)))
-						forme[i][j] = 1;
+						forme[i][j] = CHARTRUE;
 				}
 			}
 			break;
@@ -49,7 +49,7 @@ void makeForme(unsigned short forme[4][2], unsigned short i){
 			for(unsigned short i = 0; i < 3; i++){
 				for(unsigned short j = 0; j < 2; j++){
 					if(!((i == 0 && j == 1) || (i == 2 && j == 0)))
-						forme[i][j] = 1;
+						forme[i][j] = CHARTRUE;
 				}
 			}
 			break;
@@ -58,25 +58,25 @@ void makeForme(unsigned short forme[4][2], unsigned short i){
 			for(unsigned short i = 0; i < 3; i++){
 				for(unsigned short j = 0; j < 2; j++){
 					if(!((i == 0 && j == 0) || (i == 2 && j == 1)))
-						forme[i][j] = 1;
+						forme[i][j] = CHARTRUE;
 				}
 			}
 			break;
 		default:
 				for(unsigned short i = 0; i < 4; i++)
-					forme[i][0] = 1;
+					forme[i][0] = CHARTRUE;
 			break;
 	}
 }
 
-void transformForm(unsigned short forme[4][2], unsigned short x, unsigned short y, unsigned short position){
+void transformForm(unsigned char forme[4][2], unsigned short x, unsigned short y, unsigned short position){
 	unsigned short newForme[4][2] = {0};
 	unsigned short a = 0;
 	switch(position){
 		case 0:
 			for(unsigned short i = 0; i < 4; i++){
 				for(unsigned short j = 0; j < 2; j++){
-					if(forme[i][j]){
+					if(forme[i][j] == CHARTRUE){
 						newForme[a][0] = i+x;
 						newForme[a][1] = j+y;
 						a++;
@@ -87,7 +87,7 @@ void transformForm(unsigned short forme[4][2], unsigned short x, unsigned short 
 		case 1:
 			for(unsigned short i = 0; i < 4; i++){
 				for(unsigned short j = 0; j < 2; j++){
-					if(forme[i][j]){
+					if(forme[i][j] == CHARTRUE){
 						newForme[a][0] = 1-j+x;
 						newForme[a][1] = i+y;
 						a++;
@@ -98,7 +98,7 @@ void transformForm(unsigned short forme[4][2], unsigned short x, unsigned short 
 		case 2:
 			for(unsigned short i = 0; i < 4; i++){
 				for(unsigned short j = 0; j < 2; j++){
-					if(forme[i][j]){
+					if(forme[i][j] == CHARTRUE){
 						newForme[a][0] = 3 - i+x;
 						newForme[a][1] = 1 - j+y;
 						a++;
@@ -109,7 +109,7 @@ void transformForm(unsigned short forme[4][2], unsigned short x, unsigned short 
 		case 3:
 			for(unsigned short i = 0; i < 4; i++){
 				for(unsigned short j = 0; j < 2; j++){
-					if(forme[i][j]){
+					if(forme[i][j] == CHARTRUE){
 						newForme[a][0] = j+x;
 						newForme[a][1] = 3-i+y;
 						a++;
