@@ -326,6 +326,24 @@ extern long timezone;
 extern int getdate_err;
 struct tm *getdate (const char *);
 # 4 "../V3.X/data.h" 2
+# 24 "../V3.X/data.h"
+void delay_notes(unsigned int var);
+void la();
+void sib();
+void si();
+void don();
+void re();
+void mib();
+void mi();
+void fa();
+void factest();
+void solb();
+void sol();
+void lab();
+void lao();
+void pause();
+void musique();
+void musiqueperdu();
 # 2 "../V3.X/formes.h" 2
 
 void makeForme(unsigned char forme[4][2], unsigned short i);

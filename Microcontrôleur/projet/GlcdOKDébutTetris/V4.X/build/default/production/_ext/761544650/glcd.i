@@ -4852,19 +4852,55 @@ extern long timezone;
 extern int getdate_err;
 struct tm *getdate (const char *);
 # 4 "../V3.X/data.h" 2
+# 24 "../V3.X/data.h"
+void delay_notes(unsigned int var);
+void la();
+void sib();
+void si();
+void don();
+void re();
+void mib();
+void mi();
+void fa();
+void factest();
+void solb();
+void sol();
+void lab();
+void lao();
+void pause();
+void musique();
+void musiqueperdu();
 # 2 "../V3.X/collisions.h" 2
 
 unsigned short checkCollision(unsigned char tab[22][10], unsigned char forme[4][2]);
 
-void putPiece(unsigned char tab[22][10], unsigned char forme[4][2]);
+void putPiece(unsigned char tab[22][10], unsigned char forme[4][2], unsigned short points);
 
 unsigned short checkLine(unsigned char tab[22][10], unsigned short line);
 
-void eraseLine(unsigned char tab[22][10], unsigned short line);
+void eraseLine(unsigned char tab[22][10], unsigned short line, unsigned short points);
 # 43 "../V3.X/glcd.h" 2
 
 # 1 "../V3.X/formes.h" 1
 # 1 "../V3.X/data.h" 1
+# 24 "../V3.X/data.h"
+void delay_notes(unsigned int var);
+void la();
+void sib();
+void si();
+void don();
+void re();
+void mib();
+void mi();
+void fa();
+void factest();
+void solb();
+void sol();
+void lab();
+void lao();
+void pause();
+void musique();
+void musiqueperdu();
 # 2 "../V3.X/formes.h" 2
 
 void makeForme(unsigned char forme[4][2], unsigned short i);

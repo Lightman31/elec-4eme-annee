@@ -1,0 +1,678 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F631 `uc ~T0 @X0 -> 2 `i t ]
+[v F652 `uc ~T0 @X0 -> 2 `i t ]
+"3 ../V3.X/formes.c
+[; ;../V3.X/formes.c: 3: void makeForme(unsigned char forme[4][2], unsigned short i){
+[v _makeForme `(v ~T0 @X0 1 ef2`*F631`us ]
+{
+[e :U _makeForme ]
+[v F633 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `*F633 ~T0 @X0 1 r1 ]
+[v _i `us ~T0 @X0 1 r2 ]
+[f ]
+"4
+[; ;../V3.X/formes.c: 4:  for(unsigned short i = 0; i < 4; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 14  ]
+[e $U 15  ]
+[e :U 14 ]
+{
+"5
+[; ;../V3.X/formes.c: 5:   for(unsigned short j = 0; j < 2; j++)
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 17  ]
+[e $U 18  ]
+[e :U 17 ]
+"6
+[; ;../V3.X/formes.c: 6:    forme[i][j] = 0;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 17  ]
+[e :U 18 ]
+}
+"7
+[; ;../V3.X/formes.c: 7:  }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 14  ]
+[e :U 15 ]
+}
+"8
+[; ;../V3.X/formes.c: 8:  switch(i){
+[e $U 21  ]
+{
+"9
+[; ;../V3.X/formes.c: 9:   case 0:
+[e :U 22 ]
+"10
+[; ;../V3.X/formes.c: 10:    for(unsigned short i = 0; i < 4; i++)
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 23  ]
+[e $U 24  ]
+[e :U 23 ]
+"11
+[; ;../V3.X/formes.c: 11:     forme[i][0] = 1;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 0 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x -> -> 1 `i `uc ]
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 23  ]
+[e :U 24 ]
+}
+"12
+[; ;../V3.X/formes.c: 12:    break;
+[e $U 20  ]
+"14
+[; ;../V3.X/formes.c: 14:   case 1:
+[e :U 26 ]
+"15
+[; ;../V3.X/formes.c: 15:    for(unsigned short i = 0; i < 2; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 2 `i `ui 27  ]
+[e $U 28  ]
+[e :U 27 ]
+{
+"16
+[; ;../V3.X/formes.c: 16:     for(unsigned short j = 0; j < 2; j++)
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 30  ]
+[e $U 31  ]
+[e :U 30 ]
+"17
+[; ;../V3.X/formes.c: 17:      forme[i][j] = 1;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 30  ]
+[e :U 31 ]
+}
+"18
+[; ;../V3.X/formes.c: 18:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 2 `i `ui 27  ]
+[e :U 28 ]
+}
+"19
+[; ;../V3.X/formes.c: 19:    break;
+[e $U 20  ]
+"21
+[; ;../V3.X/formes.c: 21:   case 2:
+[e :U 33 ]
+"22
+[; ;../V3.X/formes.c: 22:    for(unsigned short i = 0; i < 3; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 34  ]
+[e $U 35  ]
+[e :U 34 ]
+{
+"23
+[; ;../V3.X/formes.c: 23:      for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 37  ]
+[e $U 38  ]
+[e :U 37 ]
+{
+"24
+[; ;../V3.X/formes.c: 24:       if(!((i == 0 && j == 1) || (i == 2 && j == 1)))
+[e $ ! ! || && == -> _i `ui -> -> 0 `i `ui == -> _j `ui -> -> 1 `i `ui && == -> _i `ui -> -> 2 `i `ui == -> _j `ui -> -> 1 `i `ui 40  ]
+"25
+[; ;../V3.X/formes.c: 25:        forme[i][j] = 1;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[e :U 40 ]
+"26
+[; ;../V3.X/formes.c: 26:      }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 37  ]
+[e :U 38 ]
+}
+"27
+[; ;../V3.X/formes.c: 27:     }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 34  ]
+[e :U 35 ]
+}
+"28
+[; ;../V3.X/formes.c: 28:    break;
+[e $U 20  ]
+"30
+[; ;../V3.X/formes.c: 30:   case 3:
+[e :U 41 ]
+"31
+[; ;../V3.X/formes.c: 31:    for(unsigned short i = 0; i < 3; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 42  ]
+[e $U 43  ]
+[e :U 42 ]
+{
+"32
+[; ;../V3.X/formes.c: 32:     for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 45  ]
+[e $U 46  ]
+[e :U 45 ]
+{
+"33
+[; ;../V3.X/formes.c: 33:      if(!((i == 1 && j == 1) || (i == 2 && j == 1)))
+[e $ ! ! || && == -> _i `ui -> -> 1 `i `ui == -> _j `ui -> -> 1 `i `ui && == -> _i `ui -> -> 2 `i `ui == -> _j `ui -> -> 1 `i `ui 48  ]
+"34
+[; ;../V3.X/formes.c: 34:       forme[i][j] = 1;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[e :U 48 ]
+"35
+[; ;../V3.X/formes.c: 35:     }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 45  ]
+[e :U 46 ]
+}
+"36
+[; ;../V3.X/formes.c: 36:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 42  ]
+[e :U 43 ]
+}
+"37
+[; ;../V3.X/formes.c: 37:    break;
+[e $U 20  ]
+"39
+[; ;../V3.X/formes.c: 39:   case 4:
+[e :U 49 ]
+"40
+[; ;../V3.X/formes.c: 40:    for(unsigned short i = 0; i < 3; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 50  ]
+[e $U 51  ]
+[e :U 50 ]
+{
+"41
+[; ;../V3.X/formes.c: 41:     for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 53  ]
+[e $U 54  ]
+[e :U 53 ]
+{
+"42
+[; ;../V3.X/formes.c: 42:      if(!((i == 1 && j == 0) || (i == 2 && j == 0)))
+[e $ ! ! || && == -> _i `ui -> -> 1 `i `ui == -> _j `ui -> -> 0 `i `ui && == -> _i `ui -> -> 2 `i `ui == -> _j `ui -> -> 0 `i `ui 56  ]
+"43
+[; ;../V3.X/formes.c: 43:       forme[i][j] = 1;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[e :U 56 ]
+"44
+[; ;../V3.X/formes.c: 44:     }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 53  ]
+[e :U 54 ]
+}
+"45
+[; ;../V3.X/formes.c: 45:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 50  ]
+[e :U 51 ]
+}
+"46
+[; ;../V3.X/formes.c: 46:    break;
+[e $U 20  ]
+"48
+[; ;../V3.X/formes.c: 48:   case 5:
+[e :U 57 ]
+"49
+[; ;../V3.X/formes.c: 49:    for(unsigned short i = 0; i < 3; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 58  ]
+[e $U 59  ]
+[e :U 58 ]
+{
+"50
+[; ;../V3.X/formes.c: 50:     for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 61  ]
+[e $U 62  ]
+[e :U 61 ]
+{
+"51
+[; ;../V3.X/formes.c: 51:      if(!((i == 0 && j == 1) || (i == 2 && j == 0)))
+[e $ ! ! || && == -> _i `ui -> -> 0 `i `ui == -> _j `ui -> -> 1 `i `ui && == -> _i `ui -> -> 2 `i `ui == -> _j `ui -> -> 0 `i `ui 64  ]
+"52
+[; ;../V3.X/formes.c: 52:       forme[i][j] = 1;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[e :U 64 ]
+"53
+[; ;../V3.X/formes.c: 53:     }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 61  ]
+[e :U 62 ]
+}
+"54
+[; ;../V3.X/formes.c: 54:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 58  ]
+[e :U 59 ]
+}
+"55
+[; ;../V3.X/formes.c: 55:    break;
+[e $U 20  ]
+"57
+[; ;../V3.X/formes.c: 57:   case 6:
+[e :U 65 ]
+"58
+[; ;../V3.X/formes.c: 58:    for(unsigned short i = 0; i < 3; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 66  ]
+[e $U 67  ]
+[e :U 66 ]
+{
+"59
+[; ;../V3.X/formes.c: 59:     for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 69  ]
+[e $U 70  ]
+[e :U 69 ]
+{
+"60
+[; ;../V3.X/formes.c: 60:      if(!((i == 0 && j == 0) || (i == 2 && j == 1)))
+[e $ ! ! || && == -> _i `ui -> -> 0 `i `ui == -> _j `ui -> -> 0 `i `ui && == -> _i `ui -> -> 2 `i `ui == -> _j `ui -> -> 1 `i `ui 72  ]
+"61
+[; ;../V3.X/formes.c: 61:       forme[i][j] = 1;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+[e :U 72 ]
+"62
+[; ;../V3.X/formes.c: 62:     }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 69  ]
+[e :U 70 ]
+}
+"63
+[; ;../V3.X/formes.c: 63:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 3 `i `ui 66  ]
+[e :U 67 ]
+}
+"64
+[; ;../V3.X/formes.c: 64:    break;
+[e $U 20  ]
+"65
+[; ;../V3.X/formes.c: 65:   default:
+[e :U 73 ]
+"66
+[; ;../V3.X/formes.c: 66:     for(unsigned short i = 0; i < 4; i++)
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 74  ]
+[e $U 75  ]
+[e :U 74 ]
+"67
+[; ;../V3.X/formes.c: 67:      forme[i][0] = 1;
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 0 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x -> -> 1 `i `uc ]
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 74  ]
+[e :U 75 ]
+}
+"68
+[; ;../V3.X/formes.c: 68:    break;
+[e $U 20  ]
+"69
+[; ;../V3.X/formes.c: 69:  }
+}
+[e $U 20  ]
+[e :U 21 ]
+[e [\ -> _i `ui , $ -> -> 0 `i `ui 22
+ , $ -> -> 1 `i `ui 26
+ , $ -> -> 2 `i `ui 33
+ , $ -> -> 3 `i `ui 41
+ , $ -> -> 4 `i `ui 49
+ , $ -> -> 5 `i `ui 57
+ , $ -> -> 6 `i `ui 65
+ 73 ]
+[e :U 20 ]
+"70
+[; ;../V3.X/formes.c: 70: }
+[e :UE 13 ]
+}
+"72
+[; ;../V3.X/formes.c: 72: void transformForm(unsigned char forme[4][2], unsigned short x, unsigned short y, unsigned short position){
+[v _transformForm `(v ~T0 @X0 1 ef4`*F652`us`us`us ]
+{
+[e :U _transformForm ]
+[v F654 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `*F654 ~T0 @X0 1 r1 ]
+[v _x `us ~T0 @X0 1 r2 ]
+[v _y `us ~T0 @X0 1 r3 ]
+[v _position `us ~T0 @X0 1 r4 ]
+[f ]
+[v F659 `us ~T0 @X0 -> 2 `i t ]
+[v F658 `F659 ~T0 @X0 -> 4 `i s ]
+[i F658
+:U ..
+:U ..
+"73
+[; ;../V3.X/formes.c: 73:  unsigned short newForme[4][2] = {0};
+-> -> 0 `i `us
+..
+..
+]
+[v F661 `us ~T0 @X0 -> 2 `i t ]
+[v _newForme `F661 ~T0 @X0 -> 4 `i a ]
+[e = _newForme F658 ]
+"74
+[; ;../V3.X/formes.c: 74:  unsigned short a = 0;
+[v _a `us ~T0 @X0 1 a ]
+[e = _a -> -> 0 `i `us ]
+"75
+[; ;../V3.X/formes.c: 75:  switch(position){
+[e $U 79  ]
+{
+"76
+[; ;../V3.X/formes.c: 76:   case 0:
+[e :U 80 ]
+"77
+[; ;../V3.X/formes.c: 77:    for(unsigned short i = 0; i < 4; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 81  ]
+[e $U 82  ]
+[e :U 81 ]
+{
+"78
+[; ;../V3.X/formes.c: 78:     for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 84  ]
+[e $U 85  ]
+[e :U 84 ]
+{
+"79
+[; ;../V3.X/formes.c: 79:      if(forme[i][j] == 1){
+[e $ ! == -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux `i -> 1 `i 87  ]
+{
+"80
+[; ;../V3.X/formes.c: 80:       newForme[a][0] = i+x;
+[e = *U + &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux -> + -> _i `ui -> _x `ui `us ]
+"81
+[; ;../V3.X/formes.c: 81:       newForme[a][1] = j+y;
+[e = *U + &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux -> + -> _j `ui -> _y `ui `us ]
+"82
+[; ;../V3.X/formes.c: 82:       a++;
+[e ++ _a -> -> 1 `i `us ]
+"83
+[; ;../V3.X/formes.c: 83:      }
+}
+[e :U 87 ]
+"84
+[; ;../V3.X/formes.c: 84:     }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 84  ]
+[e :U 85 ]
+}
+"85
+[; ;../V3.X/formes.c: 85:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 81  ]
+[e :U 82 ]
+}
+"86
+[; ;../V3.X/formes.c: 86:    break;
+[e $U 78  ]
+"87
+[; ;../V3.X/formes.c: 87:   case 1:
+[e :U 88 ]
+"88
+[; ;../V3.X/formes.c: 88:    for(unsigned short i = 0; i < 4; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 89  ]
+[e $U 90  ]
+[e :U 89 ]
+{
+"89
+[; ;../V3.X/formes.c: 89:     for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 92  ]
+[e $U 93  ]
+[e :U 92 ]
+{
+"90
+[; ;../V3.X/formes.c: 90:      if(forme[i][j] == 1){
+[e $ ! == -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux `i -> 1 `i 95  ]
+{
+"91
+[; ;../V3.X/formes.c: 91:       newForme[a][0] = 1-j+x;
+[e = *U + &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux -> + - -> -> 1 `i `ui -> _j `ui -> _x `ui `us ]
+"92
+[; ;../V3.X/formes.c: 92:       newForme[a][1] = i+y;
+[e = *U + &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux -> + -> _i `ui -> _y `ui `us ]
+"93
+[; ;../V3.X/formes.c: 93:       a++;
+[e ++ _a -> -> 1 `i `us ]
+"94
+[; ;../V3.X/formes.c: 94:      }
+}
+[e :U 95 ]
+"95
+[; ;../V3.X/formes.c: 95:     }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 92  ]
+[e :U 93 ]
+}
+"96
+[; ;../V3.X/formes.c: 96:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 89  ]
+[e :U 90 ]
+}
+"97
+[; ;../V3.X/formes.c: 97:    break;
+[e $U 78  ]
+"98
+[; ;../V3.X/formes.c: 98:   case 2:
+[e :U 96 ]
+"99
+[; ;../V3.X/formes.c: 99:    for(unsigned short i = 0; i < 4; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 97  ]
+[e $U 98  ]
+[e :U 97 ]
+{
+"100
+[; ;../V3.X/formes.c: 100:     for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 100  ]
+[e $U 101  ]
+[e :U 100 ]
+{
+"101
+[; ;../V3.X/formes.c: 101:      if(forme[i][j] == 1){
+[e $ ! == -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux `i -> 1 `i 103  ]
+{
+"102
+[; ;../V3.X/formes.c: 102:       newForme[a][0] = 3 - i+x;
+[e = *U + &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux -> + - -> -> 3 `i `ui -> _i `ui -> _x `ui `us ]
+"103
+[; ;../V3.X/formes.c: 103:       newForme[a][1] = 1 - j+y;
+[e = *U + &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux -> + - -> -> 1 `i `ui -> _j `ui -> _y `ui `us ]
+"104
+[; ;../V3.X/formes.c: 104:       a++;
+[e ++ _a -> -> 1 `i `us ]
+"105
+[; ;../V3.X/formes.c: 105:      }
+}
+[e :U 103 ]
+"106
+[; ;../V3.X/formes.c: 106:     }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 100  ]
+[e :U 101 ]
+}
+"107
+[; ;../V3.X/formes.c: 107:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 97  ]
+[e :U 98 ]
+}
+"108
+[; ;../V3.X/formes.c: 108:    break;
+[e $U 78  ]
+"109
+[; ;../V3.X/formes.c: 109:   case 3:
+[e :U 104 ]
+"110
+[; ;../V3.X/formes.c: 110:    for(unsigned short i = 0; i < 4; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 105  ]
+[e $U 106  ]
+[e :U 105 ]
+{
+"111
+[; ;../V3.X/formes.c: 111:     for(unsigned short j = 0; j < 2; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 108  ]
+[e $U 109  ]
+[e :U 108 ]
+{
+"112
+[; ;../V3.X/formes.c: 112:      if(forme[i][j] == 1){
+[e $ ! == -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux `i -> 1 `i 111  ]
+{
+"113
+[; ;../V3.X/formes.c: 113:       newForme[a][0] = j+x;
+[e = *U + &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux -> + -> _j `ui -> _x `ui `us ]
+"114
+[; ;../V3.X/formes.c: 114:       newForme[a][1] = 3-i+y;
+[e = *U + &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _newForme * -> _a `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux -> + - -> -> 3 `i `ui -> _i `ui -> _y `ui `us ]
+"115
+[; ;../V3.X/formes.c: 115:       a++;
+[e ++ _a -> -> 1 `i `us ]
+"116
+[; ;../V3.X/formes.c: 116:      }
+}
+[e :U 111 ]
+"117
+[; ;../V3.X/formes.c: 117:     }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 108  ]
+[e :U 109 ]
+}
+"118
+[; ;../V3.X/formes.c: 118:    }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 105  ]
+[e :U 106 ]
+}
+"119
+[; ;../V3.X/formes.c: 119:    break;
+[e $U 78  ]
+"120
+[; ;../V3.X/formes.c: 120:  }
+}
+[e $U 78  ]
+[e :U 79 ]
+[e [\ -> _position `ui , $ -> -> 0 `i `ui 80
+ , $ -> -> 1 `i `ui 88
+ , $ -> -> 2 `i `ui 96
+ , $ -> -> 3 `i `ui 104
+ 78 ]
+[e :U 78 ]
+"121
+[; ;../V3.X/formes.c: 121:  for(unsigned short i = 0; i < 4; i++)
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 112  ]
+[e $U 113  ]
+[e :U 112 ]
+"122
+[; ;../V3.X/formes.c: 122:   for(unsigned short j = 0; j < 2; j++)
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 115  ]
+[e $U 116  ]
+[e :U 115 ]
+"123
+[; ;../V3.X/formes.c: 123:    forme[i][j] = newForme[i][j];
+[e = *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> *U + &U *U + &U _newForme * -> _i `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _newForme * -> _i `ux -> * -> # *U &U *U &U _newForme `ui -> -> 2 `i `ui `ux `ui `ux `uc ]
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 115  ]
+[e :U 116 ]
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 112  ]
+[e :U 113 ]
+}
+"124
+[; ;../V3.X/formes.c: 124: }
+[e :UE 77 ]
+}
+"126
+[; ;../V3.X/formes.c: 126: void changePos(unsigned short *position){
+[v _changePos `(v ~T0 @X0 1 ef1`*us ]
+{
+[e :U _changePos ]
+[v _position `*us ~T0 @X0 1 r1 ]
+[f ]
+"127
+[; ;../V3.X/formes.c: 127:  *position = (((*position)+1) % 4);
+[e = *U _position -> % + -> *U _position `ui -> -> 1 `i `ui -> -> 4 `i `ui `us ]
+"128
+[; ;../V3.X/formes.c: 128: }
+[e :UE 118 ]
+}

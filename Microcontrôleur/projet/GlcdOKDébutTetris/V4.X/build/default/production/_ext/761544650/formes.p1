@@ -1,13 +1,13 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F631 `uc ~T0 @X0 -> 2 `i t ]
-[v F652 `uc ~T0 @X0 -> 2 `i t ]
+[v F649 `uc ~T0 @X0 -> 2 `i t ]
+[v F670 `uc ~T0 @X0 -> 2 `i t ]
 "3 ../V3.X/formes.c
 [; ;../V3.X/formes.c: 3: void makeForme(unsigned char forme[4][2], unsigned short i){
-[v _makeForme `(v ~T0 @X0 1 ef2`*F631`us ]
+[v _makeForme `(v ~T0 @X0 1 ef2`*F649`us ]
 {
 [e :U _makeForme ]
-[v F633 `uc ~T0 @X0 -> 2 `i t ]
-[v _forme `*F633 ~T0 @X0 1 r1 ]
+[v F651 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `*F651 ~T0 @X0 1 r1 ]
 [v _i `us ~T0 @X0 1 r2 ]
 [f ]
 "4
@@ -369,18 +369,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "72
 [; ;../V3.X/formes.c: 72: void transformForm(unsigned char forme[4][2], unsigned short x, unsigned short y, unsigned short position){
-[v _transformForm `(v ~T0 @X0 1 ef4`*F652`us`us`us ]
+[v _transformForm `(v ~T0 @X0 1 ef4`*F670`us`us`us ]
 {
 [e :U _transformForm ]
-[v F654 `uc ~T0 @X0 -> 2 `i t ]
-[v _forme `*F654 ~T0 @X0 1 r1 ]
+[v F672 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `*F672 ~T0 @X0 1 r1 ]
 [v _x `us ~T0 @X0 1 r2 ]
 [v _y `us ~T0 @X0 1 r3 ]
 [v _position `us ~T0 @X0 1 r4 ]
 [f ]
-[v F659 `us ~T0 @X0 -> 2 `i t ]
-[v F658 `F659 ~T0 @X0 -> 4 `i s ]
-[i F658
+[v F677 `us ~T0 @X0 -> 2 `i t ]
+[v F676 `F677 ~T0 @X0 -> 4 `i s ]
+[i F676
 :U ..
 :U ..
 "73
@@ -389,9 +389,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-[v F661 `us ~T0 @X0 -> 2 `i t ]
-[v _newForme `F661 ~T0 @X0 -> 4 `i a ]
-[e = _newForme F658 ]
+[v F679 `us ~T0 @X0 -> 2 `i t ]
+[v _newForme `F679 ~T0 @X0 -> 4 `i a ]
+[e = _newForme F676 ]
 "74
 [; ;../V3.X/formes.c: 74:  unsigned short a = 0;
 [v _a `us ~T0 @X0 1 a ]

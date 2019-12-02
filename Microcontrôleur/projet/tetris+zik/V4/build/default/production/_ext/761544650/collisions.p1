@@ -1,0 +1,215 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F641 `uc ~T0 @X0 -> 10 `i t ]
+[v F642 `uc ~T0 @X0 -> 2 `i t ]
+[v F650 `uc ~T0 @X0 -> 10 `i t ]
+[v F651 `uc ~T0 @X0 -> 2 `i t ]
+[v F658 `uc ~T0 @X0 -> 10 `i t ]
+[v F665 `uc ~T0 @X0 -> 10 `i t ]
+"3 ../V3.X/collisions.c
+[; ;../V3.X/collisions.c: 3: unsigned short checkCollision(unsigned char tab[22][10], unsigned char forme[4][2]){
+[v _checkCollision `(us ~T0 @X0 1 ef2`*F641`*F642 ]
+{
+[e :U _checkCollision ]
+[v F644 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `*F644 ~T0 @X0 1 r1 ]
+[v F646 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `*F646 ~T0 @X0 1 r2 ]
+[f ]
+"4
+[; ;../V3.X/collisions.c: 4:  unsigned short result = 0;
+[v _result `us ~T0 @X0 1 a ]
+[e = _result -> -> 0 `i `us ]
+"5
+[; ;../V3.X/collisions.c: 5:  for(unsigned short i = 0; i < 4; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 14  ]
+[e $U 15  ]
+[e :U 14 ]
+{
+"6
+[; ;../V3.X/collisions.c: 6:   if(tab[forme[i][0] + 1][forme[i][1]] == 1 || forme[i][0] + 1 == 22){
+[e $ ! || == -> *U + &U *U + _tab * -> + -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 0 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x `i -> 1 `i `x -> * -> # *U &U *U _tab `ui -> 10 `i `x * -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 1 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x `ux -> -> # *U &U *U + _tab * -> + -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 0 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x `i -> 1 `i `x -> * -> # *U &U *U _tab `ui -> 10 `i `x `ui `ux `i -> 1 `i == + -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 0 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x `i -> 1 `i -> 22 `i 17  ]
+{
+"7
+[; ;../V3.X/collisions.c: 7:    result = 1;
+[e = _result -> -> 1 `i `us ]
+"8
+[; ;../V3.X/collisions.c: 8:    break;
+[e $U 15  ]
+"9
+[; ;../V3.X/collisions.c: 9:   }
+}
+[e :U 17 ]
+"10
+[; ;../V3.X/collisions.c: 10:  }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 14  ]
+[e :U 15 ]
+}
+"11
+[; ;../V3.X/collisions.c: 11:  return result;
+[e ) _result ]
+[e $UE 13  ]
+"12
+[; ;../V3.X/collisions.c: 12: }
+[e :UE 13 ]
+}
+"14
+[; ;../V3.X/collisions.c: 14: void putPiece(unsigned char tab[22][10], unsigned char forme[4][2]){
+[v _putPiece `(v ~T0 @X0 1 ef2`*F650`*F651 ]
+{
+[e :U _putPiece ]
+[v F653 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `*F653 ~T0 @X0 1 r1 ]
+[v F655 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `*F655 ~T0 @X0 1 r2 ]
+[f ]
+"15
+[; ;../V3.X/collisions.c: 15:  for(unsigned short i = 0; i < 4; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 19  ]
+[e $U 20  ]
+[e :U 19 ]
+{
+"16
+[; ;../V3.X/collisions.c: 16:   tab[forme[i][0]][forme[i][1]] = 1;
+[e = *U + &U *U + _tab * -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 0 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x `ux -> * -> # *U &U *U _tab `ui -> -> 10 `i `ui `ux * -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 1 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x `ux -> -> # *U &U *U + _tab * -> *U + &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux * -> -> 0 `i `x -> -> # *U &U *U + _forme * -> _i `ux -> * -> # *U &U *U _forme `ui -> -> 2 `i `ui `ux `i `x `ux -> * -> # *U &U *U _tab `ui -> -> 10 `i `ui `ux `ui `ux -> -> 1 `i `uc ]
+"17
+[; ;../V3.X/collisions.c: 17:  }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 19  ]
+[e :U 20 ]
+}
+"18
+[; ;../V3.X/collisions.c: 18: }
+[e :UE 18 ]
+}
+"20
+[; ;../V3.X/collisions.c: 20: unsigned short checkLine(unsigned char tab[22][10], unsigned short line){
+[v _checkLine `(us ~T0 @X0 1 ef2`*F658`us ]
+{
+[e :U _checkLine ]
+[v F660 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `*F660 ~T0 @X0 1 r1 ]
+[v _line `us ~T0 @X0 1 r2 ]
+[f ]
+"21
+[; ;../V3.X/collisions.c: 21:  unsigned short nbTrue = 0;
+[v _nbTrue `us ~T0 @X0 1 a ]
+[e = _nbTrue -> -> 0 `i `us ]
+"22
+[; ;../V3.X/collisions.c: 22:  for(unsigned short i = 0; i < 10; i++){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 10 `i `ui 23  ]
+[e $U 24  ]
+[e :U 23 ]
+{
+"23
+[; ;../V3.X/collisions.c: 23:   if(tab[line][i] == 1)
+[e $ ! == -> *U + &U *U + _tab * -> _line `ux -> * -> # *U &U *U _tab `ui -> -> 10 `i `ui `ux * -> _i `ux -> -> # *U &U *U + _tab * -> _line `ux -> * -> # *U &U *U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 1 `i 26  ]
+"24
+[; ;../V3.X/collisions.c: 24:    nbTrue++;
+[e ++ _nbTrue -> -> 1 `i `us ]
+[e :U 26 ]
+"25
+[; ;../V3.X/collisions.c: 25:  }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 10 `i `ui 23  ]
+[e :U 24 ]
+}
+"26
+[; ;../V3.X/collisions.c: 26:  if(nbTrue + 1 == 10)
+[e $ ! == + -> _nbTrue `ui -> -> 1 `i `ui -> -> 10 `i `ui 27  ]
+"27
+[; ;../V3.X/collisions.c: 27:   return 1;
+[e ) -> -> 1 `i `us ]
+[e $UE 22  ]
+[e $U 28  ]
+"28
+[; ;../V3.X/collisions.c: 28:  else
+[e :U 27 ]
+"29
+[; ;../V3.X/collisions.c: 29:   return 0;
+[e ) -> -> 0 `i `us ]
+[e $UE 22  ]
+[e :U 28 ]
+"30
+[; ;../V3.X/collisions.c: 30: }
+[e :UE 22 ]
+}
+"32
+[; ;../V3.X/collisions.c: 32: void eraseLine(unsigned char tab[22][10], unsigned short line){
+[v _eraseLine `(v ~T0 @X0 1 ef2`*F665`us ]
+{
+[e :U _eraseLine ]
+[v F667 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `*F667 ~T0 @X0 1 r1 ]
+[v _line `us ~T0 @X0 1 r2 ]
+[f ]
+"33
+[; ;../V3.X/collisions.c: 33:  for(unsigned short i = line; i > 0; i--){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i _line ]
+[e $ > -> _i `ui -> -> 0 `i `ui 30  ]
+[e $U 31  ]
+[e :U 30 ]
+{
+"34
+[; ;../V3.X/collisions.c: 34:   for(unsigned short j = 0; j < 10; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 10 `i `ui 33  ]
+[e $U 34  ]
+[e :U 33 ]
+{
+"35
+[; ;../V3.X/collisions.c: 35:    tab[i][j] = tab[i-1][j];
+[e = *U + &U *U + _tab * -> _i `ux -> * -> # *U &U *U _tab `ui -> -> 10 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _tab * -> _i `ux -> * -> # *U &U *U _tab `ui -> -> 10 `i `ui `ux `ui `ux *U + &U *U + _tab * -> - -> _i `ui -> -> 1 `i `ui `ux -> * -> # *U &U *U _tab `ui -> -> 10 `i `ui `ux * -> _j `ux -> -> # *U &U *U + _tab * -> - -> _i `ui -> -> 1 `i `ui `ux -> * -> # *U &U *U _tab `ui -> -> 10 `i `ui `ux `ui `ux ]
+"36
+[; ;../V3.X/collisions.c: 36:   }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 10 `i `ui 33  ]
+[e :U 34 ]
+}
+"37
+[; ;../V3.X/collisions.c: 37:  }
+}
+[e -- _i -> -> 1 `i `us ]
+[e $ > -> _i `ui -> -> 0 `i `ui 30  ]
+[e :U 31 ]
+}
+"38
+[; ;../V3.X/collisions.c: 38:  for(unsigned short j = 0; j < 10; j++){
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 10 `i `ui 36  ]
+[e $U 37  ]
+[e :U 36 ]
+{
+"39
+[; ;../V3.X/collisions.c: 39:    tab[0][j] = 0;
+[e = *U + &U *U + _tab * -> -> 0 `i `x -> * -> # *U &U *U _tab `ui -> 10 `i `x * -> _j `ux -> -> # *U &U *U + _tab * -> -> 0 `i `x -> * -> # *U &U *U _tab `ui -> 10 `i `x `ui `ux -> -> 0 `i `uc ]
+"40
+[; ;../V3.X/collisions.c: 40:   }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 10 `i `ui 36  ]
+[e :U 37 ]
+}
+"41
+[; ;../V3.X/collisions.c: 41: }
+[e :UE 29 ]
+}

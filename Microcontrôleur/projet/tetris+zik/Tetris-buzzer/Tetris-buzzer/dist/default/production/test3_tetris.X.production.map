@@ -1,0 +1,1451 @@
+Microchip MPLAB XC8 Compiler V2.10 ()
+
+Linker command line:
+
+-W-3 --edf=D:\programmes x86\pic\dat\en_msgs.txt -cs \
+  -h+dist/default/production\test3_tetris.X.production.sym \
+  --cmf=dist/default/production\test3_tetris.X.production.cmf -z -Q18F4550 \
+  -oC:\Users\CLARAS~1\AppData\Local\Temp\s32g.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/test3_tetris.X.production.map -E1 -ver=XC8 \
+  --acfsm=1493 -ASTACK=02DCh-07FFh -pstack=STACK -ACODE=00h-07FFFh \
+  -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
+  -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh -AABS1=00h-07FFh \
+  -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh \
+  -preset_vec=00h,intcode,intcodelo,powerup,init -pramtop=0800h \
+  -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
+  -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F000FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
+  C:\Users\CLARAS~1\AppData\Local\Temp\s32g.o \
+  dist/default/production\test3_tetris.X.production.o 
+
+Object code version is 3.11
+
+Machine type is 18F4550
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\CLARAS~1\AppData\Local\Temp\s32g.o
+                init                                  0        0        4        0       0
+                idloc                            200000   200000        8   200000       0
+                config                           300000   300000        E   300000       0
+dist/default/production\test3_tetris.X.production.o
+                mediumconst                        773A     773A      8C6     3B9D       0
+                text23                             6CD4     6CD4       36     366A       0
+                text22                             6EEE     6EEE       80     3777       0
+                text21                             7002     7002       9C     3801       0
+                text20                             6D9A     6D9A       68     36CD       0
+                text19                             715C     715C       C4     38AE       0
+                text18                             6D0A     6D0A       36     3685       0
+                text17                             7220     7220       D2     3910       0
+                text16                             709E     709E       BE     384F       0
+                text15                             72F2     72F2      146     3979       0
+                text14                             6CA2     6CA2       32     3651       0
+                text13                             6E02     6E02       74     3701       0
+                text12                             6B28     6B28       1E     3594       0
+                text11                             6B46     6B46       1E     35A3       0
+                text10                             6B64     6B64       1E     35B2       0
+                text9                              6B82     6B82       1E     35C1       0
+                text8                              6BA0     6BA0       1E     35D0       0
+                text7                              6BBE     6BBE       1E     35DF       0
+                text6                              6BDC     6BDC       1E     35EE       0
+                text5                              6BFA     6BFA       1E     35FD       0
+                text4                              6C18     6C18       1E     360C       0
+                text3                              6C36     6C36       1E     361B       0
+                text2                              6C54     6C54       1E     362A       0
+                text1                              7438     7438      302     3A1C       0
+                text0                              6E76     6E76       78     373B       0
+                cstackCOMRAM                         31       31       1F        1       1
+                cstackBANK1                         100      100       DC      100       1
+                bssBANK2                            200      200       DC      200       1
+                dataBANK0                            60       60       94       60       1
+                dataCOMRAM                            1        1       30        1       1
+                bssCOMRAM                            50       50        2        1       1
+                cinit                              6D40     6D40       5A     36A0       0
+                idataBANK0                         6F6E     6F6E       94     6F6E       0
+                idataCOMRAM                        6C72     6C72       30     6C72       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                init                                  0        0        4         0
+                text23                             6CD4     6CD4       36         0
+                text22                             6EEE     6EEE       80         0
+                text21                             7002     7002       9C         0
+                text20                             6D9A     6D9A       68         0
+                text19                             715C     715C       C4         0
+                text18                             6D0A     6D0A       36         0
+                text17                             7220     7220       D2         0
+                text16                             709E     709E       BE         0
+                text15                             72F2     72F2      146         0
+                text14                             6CA2     6CA2       32         0
+                text13                             6E02     6E02       74         0
+                text12                             6B28     6B28       1E         0
+                text11                             6B46     6B46       1E         0
+                text10                             6B64     6B64       1E         0
+                text9                              6B82     6B82       1E         0
+                text8                              6BA0     6BA0       1E         0
+                text7                              6BBE     6BBE       1E         0
+                text6                              6BDC     6BDC       1E         0
+                text5                              6BFA     6BFA       1E         0
+                text4                              6C18     6C18       1E         0
+                text3                              6C36     6C36       1E         0
+                text2                              6C54     6C54       1E         0
+                text1                              7438     7438      302         0
+                text0                              6E76     6E76       78         0
+                cinit                              6D40     6D40       5A         0
+                idataBANK0                         6F6E     6F6E       94         0
+                idataCOMRAM                        6C72     6C72       30         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+
+        CLASS   MEDIUMCONST    
+                mediumconst                        773A     773A      8C6         0
+
+        CLASS   COMRAM         
+                cstackCOMRAM                         31       31       1F         1
+                dataCOMRAM                            1        1       30         1
+                bssCOMRAM                            50       50        2         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                dataBANK0                            60       60       94         1
+
+        CLASS   BANK1          
+                cstackBANK1                         100      100       DC         1
+
+        CLASS   BANK2          
+                bssBANK2                            200      200       DC         1
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        E         0
+
+        CLASS   IDLOC          
+                idloc                            200000   200000        8         0
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                dataCOMRAM                     000001  000051  000052         1       1  COMRAM  
+                dataBANK0                      000060  000094  0000F4        60       1  BANK0   
+                cstackBANK1                    000100  0000DC  0001DC       100       1  BANK1   
+                bssBANK2                       000200  0000DC  0002DC       200       1  BANK2   
+                text12                         006B28  00001E  006B46      3594       0  CODE    
+                text11                         006B46  00001E  006B64      35A3       0  CODE    
+                text10                         006B64  00001E  006B82      35B2       0  CODE    
+                text9                          006B82  00001E  006BA0      35C1       0  CODE    
+                text8                          006BA0  00001E  006BBE      35D0       0  CODE    
+                text7                          006BBE  00001E  006BDC      35DF       0  CODE    
+                text6                          006BDC  00001E  006BFA      35EE       0  CODE    
+                text5                          006BFA  00001E  006C18      35FD       0  CODE    
+                text4                          006C18  00001E  006C36      360C       0  CODE    
+                text3                          006C36  00001E  006C54      361B       0  CODE    
+                text2                          006C54  00001E  006C72      362A       0  CODE    
+                idataCOMRAM                    006C72  000030  006CA2      6C72       0  CODE    
+                text14                         006CA2  000032  006CD4      3651       0  CODE    
+                text23                         006CD4  000036  006D0A      366A       0  CODE    
+                text18                         006D0A  000036  006D40      3685       0  CODE    
+                cinit                          006D40  00005A  006D9A      36A0       0  CODE    
+                text20                         006D9A  000068  006E02      36CD       0  CODE    
+                text13                         006E02  000074  006E76      3701       0  CODE    
+                text0                          006E76  000078  006EEE      373B       0  CODE    
+                text22                         006EEE  000080  006F6E      3777       0  CODE    
+                idataBANK0                     006F6E  000094  007002      6F6E       0  CODE    
+                text21                         007002  00009C  00709E      3801       0  CODE    
+                text16                         00709E  0000BE  00715C      384F       0  CODE    
+                text19                         00715C  0000C4  007220      38AE       0  CODE    
+                text17                         007220  0000D2  0072F2      3910       0  CODE    
+                text15                         0072F2  000146  007438      3979       0  CODE    
+                text1                          007438  000302  00773A      3A1C       0  CODE    
+                mediumconst                    00773A  0008C6  008000      3B9D       0  MEDIUMCO
+                idloc                          200000  000008  200008    200000       0  IDLOC   
+                config                         300000  00000E  30000E    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0000F4-0000FF                C
+        BANK1            0001DC-0001FF               24
+        BANK2            0002DC-0002FF               24
+        BANK3            000300-0003FF              100
+        BANK4            000400-0004FF              100
+        BANK5            000500-0005FF              100
+        BANK6            000600-0006FF              100
+        BANK7            000700-0007FF              100
+        BIGRAM           000052-00005F                E
+                         0000F4-0000FF                C
+                         0001DC-0001FF               24
+                         0002DC-0007FF              524
+        CODE             000004-006B27             6B24
+        COMRAM           000052-00005F                E
+        CONST            000004-006B27             6B24
+        EEDATA           F00000-F000FF              100
+        MEDIUMCONST      000800-006B27             6328
+        RAM              0000F4-0000FF                C
+                         0001DC-0001FF               24
+                         0002DC-0007FF              100
+        SFR              000F60-000FFF               A0
+        SMALLCONST       000800-006B27              100
+        STACK            0002DC-0007FF              524
+
+                                  Symbol Table
+
+?___awdiv                 cstackCOMRAM 000031
+?___lwdiv                 cstackCOMRAM 000031
+_ADCON0                   (abs)        000FC2
+_ADCON1                   (abs)        000FC1
+_Font3x6                  mediumconst  007F3B
+_Font8x8                  mediumconst  00773B
+_LATBbits                 (abs)        000F8A
+_LATD                     (abs)        000F8C
+_PORTA                    (abs)        000F80
+_PORTB                    (abs)        000F81
+_PORTC                    (abs)        000F82
+_PORTCbits                (abs)        000F82
+_PORTD                    (abs)        000F83
+_PORTE                    (abs)        000F84
+_TRISA                    (abs)        000F92
+_TRISB                    (abs)        000F93
+_TRISC                    (abs)        000F94
+_TRISCbits                (abs)        000F94
+_TRISD                    (abs)        000F95
+_TRISE                    (abs)        000F96
+__CFG_BOR$OFF             (abs)        000000
+__CFG_DEBUG$ON            (abs)        000000
+__CFG_FOSC$HS             (abs)        000000
+__CFG_LVP$OFF             (abs)        000000
+__CFG_PWRT$OFF            (abs)        000000
+__CFG_WDT$OFF             (abs)        000000
+__HRAM                    (abs)        000000
+__Habs1                   abs1         000000
+__Hbank0                  bank0        000000
+__Hbank1                  bank1        000000
+__Hbank2                  bank2        000000
+__Hbank3                  bank3        000000
+__Hbank4                  bank4        000000
+__Hbank5                  bank5        000000
+__Hbank6                  bank6        000000
+__Hbank7                  bank7        000000
+__Hbigbss                 bigbss       000000
+__Hbigdata                bigdata      000000
+__Hbigram                 bigram       000000
+__Hbss                    bss          000000
+__HbssBANK2               bssBANK2     000000
+__HbssCOMRAM              bssCOMRAM    000000
+__Hcinit                  cinit        000000
+__Hclrtext                clrtext      000000
+__Hcomram                 comram       000000
+__Hconfig                 config       30000E
+__Hconst                  const        000000
+__HcstackBANK1            cstackBANK1  000000
+__HcstackCOMRAM           cstackCOMRAM 000000
+__Hdata                   data         000000
+__HdataBANK0              dataBANK0    000000
+__HdataCOMRAM             dataCOMRAM   000000
+__Heeprom_data            eeprom_data  000000
+__Hfarbss                 farbss       000000
+__Hfardata                fardata      000000
+__Hibigdata               ibigdata     000000
+__Hidata                  idata        000000
+__HidataBANK0             idataBANK0   000000
+__HidataCOMRAM            idataCOMRAM  000000
+__Hidloc                  idloc        200008
+__Hifardata               ifardata     000000
+__Hinit                   init         000004
+__Hintcode                intcode      000000
+__Hintcode_body           intcode_body 000000
+__Hintcodelo              intcodelo    000000
+__Hintentry               intentry     000000
+__Hintret                 intret       000000
+__Hintsave_regs           intsave_regs 000000
+__Hirdata                 irdata       000000
+__Hmediumconst            mediumconst  008000
+__HnvFARRAM               nvFARRAM     000000
+__Hnvbit                  nvbit        000000
+__Hnvrram                 nvrram       000000
+__Hparam                  rparam       000000
+__Hpowerup                powerup      000000
+__Hram                    ram          000000
+__Hramtop                 ramtop       000800
+__Hrbit                   rbit         000000
+__Hrbss                   rbss         000000
+__Hrdata                  rdata        000000
+__Hreset_vec              reset_vec    000000
+__Hrparam                 rparam       000000
+__Hsfr                    sfr          000000
+__Hsmallconst             smallconst   000000
+__Hspace_0                (abs)        30000E
+__Hspace_1                (abs)        0002DC
+__Hspace_2                (abs)        000000
+__Hstack                  stack        000000
+__Hstruct                 struct       000000
+__Htemp                   temp         000000
+__Htext                   text         000000
+__Htext0                  text0        000000
+__Htext1                  text1        000000
+__Htext10                 text10       000000
+__Htext11                 text11       000000
+__Htext12                 text12       000000
+__Htext13                 text13       000000
+__Htext14                 text14       000000
+__Htext15                 text15       000000
+__Htext16                 text16       000000
+__Htext17                 text17       000000
+__Htext18                 text18       000000
+__Htext19                 text19       000000
+__Htext2                  text2        000000
+__Htext20                 text20       000000
+__Htext21                 text21       000000
+__Htext22                 text22       000000
+__Htext23                 text23       000000
+__Htext3                  text3        000000
+__Htext4                  text4        000000
+__Htext5                  text5        000000
+__Htext6                  text6        000000
+__Htext7                  text7        000000
+__Htext8                  text8        000000
+__Htext9                  text9        000000
+__LRAM                    (abs)        000001
+__Labs1                   abs1         000000
+__Lbank0                  bank0        000000
+__Lbank1                  bank1        000000
+__Lbank2                  bank2        000000
+__Lbank3                  bank3        000000
+__Lbank4                  bank4        000000
+__Lbank5                  bank5        000000
+__Lbank6                  bank6        000000
+__Lbank7                  bank7        000000
+__Lbigbss                 bigbss       000000
+__Lbigdata                bigdata      000000
+__Lbigram                 bigram       000000
+__Lbss                    bss          000000
+__LbssBANK2               bssBANK2     000000
+__LbssCOMRAM              bssCOMRAM    000000
+__Lcinit                  cinit        000000
+__Lclrtext                clrtext      000000
+__Lcomram                 comram       000000
+__Lconfig                 config       300000
+__Lconst                  const        000000
+__LcstackBANK1            cstackBANK1  000000
+__LcstackCOMRAM           cstackCOMRAM 000000
+__Ldata                   data         000000
+__LdataBANK0              dataBANK0    000000
+__LdataCOMRAM             dataCOMRAM   000000
+__Leeprom_data            eeprom_data  000000
+__Lfarbss                 farbss       000000
+__Lfardata                fardata      000000
+__Libigdata               ibigdata     000000
+__Lidata                  idata        000000
+__LidataBANK0             idataBANK0   000000
+__LidataCOMRAM            idataCOMRAM  000000
+__Lidloc                  idloc        200000
+__Lifardata               ifardata     000000
+__Linit                   init         000000
+__Lintcode                intcode      000000
+__Lintcode_body           intcode_body 000000
+__Lintcodelo              intcodelo    000000
+__Lintentry               intentry     000000
+__Lintret                 intret       000000
+__Lintsave_regs           intsave_regs 000000
+__Lirdata                 irdata       000000
+__Lmediumconst            mediumconst  00773A
+__LnvFARRAM               nvFARRAM     000000
+__Lnvbit                  nvbit        000000
+__Lnvrram                 nvrram       000000
+__Lparam                  rparam       000000
+__Lpowerup                powerup      000000
+__Lram                    ram          000000
+__Lramtop                 ramtop       000800
+__Lrbit                   rbit         000000
+__Lrbss                   rbss         000000
+__Lrdata                  rdata        000000
+__Lreset_vec              reset_vec    000000
+__Lrparam                 rparam       000000
+__Lsfr                    sfr          000000
+__Lsmallconst             smallconst   000000
+__Lspace_0                (abs)        000000
+__Lspace_1                (abs)        000000
+__Lspace_2                (abs)        000000
+__Lstack                  stack        000000
+__Lstruct                 struct       000000
+__Ltemp                   temp         000000
+__Ltext                   text         000000
+__Ltext0                  text0        000000
+__Ltext1                  text1        000000
+__Ltext10                 text10       000000
+__Ltext11                 text11       000000
+__Ltext12                 text12       000000
+__Ltext13                 text13       000000
+__Ltext14                 text14       000000
+__Ltext15                 text15       000000
+__Ltext16                 text16       000000
+__Ltext17                 text17       000000
+__Ltext18                 text18       000000
+__Ltext19                 text19       000000
+__Ltext2                  text2        000000
+__Ltext20                 text20       000000
+__Ltext21                 text21       000000
+__Ltext22                 text22       000000
+__Ltext23                 text23       000000
+__Ltext3                  text3        000000
+__Ltext4                  text4        000000
+__Ltext5                  text5        000000
+__Ltext6                  text6        000000
+__Ltext7                  text7        000000
+__Ltext8                  text8        000000
+__Ltext9                  text9        000000
+__S0                      (abs)        30000E
+__S1                      (abs)        0002DC
+__S2                      (abs)        000000
+___awdiv                  text19       00715C
+___awdiv@counter          cstackCOMRAM 000035
+___awdiv@dividend         cstackCOMRAM 000031
+___awdiv@divisor          cstackCOMRAM 000033
+___awdiv@quotient         cstackCOMRAM 000037
+___awdiv@sign             cstackCOMRAM 000036
+___inthi_sp               stack        000000
+___intlo_sp               stack        000000
+___lwdiv                  text13       006E02
+___lwdiv@counter          cstackCOMRAM 000037
+___lwdiv@dividend         cstackCOMRAM 000031
+___lwdiv@divisor          cstackCOMRAM 000033
+___lwdiv@quotient         cstackCOMRAM 000035
+___param_bank             (abs)        000000
+___rparam_used            (abs)        000001
+___sp                     stack        000000
+__accesstop               (abs)        000060
+__activetblptr            (abs)        000002
+__end_of_Font3x6          mediumconst  007FFE
+__end_of_Font8x8          mediumconst  007F3B
+__end_of___awdiv          text19       007220
+__end_of___lwdiv          text13       006E76
+__end_of__initialization  cinit        006D90
+__end_of_delay_notes      text12       006B46
+__end_of_don              text11       006B64
+__end_of_fa               text10       006B82
+__end_of_glcd_FillScreen  text22       006F6E
+__end_of_glcd_Init        text21       00709E
+__end_of_glcd_PlotPixel   text17       0072F2
+__end_of_glcd_ReadByte    text18       006D40
+__end_of_glcd_Rect        text16       00715C
+__end_of_glcd_SetCursor   text20       006E02
+__end_of_glcd_WriteByte   text23       006D0A
+__end_of_glcd_print_tab   text15       007438
+__end_of_initMyPIC18F     text14       006CD4
+__end_of_la               text9        006BA0
+__end_of_lao              text8        006BBE
+__end_of_main             text0        006EEE
+__end_of_mi               text7        006BDC
+__end_of_mib              text6        006BFA
+__end_of_musiqueperdu     text1        00773A
+__end_of_re               text5        006C18
+__end_of_si               text4        006C36
+__end_of_sol              text3        006C54
+__end_of_solb             text2        006C72
+__initialization          cinit        006D40
+__mediumconst             mediumconst  00773A
+__pbssBANK2               bssBANK2     000200
+__pbssCOMRAM              bssCOMRAM    000050
+__pcinit                  cinit        006D40
+__pcstackBANK1            cstackBANK1  000100
+__pcstackCOMRAM           cstackCOMRAM 000031
+__pdataBANK0              dataBANK0    000060
+__pdataCOMRAM             dataCOMRAM   000001
+__pidataBANK0             idataBANK0   006F6E
+__pidataCOMRAM            idataCOMRAM  006C72
+__pmediumconst            mediumconst  00773A
+__ptext0                  text0        006E76
+__ptext1                  text1        007438
+__ptext10                 text10       006B64
+__ptext11                 text11       006B46
+__ptext12                 text12       006B28
+__ptext13                 text13       006E02
+__ptext14                 text14       006CA2
+__ptext15                 text15       0072F2
+__ptext16                 text16       00709E
+__ptext17                 text17       007220
+__ptext18                 text18       006D0A
+__ptext19                 text19       00715C
+__ptext2                  text2        006C54
+__ptext20                 text20       006D9A
+__ptext21                 text21       007002
+__ptext22                 text22       006EEE
+__ptext23                 text23       006CD4
+__ptext3                  text3        006C36
+__ptext4                  text4        006C18
+__ptext5                  text5        006BFA
+__ptext6                  text6        006BDC
+__ptext7                  text7        006BBE
+__ptext8                  text8        006BA0
+__ptext9                  text9        006B82
+__ramtop                  ramtop       000800
+__size_of___awdiv         (abs)        000000
+__size_of___lwdiv         (abs)        000000
+__size_of_delay_notes     (abs)        000000
+__size_of_don             (abs)        000000
+__size_of_fa              (abs)        000000
+__size_of_glcd_FillScreen (abs)        000000
+__size_of_glcd_Init       (abs)        000000
+__size_of_glcd_PlotPixel  (abs)        000000
+__size_of_glcd_ReadByte   (abs)        000000
+__size_of_glcd_Rect       (abs)        000000
+__size_of_glcd_SetCursor  (abs)        000000
+__size_of_glcd_WriteByte  (abs)        000000
+__size_of_glcd_print_tab  (abs)        000000
+__size_of_initMyPIC18F    (abs)        000000
+__size_of_la              (abs)        000000
+__size_of_lao             (abs)        000000
+__size_of_main            (abs)        000000
+__size_of_mi              (abs)        000000
+__size_of_mib             (abs)        000000
+__size_of_musiqueperdu    (abs)        000000
+__size_of_re              (abs)        000000
+__size_of_si              (abs)        000000
+__size_of_sol             (abs)        000000
+__size_of_solb            (abs)        000000
+__smallconst              smallconst   000000
+_delay_notes              text12       006B28
+_don                      text11       006B46
+_fa                       text10       006B64
+_glcd_FillScreen          text22       006EEE
+_glcd_Init                text21       007002
+_glcd_PlotPixel           text17       007220
+_glcd_ReadByte            text18       006D0A
+_glcd_Rect                text16       00709E
+_glcd_SetCursor           text20       006D9A
+_glcd_WriteByte           text23       006CD4
+_glcd_print_tab           text15       0072F2
+_initMyPIC18F             text14       006CA2
+_la                       text9        006B82
+_lao                      text8        006BA0
+_main                     text0        006E76
+_mi                       text7        006BBE
+_mib                      text6        006BDC
+_musiqueperdu             text1        007438
+_partition                dataBANK0    000060
+_partitionperte           dataCOMRAM   000001
+_re                       text5        006BFA
+_si                       text4        006C18
+_sol                      text3        006C36
+_solb                     text2        006C54
+_x                        bssCOMRAM    000051
+_y                        bssCOMRAM    000050
+delay_notes@var           cstackCOMRAM 000031
+end_of_initialization     cinit        006D90
+glcd_FillScreen@color     cstackCOMRAM 00003B
+glcd_FillScreen@i         cstackCOMRAM 00003D
+glcd_FillScreen@j         cstackCOMRAM 00003C
+glcd_Init@mode            cstackCOMRAM 00003E
+glcd_PlotPixel@color      cstackCOMRAM 00003C
+glcd_PlotPixel@data       cstackCOMRAM 000040
+glcd_PlotPixel@side       cstackCOMRAM 000041
+glcd_PlotPixel@xpos       cstackCOMRAM 00003F
+glcd_PlotPixel@ypos       cstackCOMRAM 00003B
+glcd_ReadByte@data        cstackCOMRAM 000032
+glcd_ReadByte@side        cstackCOMRAM 000031
+glcd_Rect@color           cstackCOMRAM 000045
+glcd_Rect@i               cstackCOMRAM 000047
+glcd_Rect@j               cstackCOMRAM 000048
+glcd_Rect@xe              cstackCOMRAM 000043
+glcd_Rect@xs              cstackCOMRAM 000046
+glcd_Rect@ye              cstackCOMRAM 000044
+glcd_Rect@ys              cstackCOMRAM 000042
+glcd_SetCursor@side       cstackCOMRAM 00003C
+glcd_SetCursor@xpos       cstackCOMRAM 00003D
+glcd_SetCursor@ypos       cstackCOMRAM 00003B
+glcd_WriteByte@data       cstackCOMRAM 000039
+glcd_WriteByte@side       cstackCOMRAM 00003A
+glcd_print_tab@ecran      cstackCOMRAM 000049
+glcd_print_tab@i          cstackCOMRAM 00004E
+glcd_print_tab@j          cstackCOMRAM 00004F
+intlevel0                 text         000000
+intlevel1                 text         000000
+intlevel2                 text         000000
+intlevel3                 text         000000
+main@ecran                cstackBANK1  000100
+musiqueperdu@i            cstackCOMRAM 00003E
+musiqueperdu@z            cstackCOMRAM 00003C
+stackhi                   (abs)        0007FF
+stacklo                   (abs)        0002DC
+start                     init         000000
+start_initialization      cinit        006D40
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 234 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  ecran         220    0[BANK1 ] unsigned char [22][10]
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0     220       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0     220       0       0       0       0       0       0
+Total ram usage:      220 bytes
+ Hardware stack levels required when called:    4
+ This function calls:
+		_glcd_FillScreen
+		_glcd_Init
+		_glcd_Rect
+		_glcd_SetCursor
+		_glcd_print_tab
+		_initMyPIC18F
+		_musiqueperdu
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _musiqueperdu *****************
+ Defined at:
+		line 212 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2   13[COMRAM] int 
+  z               2   11[COMRAM] int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		___lwdiv
+		_don
+		_fa
+		_la
+		_lao
+		_mi
+		_mib
+		_re
+		_si
+		_sol
+		_solb
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _solb *****************
+ Defined at:
+		line 156 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+ This function uses a non-reentrant model
+
+
+ *************** function _sol *****************
+ Defined at:
+		line 163 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+		_musique
+ This function uses a non-reentrant model
+
+
+ *************** function _si *****************
+ Defined at:
+		line 100 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+		_musique
+ This function uses a non-reentrant model
+
+
+ *************** function _re *****************
+ Defined at:
+		line 121 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+		_musique
+ This function uses a non-reentrant model
+
+
+ *************** function _mib *****************
+ Defined at:
+		line 128 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+ This function uses a non-reentrant model
+
+
+ *************** function _mi *****************
+ Defined at:
+		line 135 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+		_musique
+ This function uses a non-reentrant model
+
+
+ *************** function _lao *****************
+ Defined at:
+		line 177 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+		_musique
+ This function uses a non-reentrant model
+
+
+ *************** function _la *****************
+ Defined at:
+		line 86 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+		_musique
+ This function uses a non-reentrant model
+
+
+ *************** function _fa *****************
+ Defined at:
+		line 142 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+		_musique
+ This function uses a non-reentrant model
+
+
+ *************** function _don *****************
+ Defined at:
+		line 107 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_delay_notes
+ This function is called by:
+		_musiqueperdu
+		_musique
+ This function uses a non-reentrant model
+
+
+ *************** function _delay_notes *****************
+ Defined at:
+		line 80 in file "../Test2-tetris.X/newmain1.c"
+ Parameters:    Size  Location     Type
+  var             2    0[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_la
+		_si
+		_don
+		_re
+		_mib
+		_mi
+		_fa
+		_solb
+		_sol
+		_lao
+		_sib
+		_factest
+		_lab
+ This function uses a non-reentrant model
+
+
+ *************** function ___lwdiv *****************
+ Defined at:
+		line 7 in file "D:\programmes x86\pic\sources\c99\common\lwdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    0[COMRAM] unsigned int 
+  divisor         2    2[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  quotient        2    4[COMRAM] unsigned int 
+  counter         1    6[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_musiqueperdu
+ This function uses a non-reentrant model
+
+
+ *************** function _initMyPIC18F *****************
+ Defined at:
+		line 4 in file "../Test2-tetris.X/init.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _glcd_print_tab *****************
+ Defined at:
+		line 660 in file "../Test2-tetris.X/glcd.c"
+ Parameters:    Size  Location     Type
+  ecran           2   24[COMRAM] PTR unsigned char [22]
+		 -> main@ecran(220), 
+ Auto vars:     Size  Location     Type
+  j               1   30[COMRAM] unsigned char 
+  i               1   29[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          3       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_glcd_Rect
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _glcd_Rect *****************
+ Defined at:
+		line 643 in file "../Test2-tetris.X/glcd.c"
+ Parameters:    Size  Location     Type
+  xs              1    wreg     unsigned char 
+  ys              1   17[COMRAM] unsigned char 
+  xe              1   18[COMRAM] unsigned char 
+  ye              1   19[COMRAM] unsigned char 
+  color           1   20[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  xs              1   21[COMRAM] unsigned char 
+  j               1   23[COMRAM] unsigned char 
+  i               1   22[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_glcd_PlotPixel
+ This function is called by:
+		_glcd_print_tab
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _glcd_PlotPixel *****************
+ Defined at:
+		line 469 in file "../Test2-tetris.X/glcd.c"
+ Parameters:    Size  Location     Type
+  xpos            1    wreg     unsigned char 
+  ypos            1   10[COMRAM] unsigned char 
+  color           1   11[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  xpos            1   14[COMRAM] unsigned char 
+  side            1   16[COMRAM] unsigned char 
+  data            1   15[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		___awdiv
+		_glcd_ReadByte
+		_glcd_WriteByte
+ This function is called by:
+		_glcd_Rect
+ This function uses a non-reentrant model
+
+
+ *************** function _glcd_ReadByte *****************
+ Defined at:
+		line 433 in file "../Test2-tetris.X/glcd.c"
+ Parameters:    Size  Location     Type
+  side            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  side            1    0[COMRAM] unsigned char 
+  data            1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_glcd_PlotPixel
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 7 in file "D:\programmes x86\pic\sources\c99\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    0[COMRAM] int 
+  divisor         2    2[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  quotient        2    6[COMRAM] int 
+  sign            1    5[COMRAM] unsigned char 
+  counter         1    4[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_glcd_PlotPixel
+ This function uses a non-reentrant model
+
+
+ *************** function _glcd_SetCursor *****************
+ Defined at:
+		line 508 in file "../Test2-tetris.X/glcd.c"
+ Parameters:    Size  Location     Type
+  xpos            1    wreg     unsigned char 
+  ypos            1   10[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  xpos            1   12[COMRAM] unsigned char 
+  side            1   11[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         1       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_glcd_WriteByte
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _glcd_Init *****************
+ Defined at:
+		line 334 in file "../Test2-tetris.X/glcd.c"
+ Parameters:    Size  Location     Type
+  mode            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  mode            1   13[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_glcd_FillScreen
+		_glcd_WriteByte
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _glcd_FillScreen *****************
+ Defined at:
+		line 408 in file "../Test2-tetris.X/glcd.c"
+ Parameters:    Size  Location     Type
+  color           1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  color           1   10[COMRAM] unsigned char 
+  i               1   12[COMRAM] unsigned char 
+  j               1   11[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_glcd_WriteByte
+ This function is called by:
+		_glcd_Init
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _glcd_WriteByte *****************
+ Defined at:
+		line 374 in file "../Test2-tetris.X/glcd.c"
+ Parameters:    Size  Location     Type
+  side            1    wreg     unsigned char 
+  data            1    8[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  side            1    9[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         1       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_glcd_Init
+		_glcd_FillScreen
+		_glcd_PlotPixel
+		_glcd_SetCursor
+		_glcd_WriteChar8X8
+		_glcd_WriteChar3x6
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+D:\programmes x86\pic\sources\c99\common\lwdiv.c
+		___lwdiv       		CODE           	6E02	0000	117
+
+D:\programmes x86\pic\sources\c99\common\lwdiv.c estimated size: 117
+
+D:\programmes x86\pic\sources\c99\common\awdiv.c
+		___awdiv       		CODE           	715C	0000	197
+
+D:\programmes x86\pic\sources\c99\common\awdiv.c estimated size: 197
+
+../Test2-tetris.X/glcd.c
+		_glcd_SetCursor		CODE           	6D9A	0000	105
+		_glcd_WriteByte		CODE           	6CD4	0000	55
+		_glcd_Rect     		CODE           	709E	0000	191
+		_glcd_Init     		CODE           	7002	0000	157
+		_glcd_ReadByte 		CODE           	6D0A	0000	55
+		_glcd_FillScreen		CODE           	6EEE	0000	129
+		_glcd_PlotPixel		CODE           	7220	0000	211
+		_glcd_print_tab		CODE           	72F2	0000	327
+
+../Test2-tetris.X/glcd.c estimated size: 1230
+
+shared
+		_Font3x6       		MEDIUMCONST    	7F3B	0000	196
+		_Font8x8       		MEDIUMCONST    	773B	0000	2049
+		__initialization		CODE           	6D40	0000	81
+
+shared estimated size: 2326
+
+../Test2-tetris.X/newmain1.c
+		_lao           		CODE           	6BA0	0000	31
+		_fa            		CODE           	6B64	0000	31
+		_don           		CODE           	6B46	0000	31
+		_main          		CODE           	6E76	0000	121
+		_la            		CODE           	6B82	0000	31
+		_sol           		CODE           	6C36	0000	31
+		_re            		CODE           	6BFA	0000	31
+		_mi            		CODE           	6BBE	0000	31
+		_delay_notes   		CODE           	6B28	0000	31
+		_si            		CODE           	6C18	0000	31
+		_mib           		CODE           	6BDC	0000	31
+		_solb          		CODE           	6C54	0000	31
+		_musiqueperdu  		CODE           	7438	0000	771
+
+../Test2-tetris.X/newmain1.c estimated size: 1233
+
+../Test2-tetris.X/init.c
+		_initMyPIC18F  		CODE           	6CA2	0000	51
+
+../Test2-tetris.X/init.c estimated size: 51
+

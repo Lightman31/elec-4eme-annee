@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=newmain.c ../V3.X/collisions.c ../V3.X/formes.c ../V3.X/glcd.c ../V3.X/init.c
+SOURCEFILES_QUOTED_IF_SPACED=newmain.c ../V3.X/collisions.c ../V3.X/formes.c ../V3.X/glcd.c ../V3.X/init.c buzz.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.p1 ${OBJECTDIR}/_ext/761544650/collisions.p1 ${OBJECTDIR}/_ext/761544650/formes.p1 ${OBJECTDIR}/_ext/761544650/glcd.p1 ${OBJECTDIR}/_ext/761544650/init.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.p1.d ${OBJECTDIR}/_ext/761544650/collisions.p1.d ${OBJECTDIR}/_ext/761544650/formes.p1.d ${OBJECTDIR}/_ext/761544650/glcd.p1.d ${OBJECTDIR}/_ext/761544650/init.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.p1 ${OBJECTDIR}/_ext/761544650/collisions.p1 ${OBJECTDIR}/_ext/761544650/formes.p1 ${OBJECTDIR}/_ext/761544650/glcd.p1 ${OBJECTDIR}/_ext/761544650/init.p1 ${OBJECTDIR}/buzz.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.p1.d ${OBJECTDIR}/_ext/761544650/collisions.p1.d ${OBJECTDIR}/_ext/761544650/formes.p1.d ${OBJECTDIR}/_ext/761544650/glcd.p1.d ${OBJECTDIR}/_ext/761544650/init.p1.d ${OBJECTDIR}/buzz.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/newmain.p1 ${OBJECTDIR}/_ext/761544650/collisions.p1 ${OBJECTDIR}/_ext/761544650/formes.p1 ${OBJECTDIR}/_ext/761544650/glcd.p1 ${OBJECTDIR}/_ext/761544650/init.p1
+OBJECTFILES=${OBJECTDIR}/newmain.p1 ${OBJECTDIR}/_ext/761544650/collisions.p1 ${OBJECTDIR}/_ext/761544650/formes.p1 ${OBJECTDIR}/_ext/761544650/glcd.p1 ${OBJECTDIR}/_ext/761544650/init.p1 ${OBJECTDIR}/buzz.p1
 
 # Source Files
-SOURCEFILES=newmain.c ../V3.X/collisions.c ../V3.X/formes.c ../V3.X/glcd.c ../V3.X/init.c
+SOURCEFILES=newmain.c ../V3.X/collisions.c ../V3.X/formes.c ../V3.X/glcd.c ../V3.X/init.c buzz.c
 
 
 
@@ -134,6 +134,14 @@ ${OBJECTDIR}/_ext/761544650/init.p1: ../V3.X/init.c  nbproject/Makefile-${CND_CO
 	@-${MV} ${OBJECTDIR}/_ext/761544650/init.d ${OBJECTDIR}/_ext/761544650/init.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/761544650/init.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/buzz.p1: buzz.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/buzz.p1.d 
+	@${RM} ${OBJECTDIR}/buzz.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/buzz.p1 buzz.c 
+	@-${MV} ${OBJECTDIR}/buzz.d ${OBJECTDIR}/buzz.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/buzz.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 else
 ${OBJECTDIR}/newmain.p1: newmain.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -174,6 +182,14 @@ ${OBJECTDIR}/_ext/761544650/init.p1: ../V3.X/init.c  nbproject/Makefile-${CND_CO
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/761544650/init.p1 ../V3.X/init.c 
 	@-${MV} ${OBJECTDIR}/_ext/761544650/init.d ${OBJECTDIR}/_ext/761544650/init.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/761544650/init.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/buzz.p1: buzz.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/buzz.p1.d 
+	@${RM} ${OBJECTDIR}/buzz.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/buzz.p1 buzz.c 
+	@-${MV} ${OBJECTDIR}/buzz.d ${OBJECTDIR}/buzz.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/buzz.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 

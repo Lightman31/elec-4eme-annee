@@ -9,23 +9,54 @@ Version 4.0 HI-TECH Software Intermediate Code
 "53
 [; ;./glcd.h: 53: extern void glcd_SetCursor(unsigned char xpos,unsigned char ypos);
 [v _glcd_SetCursor `(v ~T0 @X0 0 ef2`uc`uc ]
+"2448 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2448:     struct {
+[s S104 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S104 . RC0 RC1 RC2 . RC4 RC5 RC6 RC7 ]
+"2458
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2458:     struct {
+[s S105 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S105 . T1OSO T1OSI CCP1 . TX RX ]
+"2466
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2466:     struct {
+[s S106 :1 `uc 1 :1 `uc 1 ]
+[n S106 . . NOT_UOE ]
+"2470
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2470:     struct {
+[s S107 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S107 . T1CKI nUOE P1A . CK DT ]
+"2478
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2478:     struct {
+[s S108 :1 `uc 1 :1 `uc 1 ]
+[n S108 . . UOE ]
+"2482
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2482:     struct {
+[s S109 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S109 . . CCP2 PA1 ]
+"2487
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2487:     struct {
+[s S110 :1 `uc 1 :1 `uc 1 ]
+[n S110 . . PA2 ]
+"2447
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2447: typedef union {
+[u S103 `S104 1 `S105 1 `S106 1 `S107 1 `S108 1 `S109 1 `S110 1 ]
+[n S103 . . . . . . . . ]
+"2492
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2492: extern volatile PORTCbits_t PORTCbits __attribute__((address(0xF82)));
+[v _PORTCbits `VS103 ~T0 @X0 0 e@3970 ]
+"20 newmain.c
+[; ;newmain.c: 20:  unsigned short position = 0;
+[v _menu `(v ~T0 @X0 0 e? ]
 "40 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdlib.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdlib.h: 40: void srand (unsigned);
 [v _srand `(v ~T0 @X0 0 ef1`ui ]
 "55 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\time.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\time.h: 55: time_t time (time_t *);
 [v _time `(o ~T0 @X0 0 ef1`*o ]
-[v F3131 `uc ~T0 @X0 -> 10 `i t ]
+[v F3169 `uc ~T0 @X0 -> 10 `i t ]
 "57 ./glcd.h
 [; ;./glcd.h: 57: void glcd_print_tab(unsigned char tab[22][10]);
-[v _glcd_print_tab `(v ~T0 @X0 0 ef1`*F3131 ]
-[v F2909 `(v ~T0 @X0 1 tf1`ul ]
-"187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
-[v __delay `JF2909 ~T0 @X0 0 e ]
-[p i __delay ]
-"39 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdlib.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdlib.h: 39: int rand (void);
-[v _rand `(i ~T0 @X0 0 ef ]
+[v _glcd_print_tab `(v ~T0 @X0 0 ef1`*F3169 ]
 "2678 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 2678: extern volatile unsigned char PORTE __attribute__((address(0xF84)));
 [v _PORTE `Vuc ~T0 @X0 0 e@3972 ]
@@ -33,42 +64,64 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./formes.h: 7: void changePos(unsigned short *position);
 [; ;./formes.h: 7: void changePos(unsigned short *position);
 [v _changePos `(v ~T0 @X0 0 ef1`*us ]
-[v F3169 `uc ~T0 @X0 -> 2 `i t ]
+[v F3245 `uc ~T0 @X0 -> 2 `i t ]
 "3
 [; ;./formes.h: 3: void makeForme(unsigned char forme[4][2], unsigned short i);
 [; ;./formes.h: 3: void makeForme(unsigned char forme[4][2], unsigned short i);
-[v _makeForme `(v ~T0 @X0 0 ef2`*F3169`us ]
-[v F3174 `uc ~T0 @X0 -> 2 `i t ]
+[v _makeForme `(v ~T0 @X0 0 ef2`*F3245`us ]
+[v F3250 `uc ~T0 @X0 -> 2 `i t ]
 "5
 [; ;./formes.h: 5: void transformForm(unsigned char forme[4][2], unsigned short x, unsigned short y, unsigned short position);
 [; ;./formes.h: 5: void transformForm(unsigned char forme[4][2], unsigned short x, unsigned short y, unsigned short position);
-[v _transformForm `(v ~T0 @X0 0 ef4`*F3174`us`us`us ]
-[v F3145 `uc ~T0 @X0 -> 10 `i t ]
-[v F3146 `uc ~T0 @X0 -> 2 `i t ]
+[v _transformForm `(v ~T0 @X0 0 ef4`*F3250`us`us`us ]
+[v F3177 `uc ~T0 @X0 -> 2 `i t ]
+"59 ./glcd.h
+[; ;./glcd.h: 59: void glcd_draw_shape(unsigned char forme[4][2], unsigned char color);
+[v _glcd_draw_shape `(v ~T0 @X0 0 ef2`*F3177`uc ]
+"39 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdlib.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdlib.h: 39: int rand (void);
+[v _rand `(i ~T0 @X0 0 ef ]
+[v F3201 `uc ~T0 @X0 -> 10 `i t ]
+[v F3202 `uc ~T0 @X0 -> 2 `i t ]
 "3 ./collisions.h
 [; ;./collisions.h: 3: unsigned short checkCollision(unsigned char tab[22][10], unsigned char forme[4][2]);
 [; ;./collisions.h: 3: unsigned short checkCollision(unsigned char tab[22][10], unsigned char forme[4][2]);
-[v _checkCollision `(us ~T0 @X0 0 ef2`*F3145`*F3146 ]
-[v F3152 `uc ~T0 @X0 -> 10 `i t ]
-[v F3153 `uc ~T0 @X0 -> 2 `i t ]
+[v _checkCollision `(us ~T0 @X0 0 ef2`*F3201`*F3202 ]
+[v F3208 `uc ~T0 @X0 -> 10 `i t ]
+[v F3209 `uc ~T0 @X0 -> 2 `i t ]
 "5
-[; ;./collisions.h: 5: void putPiece(unsigned char tab[22][10], unsigned char forme[4][2]);
-[; ;./collisions.h: 5: void putPiece(unsigned char tab[22][10], unsigned char forme[4][2]);
-[v _putPiece `(v ~T0 @X0 0 ef2`*F3152`*F3153 ]
-[v F3139 `uc ~T0 @X0 -> 2 `i t ]
-"59 ./glcd.h
-[; ;./glcd.h: 59: void glcd_draw_shape(unsigned char forme[4][2], unsigned char color);
-[v _glcd_draw_shape `(v ~T0 @X0 0 ef2`*F3139`uc ]
-[v F3159 `uc ~T0 @X0 -> 10 `i t ]
-"7 ./collisions.h
+[; ;./collisions.h: 5: void putPiece(unsigned char tab[22][10], unsigned char forme[4][2], unsigned short points);
+[; ;./collisions.h: 5: void putPiece(unsigned char tab[22][10], unsigned char forme[4][2], unsigned short points);
+[v _putPiece `(v ~T0 @X0 0 ef3`*F3208`*F3209`us ]
+[v F3216 `uc ~T0 @X0 -> 10 `i t ]
+"7
 [; ;./collisions.h: 7: unsigned short checkLine(unsigned char tab[22][10], unsigned short line);
 [; ;./collisions.h: 7: unsigned short checkLine(unsigned char tab[22][10], unsigned short line);
-[v _checkLine `(us ~T0 @X0 0 ef2`*F3159`us ]
-[v F3164 `uc ~T0 @X0 -> 10 `i t ]
+[v _checkLine `(us ~T0 @X0 0 ef2`*F3216`us ]
+[v F3221 `uc ~T0 @X0 -> 10 `i t ]
 "9
-[; ;./collisions.h: 9: void eraseLine(unsigned char tab[22][10], unsigned short line);
-[; ;./collisions.h: 9: void eraseLine(unsigned char tab[22][10], unsigned short line);
-[v _eraseLine `(v ~T0 @X0 0 ef2`*F3164`us ]
+[; ;./collisions.h: 9: void eraseLine(unsigned char tab[22][10], unsigned short line, unsigned short points);
+[; ;./collisions.h: 9: void eraseLine(unsigned char tab[22][10], unsigned short line, unsigned short points);
+[v _eraseLine `(v ~T0 @X0 0 ef3`*F3221`us`us ]
+[v F2909 `(v ~T0 @X0 1 tf1`ul ]
+"187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
+[v __delay `JF2909 ~T0 @X0 0 e ]
+[p i __delay ]
+"54 ./glcd.h
+[; ;./glcd.h: 54: extern void glcd_FillScreen(unsigned char color);
+[v _glcd_FillScreen `(v ~T0 @X0 0 ef1`uc ]
+"22 newmain.c
+[; ;newmain.c: 22:  unsigned short verif = 0;
+[v _affMenu `(v ~T0 @X0 0 e? ]
+"21
+[; ;newmain.c: 21:  unsigned short x = 0, y = 0;
+[v _menuTetris `(v ~T0 @X0 0 e? ]
+"52 ./glcd.h
+[; ;./glcd.h: 52: extern void glcd_PlotPixel(unsigned char x, unsigned char y, unsigned char color);
+[v _glcd_PlotPixel `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"58
+[; ;./glcd.h: 58: void glcd_draw_cube(unsigned char x, unsigned char y, unsigned char color);
+[v _glcd_draw_cube `(v ~T0 @X0 0 ef3`uc`uc`uc ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 54: __asm("UFRM equ 0F66h");
 [; <" UFRM equ 0F66h ;# ">
@@ -498,316 +551,1167 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7240
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4450.h: 7240: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"12 newmain.c
-[; ;newmain.c: 12:  unsigned char tab[22][10] = {0};
+"13 newmain.c
+[; ;newmain.c: 13:     menu();
 [p x FOSC = HS ]
-"13
-[; ;newmain.c: 13:  unsigned short position = 0;
-[p x PWRT = OFF ]
 "14
-[; ;newmain.c: 14:  unsigned short x = 0, y = 0;
-[p x BOR = OFF ]
+[; ;newmain.c: 14: 
+[p x PWRT = OFF ]
 "15
-[; ;newmain.c: 15:  unsigned short verif = 0;
-[p x WDT = OFF ]
+[; ;newmain.c: 15: 
+[p x BOR = OFF ]
 "16
-[; ;newmain.c: 16:  unsigned short formeEnCours = 0;
-[p x LVP = OFF ]
+[; ;newmain.c: 16:     srand(time(((void*)0)));
+[p x WDT = OFF ]
 "17
-[; ;newmain.c: 17:  unsigned short typeForme = 0;
+[; ;newmain.c: 17:  unsigned char forme[4][2] = {0};
+[p x LVP = OFF ]
+"18
+[; ;newmain.c: 18:  unsigned char prevForme[4][2] = {0};
 [p x DEBUG = ON ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"20
-[; ;newmain.c: 20:     glcd_print_tab(tab);
+"24
+[; ;newmain.c: 24:  unsigned short typeForme = 0;
 [v _main `(v ~T0 @X0 1 ef ]
-"21
-[; ;newmain.c: 21: 
+"25
+[; ;newmain.c: 25:     unsigned short delay = 0;
 {
 [e :U _main ]
 [f ]
-"23
-[; ;newmain.c: 23: 
+"27
+[; ;newmain.c: 27: 
 [e ( _initMyPIC18F ..  ]
-"24
-[; ;newmain.c: 24:     while(!verif){
-[e ( _glcd_Init (1 -> -> 1 `i `uc ]
-"25
-[; ;newmain.c: 25:          _delay((unsigned long)((100000)*(8000000/4000000.0)));
-[e ( _glcd_SetCursor (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 "28
-[; ;newmain.c: 28:    typeForme = rand() % 7;
-[e ( _srand (1 -> ( _time (1 -> -> -> 0 `i `*v `*o `ui ]
-[v F3184 `uc ~T0 @X0 -> 2 `i t ]
-[v F3183 `F3184 ~T0 @X0 -> 4 `i s ]
-[i F3183
-:U ..
-:U ..
+[; ;newmain.c: 28: 
+[e ( _glcd_Init (1 -> -> 1 `i `uc ]
 "29
-[; ;newmain.c: 29:    position = 0;
--> -> 0 `i `uc
-..
-..
-]
-[v F3186 `uc ~T0 @X0 -> 2 `i t ]
-[v _forme `F3186 ~T0 @X0 -> 4 `i a ]
-[e = _forme F3183 ]
-[v F3188 `uc ~T0 @X0 -> 2 `i t ]
-[v F3187 `F3188 ~T0 @X0 -> 4 `i s ]
-[i F3187
-:U ..
-:U ..
-"30
-[; ;newmain.c: 30:    formeEnCours = 1;
--> -> 0 `i `uc
-..
-..
-]
-[v F3190 `uc ~T0 @X0 -> 2 `i t ]
-[v _prevForme `F3190 ~T0 @X0 -> 4 `i a ]
-[e = _prevForme F3187 ]
-[v F3192 `uc ~T0 @X0 -> 10 `i t ]
-[v F3191 `F3192 ~T0 @X0 -> 22 `i s ]
-[i F3191
-:U ..
-:U ..
-"31
-[; ;newmain.c: 31:   }else{
--> -> 0 `i `uc
-..
-..
-]
-[v F3194 `uc ~T0 @X0 -> 10 `i t ]
-[v _tab `F3194 ~T0 @X0 -> 22 `i a ]
-[e = _tab F3191 ]
+[; ;newmain.c: 29:     glcd_print_tab(tab);
+[e ( _glcd_SetCursor (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 "32
-[; ;newmain.c: 32:             for(unsigned short i = 0; i < 4; i++){
+[; ;newmain.c: 32:         if(!(delay % 20) && formeEnCours){
+[e = . . _PORTCbits 0 0 -> -> 1 `i `uc ]
+"33
+[; ;newmain.c: 33:             if (PORTE == 0x01 && y > 0 && !tab[x][y - 1]&& !tab[x+1][y - 1]&& !tab[x+2][y - 1]&& !tab[x+3][y - 1]) y--;
+[e ( _menu ..  ]
+"36
+[; ;newmain.c: 36:             if (PORTE == 0x04 && typeForme != 1) changePos(&position);
+[e ( _srand (1 -> ( _time (1 -> -> -> 0 `i `*v `*o `ui ]
+[v F3281 `uc ~T0 @X0 -> 2 `i t ]
+[v F3280 `F3281 ~T0 @X0 -> 4 `i s ]
+[i F3280
+:U ..
+:U ..
+"37
+[; ;newmain.c: 37:             if(PORTE == 0x01 || PORTE == 0x02 || PORTE == 0x04){
+-> -> 0 `i `uc
+..
+..
+]
+[v F3283 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `F3283 ~T0 @X0 -> 4 `i a ]
+[e = _forme F3280 ]
+[v F3285 `uc ~T0 @X0 -> 2 `i t ]
+[v F3284 `F3285 ~T0 @X0 -> 4 `i s ]
+[i F3284
+:U ..
+:U ..
+"38
+[; ;newmain.c: 38:                 makeForme(forme, typeForme);
+-> -> 0 `i `uc
+..
+..
+]
+[v F3287 `uc ~T0 @X0 -> 2 `i t ]
+[v _prevForme `F3287 ~T0 @X0 -> 4 `i a ]
+[e = _prevForme F3284 ]
+[v F3289 `uc ~T0 @X0 -> 10 `i t ]
+[v F3288 `F3289 ~T0 @X0 -> 22 `i s ]
+[i F3288
+:U ..
+:U ..
+"39
+[; ;newmain.c: 39:                 transformForm(forme, x, y, position);
+-> -> 0 `i `uc
+..
+..
+]
+[v F3291 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `F3291 ~T0 @X0 -> 22 `i a ]
+[e = _tab F3288 ]
+"40
+[; ;newmain.c: 40:                 glcd_draw_shape(prevForme, 0);
 [v _position `us ~T0 @X0 1 a ]
 [e = _position -> -> 0 `i `us ]
-"33
-[; ;newmain.c: 33:                 for(unsigned short j = 0; j < 2; j++){
+"41
+[; ;newmain.c: 41:                 glcd_draw_shape(forme,1);
 [v _x `us ~T0 @X0 1 a ]
 [e = _x -> -> 0 `i `us ]
 [v _y `us ~T0 @X0 1 a ]
 [e = _y -> -> 0 `i `us ]
-"34
-[; ;newmain.c: 34:                     prevForme[i][j] = forme[i][j];
+"42
+[; ;newmain.c: 42:             }
 [v _verif `us ~T0 @X0 1 a ]
 [e = _verif -> -> 0 `i `us ]
-"35
-[; ;newmain.c: 35:                 }
+"43
+[; ;newmain.c: 43:         }
 [v _formeEnCours `us ~T0 @X0 1 a ]
 [e = _formeEnCours -> -> 0 `i `us ]
-"36
-[; ;newmain.c: 36:             }
+"44
+[; ;newmain.c: 44: 
 [v _typeForme `us ~T0 @X0 1 a ]
 [e = _typeForme -> -> 0 `i `us ]
-"39
-[; ;newmain.c: 39:             if (PORTE == 0x02 && ((y < 8 && position % 2) || y < 6)) y++;
+"45
+[; ;newmain.c: 45:         if(!(delay % 50) && formeEnCours){
+[v _delay `us ~T0 @X0 1 a ]
+[e = _delay -> -> 0 `i `us ]
+"46
+[; ;newmain.c: 46:             makeForme(forme, typeForme);
+[v _points `us ~T0 @X0 1 a ]
+[e = _points -> -> 0 `i `us ]
+"49
+[; ;newmain.c: 49:             glcd_draw_shape(forme,1);
 [e ( _glcd_print_tab (1 &U _tab ]
-"43
-[; ;newmain.c: 43: 
+"51
+[; ;newmain.c: 51:         }
 [e $U 310  ]
 [e :U 311 ]
 {
-"44
-[; ;newmain.c: 44:    if(checkCollision(tab, forme)){
-[e ( __delay (1 -> * -> -> 100000 `l `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-"45
-[; ;newmain.c: 45:     putPiece(tab, forme);
-[e $ ! ! != -> _formeEnCours `ui -> -> 0 `i `ui 313  ]
+"52
+[; ;newmain.c: 52:         delay++;
+[e $ ! && ! != % -> _delay `ui -> -> 20 `i `ui -> -> 0 `i `ui != -> _formeEnCours `ui -> -> 0 `i `ui 313  ]
 {
-"46
-[; ;newmain.c: 46:                 formeEnCours = 0;
-[e ; = _x -> -> 0 `i `us = _y -> -> 4 `i `us ]
-"47
-[; ;newmain.c: 47:                 glcd_draw_shape(prevForme,0);
-[e = _typeForme -> % ( _rand ..  -> 7 `i `us ]
-"48
-[; ;newmain.c: 48:                 glcd_draw_shape(forme,1);
-[e = _position -> -> 0 `i `us ]
-"49
-[; ;newmain.c: 49:                 glcd_print_tab(tab);
-[e = _formeEnCours -> -> 1 `i `us ]
-"50
-[; ;newmain.c: 50:                 for(unsigned short i = 0; i < 4; i++){
+"53
+[; ;newmain.c: 53:         if(!formeEnCours){
+[e $ ! && && && && && == -> _PORTE `i -> 1 `i > -> _y `ui -> -> 0 `i `ui ! != -> *U + &U *U + &U _tab * -> _x `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> - -> _y `ui -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _tab * -> _x `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 0 `i ! != -> *U + &U *U + &U _tab * -> + -> _x `ui -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> - -> _y `ui -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _tab * -> + -> _x `ui -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 0 `i ! != -> *U + &U *U + &U _tab * -> + -> _x `ui -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> - -> _y `ui -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _tab * -> + -> _x `ui -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 0 `i ! != -> *U + &U *U + &U _tab * -> + -> _x `ui -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> - -> _y `ui -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _tab * -> + -> _x `ui -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 0 `i 314  ]
+[e -- _y -> -> 1 `i `us ]
+[e :U 314 ]
+"54
+[; ;newmain.c: 54:    x = 0, y = 4;
+[e $ ! && && && && && == -> _PORTE `i -> 2 `i ! != -> *U + &U *U + &U _tab * -> _x `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> + -> _y `ui -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _tab * -> _x `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 0 `i ! != -> *U + &U *U + &U _tab * -> + -> _x `ui -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> - -> _y `ui -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _tab * -> + -> _x `ui -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 0 `i ! != -> *U + &U *U + &U _tab * -> + -> _x `ui -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> - -> _y `ui -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _tab * -> + -> _x `ui -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 0 `i ! != -> *U + &U *U + &U _tab * -> + -> _x `ui -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> - -> _y `ui -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _tab * -> + -> _x `ui -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 0 `i || || || && < -> _y `ui -> -> 8 `i `ui ! != % -> _position `ui -> -> 2 `i `ui -> -> 0 `i `ui && != -> _typeForme `ui -> -> 0 `i `ui < -> _y `ui -> -> 7 `i `ui && && ! != -> _typeForme `ui -> -> 0 `i `ui < -> _y `ui -> -> 9 `i `ui ! != % -> _position `ui -> -> 2 `i `ui -> -> 0 `i `ui && ! != -> _typeForme `ui -> -> 0 `i `ui < -> _y `ui -> -> 6 `i `ui 315  ]
+"55
+[; ;newmain.c: 55:    typeForme = rand() % 7;
+[e ++ _y -> -> 1 `i `us ]
+[e :U 315 ]
+"56
+[; ;newmain.c: 56:    position = 0;
+[e $ ! && == -> _PORTE `i -> 4 `i != -> _typeForme `ui -> -> 1 `i `ui 316  ]
+[e ( _changePos (1 &U _position ]
+[e :U 316 ]
+"57
+[; ;newmain.c: 57:    formeEnCours = 1;
+[e $ ! || || == -> _PORTE `i -> 1 `i == -> _PORTE `i -> 2 `i == -> _PORTE `i -> 4 `i 317  ]
+{
+"58
+[; ;newmain.c: 58:   }else if(checkCollision(tab, forme)){
+[e ( _makeForme (2 , &U _forme _typeForme ]
+"59
+[; ;newmain.c: 59:             putPiece(tab, forme, points);
+[e ( _transformForm (4 , , , &U _forme _x _y _position ]
+"60
+[; ;newmain.c: 60:             glcd_draw_shape(prevForme,0);
+[e ( _glcd_draw_shape (2 , &U _prevForme -> -> 0 `i `uc ]
+"61
+[; ;newmain.c: 61:             glcd_draw_shape(forme,1);
+[e ( _glcd_draw_shape (2 , &U _forme -> -> 1 `i `uc ]
+"62
+[; ;newmain.c: 62:             glcd_print_tab(tab);
 }
-[e $U 314  ]
+[e :U 317 ]
+"63
+[; ;newmain.c: 63:             for(unsigned short i = 0; i < 4; i++){
+}
 [e :U 313 ]
+"65
+[; ;newmain.c: 65:                     prevForme[i][j] = 0;
+[e $ ! && ! != % -> _delay `ui -> -> 50 `i `ui -> -> 0 `i `ui != -> _formeEnCours `ui -> -> 0 `i `ui 318  ]
 {
-"51
-[; ;newmain.c: 51:                 for(unsigned short j = 0; j < 2; j++){
+"66
+[; ;newmain.c: 66:                 }
+[e ( _makeForme (2 , &U _forme _typeForme ]
+"67
+[; ;newmain.c: 67:             }
+[e ( _transformForm (4 , , , &U _forme _x _y _position ]
+"68
+[; ;newmain.c: 68:             for(unsigned short i = 0; i < 4; i++){
+[e ( _glcd_draw_shape (2 , &U _prevForme -> -> 0 `i `uc ]
+"69
+[; ;newmain.c: 69:                 for(unsigned short j = 0; j < 2; j++){
+[e ( _glcd_draw_shape (2 , &U _forme -> -> 1 `i `uc ]
+"70
+[; ;newmain.c: 70:                     forme[i][j] = 0;
+[e ++ _x -> -> 1 `i `us ]
+"71
+[; ;newmain.c: 71:                 }
+}
+[e :U 318 ]
+"72
+[; ;newmain.c: 72:             }
+[e ++ _delay -> -> 1 `i `us ]
+"73
+[; ;newmain.c: 73:             delay = 0;
+[e $ ! ! != -> _formeEnCours `ui -> -> 0 `i `ui 319  ]
+{
+"74
+[; ;newmain.c: 74:             for(unsigned short i = 0; i < 10; i++)
+[e ; = _x -> -> 0 `i `us = _y -> -> 4 `i `us ]
+"75
+[; ;newmain.c: 75:                     if(tab[0][i] == 1)
+[e = _typeForme -> % ( _rand ..  -> 7 `i `us ]
+"76
+[; ;newmain.c: 76:                         verif = 1, points = 0;
+[e = _position -> -> 0 `i `us ]
+"77
+[; ;newmain.c: 77:            formeEnCours = 0;
+[e = _formeEnCours -> -> 1 `i `us ]
+"78
+[; ;newmain.c: 78:         }else{
+}
+[e $U 320  ]
+[e :U 319 ]
+[e $ ! != -> ( _checkCollision (2 , &U _tab &U _forme `ui -> -> 0 `i `ui 321  ]
+{
+"79
+[; ;newmain.c: 79:             for(unsigned short i = 0; i < 4; i++){
+[e ( _putPiece (3 , , &U _tab &U _forme _points ]
+"80
+[; ;newmain.c: 80:                 for(unsigned short j = 0; j < 2; j++){
+[e ( _glcd_draw_shape (2 , &U _prevForme -> -> 0 `i `uc ]
+"81
+[; ;newmain.c: 81:                     prevForme[i][j] = forme[i][j];
+[e ( _glcd_draw_shape (2 , &U _forme -> -> 1 `i `uc ]
+"82
+[; ;newmain.c: 82:                 }
+[e ( _glcd_print_tab (1 &U _tab ]
+"83
+[; ;newmain.c: 83:             }
 {
 [v _i `us ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `us ]
-[e $ < -> _i `ui -> -> 4 `i `ui 315  ]
-[e $U 316  ]
-[e :U 315 ]
+[e $ < -> _i `ui -> -> 4 `i `ui 322  ]
+[e $U 323  ]
+[e :U 322 ]
 {
-"52
-[; ;newmain.c: 52:                     prevForme[i][j] = 0;
+"84
+[; ;newmain.c: 84:         }
 {
 [v _j `us ~T0 @X0 1 a ]
 [e = _j -> -> 0 `i `us ]
-[e $ < -> _j `ui -> -> 2 `i `ui 318  ]
-[e $U 319  ]
-[e :U 318 ]
-{
-"53
-[; ;newmain.c: 53:                 }
-[e = *U + &U *U + &U _prevForme * -> _i `ux -> * -> # *U &U *U &U _prevForme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _prevForme * -> _i `ux -> * -> # *U &U *U &U _prevForme `ui -> -> 2 `i `ui `ux `ui `ux *U + &U *U + &U _forme * -> _i `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _forme * -> _i `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux ]
-"54
-[; ;newmain.c: 54:             }
-}
-[e ++ _j -> -> 1 `i `us ]
-[e $ < -> _j `ui -> -> 2 `i `ui 318  ]
-[e :U 319 ]
-}
-"55
-[; ;newmain.c: 55:             }else{
-}
-[e ++ _i -> -> 1 `i `us ]
-[e $ < -> _i `ui -> -> 4 `i `ui 315  ]
-[e :U 316 ]
-}
-"56
-[; ;newmain.c: 56:                 glcd_draw_shape(prevForme, 0);
-}
-[e :U 314 ]
-"57
-[; ;newmain.c: 57:                 glcd_draw_shape(forme,1);
-[e $ ! && == -> _PORTE `i -> 1 `i > -> _y `ui -> -> 0 `i `ui 321  ]
-[e -- _y -> -> 1 `i `us ]
-[e :U 321 ]
-"58
-[; ;newmain.c: 58:             }
-[e $ ! && == -> _PORTE `i -> 2 `i || && < -> _y `ui -> -> 8 `i `ui != % -> _position `ui -> -> 2 `i `ui -> -> 0 `i `ui < -> _y `ui -> -> 6 `i `ui 322  ]
-[e ++ _y -> -> 1 `i `us ]
-[e :U 322 ]
-"59
-[; ;newmain.c: 59: 
-[e $ ! == -> _PORTE `i -> 4 `i 323  ]
-[e ( _changePos (1 &U _position ]
-[e :U 323 ]
-"60
-[; ;newmain.c: 60:    for(unsigned short line = 0; line < 22; line++)
-[e ( _makeForme (2 , &U _forme _typeForme ]
-"61
-[; ;newmain.c: 61:     if(checkLine(tab, line)){
-[e ( _transformForm (4 , , , &U _forme _x _y _position ]
-"63
-[; ;newmain.c: 63:                     glcd_print_tab(tab);
-[e $ ! != -> ( _checkCollision (2 , &U _tab &U _forme `ui -> -> 0 `i `ui 324  ]
-{
-"64
-[; ;newmain.c: 64:                 }
-[e ( _putPiece (2 , &U _tab &U _forme ]
-"65
-[; ;newmain.c: 65: 
-[e = _formeEnCours -> -> 0 `i `us ]
-"66
-[; ;newmain.c: 66:    x++;
-[e ( _glcd_draw_shape (2 , &U _prevForme -> -> 0 `i `uc ]
-"67
-[; ;newmain.c: 67:   for(unsigned short i = 0; i < 10; i++)
-[e ( _glcd_draw_shape (2 , &U _forme -> -> 1 `i `uc ]
-"68
-[; ;newmain.c: 68:     if(tab[0][i] == 1)
-[e ( _glcd_print_tab (1 &U _tab ]
-"69
-[; ;newmain.c: 69:      verif = 1;
-{
-[v _i `us ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `us ]
-[e $ < -> _i `ui -> -> 4 `i `ui 325  ]
+[e $ < -> _j `ui -> -> 2 `i `ui 325  ]
 [e $U 326  ]
 [e :U 325 ]
 {
-"70
-[; ;newmain.c: 70:  }
-{
-[v _j `us ~T0 @X0 1 a ]
-[e = _j -> -> 0 `i `us ]
-[e $ < -> _j `ui -> -> 2 `i `ui 328  ]
-[e $U 329  ]
-[e :U 328 ]
-{
-"71
-[; ;newmain.c: 71: 
+"85
+[; ;newmain.c: 85:         for(unsigned short line = 0; line < 22; line++)
 [e = *U + &U *U + &U _prevForme * -> _i `ux -> * -> # *U &U *U &U _prevForme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _prevForme * -> _i `ux -> * -> # *U &U *U &U _prevForme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
-"72
-[; ;newmain.c: 72: 
+"86
+[; ;newmain.c: 86:             if(checkLine(tab, line)){
 }
 [e ++ _j -> -> 1 `i `us ]
-[e $ < -> _j `ui -> -> 2 `i `ui 328  ]
-[e :U 329 ]
-}
-"73
-[; ;newmain.c: 73: 
-}
-[e ++ _i -> -> 1 `i `us ]
-[e $ < -> _i `ui -> -> 4 `i `ui 325  ]
+[e $ < -> _j `ui -> -> 2 `i `ui 325  ]
 [e :U 326 ]
 }
-"74
-[; ;newmain.c: 74: 
+"87
+[; ;newmain.c: 87:                 eraseLine(tab, line, points);
 }
-[e $U 331  ]
-[e :U 324 ]
-{
-"75
-[; ;newmain.c: 75: }
-[e ( _glcd_draw_shape (2 , &U _prevForme -> -> 0 `i `uc ]
-"76
-[e ( _glcd_draw_shape (2 , &U _forme -> -> 1 `i `uc ]
-"77
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 322  ]
+[e :U 323 ]
 }
-[e :U 331 ]
-"79
-{
-[v _line `us ~T0 @X0 1 a ]
-[e = _line -> -> 0 `i `us ]
-[e $ < -> _line `ui -> -> 22 `i `ui 332  ]
-[e $U 333  ]
-[e :U 332 ]
-"80
-[e $ ! != -> ( _checkLine (2 , &U _tab _line `ui -> -> 0 `i `ui 335  ]
-{
-"81
-[e ( _eraseLine (2 , &U _tab _line ]
-"82
-[e ( _glcd_print_tab (1 &U _tab ]
-"83
-}
-[e :U 335 ]
-[e ++ _line -> -> 1 `i `us ]
-[e $ < -> _line `ui -> -> 22 `i `ui 332  ]
-[e :U 333 ]
-}
-"85
-[e ++ _x -> -> 1 `i `us ]
-"86
+"88
+[; ;newmain.c: 88:                 points++;
 {
 [v _i `us ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `us ]
-[e $ < -> _i `ui -> -> 10 `i `ui 336  ]
-[e $U 337  ]
-[e :U 336 ]
-"87
-[e $ ! == -> *U + &U *U + &U _tab * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _tab * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 1 `i 339  ]
-"88
-[e = _verif -> -> 1 `i `us ]
-[e :U 339 ]
-[e ++ _i -> -> 1 `i `us ]
-[e $ < -> _i `ui -> -> 10 `i `ui 336  ]
-[e :U 337 ]
-}
+[e $ < -> _i `ui -> -> 4 `i `ui 328  ]
+[e $U 329  ]
+[e :U 328 ]
+{
 "89
+[; ;newmain.c: 89:                 glcd_print_tab(tab);
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 331  ]
+[e $U 332  ]
+[e :U 331 ]
+{
+"90
+[; ;newmain.c: 90:             }
+[e = *U + &U *U + &U _forme * -> _i `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _forme * -> _i `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux -> -> 0 `i `uc ]
+"91
+[; ;newmain.c: 91: 
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 331  ]
+[e :U 332 ]
+}
+"92
+[; ;newmain.c: 92:         if(points % 2){
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 328  ]
+[e :U 329 ]
+}
+"93
+[; ;newmain.c: 93:             PORTCbits.RC1 = 1;
+[e = _delay -> -> 0 `i `us ]
+"94
+[; ;newmain.c: 94:         }
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 10 `i `ui 334  ]
+[e $U 335  ]
+[e :U 334 ]
+"95
+[; ;newmain.c: 95:         else PORTCbits.RC1 = 0;
+[e $ ! == -> *U + &U *U + &U _tab * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _tab * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _tab `ui -> -> 10 `i `ui `ux `ui `ux `i -> 1 `i 337  ]
+"96
+[; ;newmain.c: 96:         if(points == 2 || points == 6 || points == 7){
+[e ; = _verif -> -> 1 `i `us = _points -> -> 0 `i `us ]
+[e :U 337 ]
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 10 `i `ui 334  ]
+[e :U 335 ]
+}
+"97
+[; ;newmain.c: 97:             PORTCbits.RC2 = 1;
+[e = _formeEnCours -> -> 0 `i `us ]
+"98
+[; ;newmain.c: 98:         }else PORTCbits.RC2 = 0;
+}
+[e $U 338  ]
+[e :U 321 ]
+{
+"99
+[; ;newmain.c: 99:         if(points == 6 || points == 7){
+{
+[v _i `us ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 339  ]
+[e $U 340  ]
+[e :U 339 ]
+{
+"100
+[; ;newmain.c: 100:             PORTCbits.RC5 = 1;
+{
+[v _j `us ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 342  ]
+[e $U 343  ]
+[e :U 342 ]
+{
+"101
+[; ;newmain.c: 101:         }else PORTCbits.RC5 = 0;
+[e = *U + &U *U + &U _prevForme * -> _i `ux -> * -> # *U &U *U &U _prevForme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _prevForme * -> _i `ux -> * -> # *U &U *U &U _prevForme `ui -> -> 2 `i `ui `ux `ui `ux *U + &U *U + &U _forme * -> _i `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _forme * -> _i `ux -> * -> # *U &U *U &U _forme `ui -> -> 2 `i `ui `ux `ui `ux ]
+"102
+[; ;newmain.c: 102:  }
+}
+[e ++ _j -> -> 1 `i `us ]
+[e $ < -> _j `ui -> -> 2 `i `ui 342  ]
+[e :U 343 ]
+}
+"103
+[; ;newmain.c: 103: 
+}
+[e ++ _i -> -> 1 `i `us ]
+[e $ < -> _i `ui -> -> 4 `i `ui 339  ]
+[e :U 340 ]
+}
+"104
+[; ;newmain.c: 104: 
+}
+[e :U 338 ]
+[e :U 320 ]
+"105
+[; ;newmain.c: 105: 
+{
+[v _line `us ~T0 @X0 1 a ]
+[e = _line -> -> 0 `i `us ]
+[e $ < -> _line `ui -> -> 22 `i `ui 345  ]
+[e $U 346  ]
+[e :U 345 ]
+"106
+[; ;newmain.c: 106: 
+[e $ ! != -> ( _checkLine (2 , &U _tab _line `ui -> -> 0 `i `ui 348  ]
+{
+"107
+[; ;newmain.c: 107:     PORTCbits.RC0 = 0;
+[e ( _eraseLine (3 , , &U _tab _line _points ]
+"108
+[; ;newmain.c: 108:     _delay((unsigned long)((200000)*(8000000/4000000.0)));
+[e ++ _points -> -> 1 `i `us ]
+"109
+[; ;newmain.c: 109:     PORTCbits.RC0 = 1;
+[e ( _glcd_print_tab (1 &U _tab ]
+"110
+[; ;newmain.c: 110: 
+}
+[e :U 348 ]
+[e ++ _line -> -> 1 `i `us ]
+[e $ < -> _line `ui -> -> 22 `i `ui 345  ]
+[e :U 346 ]
+}
+"112
+[; ;newmain.c: 112: 
+[e $ ! != % -> _points `ui -> -> 2 `i `ui -> -> 0 `i `ui 349  ]
+{
+"113
+[; ;newmain.c: 113: 
+[e = . . _PORTCbits 0 1 -> -> 1 `i `uc ]
+"114
+[; ;newmain.c: 114: 
+}
+[e $U 350  ]
+"115
+[; ;newmain.c: 115: void menu()
+[e :U 349 ]
+[e = . . _PORTCbits 0 1 -> -> 0 `i `uc ]
+[e :U 350 ]
+"116
+[; ;newmain.c: 116: {
+[e $ ! || || == -> _points `ui -> -> 2 `i `ui == -> _points `ui -> -> 6 `i `ui == -> _points `ui -> -> 7 `i `ui 351  ]
+{
+"117
+[; ;newmain.c: 117:     int fin = 0;
+[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
+"118
+[; ;newmain.c: 118:     glcd_FillScreen(0);
+}
+[e $U 352  ]
+[e :U 351 ]
+[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
+[e :U 352 ]
+"119
+[; ;newmain.c: 119: 
+[e $ ! || == -> _points `ui -> -> 6 `i `ui == -> _points `ui -> -> 7 `i `ui 353  ]
+{
+"120
+[; ;newmain.c: 120:      affMenu();
+[e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
+"121
+[; ;newmain.c: 121: 
+}
+[e $U 354  ]
+[e :U 353 ]
+[e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
+[e :U 354 ]
+"122
+[; ;newmain.c: 122:     while(fin == 0)
 }
 [e :U 310 ]
-"43
-[; ;newmain.c: 43: 
+"51
+[; ;newmain.c: 51:         }
 [e $ ! != -> _verif `ui -> -> 0 `i `ui 311  ]
 [e :U 312 ]
-"94
+"127
+[; ;newmain.c: 127:             menuTetris();
+[e = . . _PORTCbits 0 0 -> -> 0 `i `uc ]
+"128
+[; ;newmain.c: 128:             _delay((unsigned long)((2000000)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 200000 `l `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"129
+[; ;newmain.c: 129:             affMenu();
+[e = . . _PORTCbits 0 0 -> -> 1 `i `uc ]
+"131
+[; ;newmain.c: 131:         if (PORTE == 0x02)
 [e :UE 309 ]
+}
+"135
+[; ;newmain.c: 135:         }
+[v _menu `(v ~T0 @X0 1 ef ]
+"136
+[; ;newmain.c: 136:     }
+{
+[e :U _menu ]
+[f ]
+"137
+[; ;newmain.c: 137: 
+[v _fin `i ~T0 @X0 1 a ]
+[e = _fin -> 0 `i ]
+"138
+[; ;newmain.c: 138: }
+[e ( _glcd_FillScreen (1 -> -> 0 `i `uc ]
+"140
+[; ;newmain.c: 140: void affMenu()
+[e ( _affMenu ..  ]
+"142
+[; ;newmain.c: 142:     glcd_FillScreen(0);
+[e $U 356  ]
+[e :U 357 ]
+"143
+[; ;newmain.c: 143: 
+{
+"145
+[; ;newmain.c: 145:     glcd_PlotPixel(11,59,1);
+[e $ ! == -> _PORTE `i -> 1 `i 359  ]
+"146
+[; ;newmain.c: 146:     glcd_PlotPixel(12,58,1);
+{
+"147
+[; ;newmain.c: 147:     glcd_PlotPixel(11,57,1);
+[e ( _menuTetris ..  ]
+"148
+[; ;newmain.c: 148:     glcd_PlotPixel(10,56,1);
+[e ( __delay (1 -> * -> -> 2000000 `l `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"149
+[; ;newmain.c: 149:     glcd_PlotPixel(11,56,1);
+[e ( _affMenu ..  ]
+"150
+[; ;newmain.c: 150:     glcd_PlotPixel(12,56,1);
+}
+[e :U 359 ]
+"151
+[; ;newmain.c: 151:     glcd_PlotPixel(13,56,1);
+[e $ ! == -> _PORTE `i -> 2 `i 360  ]
+"152
+[; ;newmain.c: 152:     glcd_PlotPixel(14,56,1);
+{
+"153
+[; ;newmain.c: 153:     glcd_PlotPixel(15,56,1);
+[e ( _glcd_FillScreen (1 -> -> 0 `i `uc ]
+"154
+[; ;newmain.c: 154:     glcd_PlotPixel(16,56,1);
+[e = _fin -> 1 `i ]
+"155
+[; ;newmain.c: 155:     glcd_PlotPixel(11,60,1);
+}
+[e :U 360 ]
+"156
+[; ;newmain.c: 156:     glcd_PlotPixel(12,60,1);
+}
+[e :U 356 ]
+"142
+[; ;newmain.c: 142:     glcd_FillScreen(0);
+[e $ == _fin -> 0 `i 357  ]
+[e :U 358 ]
+"158
+[; ;newmain.c: 158:     glcd_PlotPixel(14,60,1);
+[e :UE 355 ]
+}
+"160
+[; ;newmain.c: 160:     glcd_PlotPixel(16,60,1);
+[v _affMenu `(v ~T0 @X0 1 ef ]
+"161
+[; ;newmain.c: 161: 
+{
+[e :U _affMenu ]
+[f ]
+"162
+[; ;newmain.c: 162: 
+[e ( _glcd_FillScreen (1 -> -> 0 `i `uc ]
+"164
+[; ;newmain.c: 164:     glcd_PlotPixel(10,52,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"165
+[; ;newmain.c: 165:     glcd_PlotPixel(10,51,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"166
+[; ;newmain.c: 166:     glcd_PlotPixel(11,53,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 58 `i `uc -> -> 1 `i `uc ]
+"167
+[; ;newmain.c: 167:     glcd_PlotPixel(12,53,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 57 `i `uc -> -> 1 `i `uc ]
+"168
+[; ;newmain.c: 168:     glcd_PlotPixel(13,53,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 56 `i `uc -> -> 1 `i `uc ]
+"169
+[; ;newmain.c: 169:     glcd_PlotPixel(14,53,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 56 `i `uc -> -> 1 `i `uc ]
+"170
+[; ;newmain.c: 170:     glcd_PlotPixel(15,53,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 56 `i `uc -> -> 1 `i `uc ]
+"171
+[; ;newmain.c: 171:     glcd_PlotPixel(16,53,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 56 `i `uc -> -> 1 `i `uc ]
+"172
+[; ;newmain.c: 172:     glcd_PlotPixel(16,52,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 14 `i `uc -> -> 56 `i `uc -> -> 1 `i `uc ]
+"173
+[; ;newmain.c: 173:     glcd_PlotPixel(16,51,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 15 `i `uc -> -> 56 `i `uc -> -> 1 `i `uc ]
+"174
+[; ;newmain.c: 174:     glcd_PlotPixel(13,52,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 56 `i `uc -> -> 1 `i `uc ]
+"175
+[; ;newmain.c: 175: 
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"176
+[; ;newmain.c: 176: 
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"177
+[; ;newmain.c: 177:     glcd_PlotPixel(10,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"178
+[; ;newmain.c: 178:     glcd_PlotPixel(11,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 14 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"179
+[; ;newmain.c: 179:     glcd_PlotPixel(11,46,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 15 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"180
+[; ;newmain.c: 180:     glcd_PlotPixel(12,45,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"183
+[; ;newmain.c: 183:     glcd_PlotPixel(15,42,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 53 `i `uc -> -> 1 `i `uc ]
+"184
+[; ;newmain.c: 184:     glcd_PlotPixel(12,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 52 `i `uc -> -> 1 `i `uc ]
+"185
+[; ;newmain.c: 185:     glcd_PlotPixel(13,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 51 `i `uc -> -> 1 `i `uc ]
+"186
+[; ;newmain.c: 186:     glcd_PlotPixel(16,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 53 `i `uc -> -> 1 `i `uc ]
+"187
+[; ;newmain.c: 187:     glcd_PlotPixel(13,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 53 `i `uc -> -> 1 `i `uc ]
+"188
+[; ;newmain.c: 188:     glcd_PlotPixel(14,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 53 `i `uc -> -> 1 `i `uc ]
+"189
+[; ;newmain.c: 189:     glcd_PlotPixel(15,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 14 `i `uc -> -> 53 `i `uc -> -> 1 `i `uc ]
+"190
+[; ;newmain.c: 190:     glcd_PlotPixel(10,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 15 `i `uc -> -> 53 `i `uc -> -> 1 `i `uc ]
+"191
+[; ;newmain.c: 191:     glcd_PlotPixel(11,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 53 `i `uc -> -> 1 `i `uc ]
+"192
+[; ;newmain.c: 192:     glcd_PlotPixel(12,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 52 `i `uc -> -> 1 `i `uc ]
+"193
+[; ;newmain.c: 193:     glcd_PlotPixel(13,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 51 `i `uc -> -> 1 `i `uc ]
+"194
+[; ;newmain.c: 194:     glcd_PlotPixel(14,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 52 `i `uc -> -> 1 `i `uc ]
+"197
+[; ;newmain.c: 197: 
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"198
+[; ;newmain.c: 198: 
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"199
+[; ;newmain.c: 199:     glcd_PlotPixel(10,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 46 `i `uc -> -> 1 `i `uc ]
+"200
+[; ;newmain.c: 200:     glcd_PlotPixel(11,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"201
+[; ;newmain.c: 201:     glcd_PlotPixel(12,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 44 `i `uc -> -> 1 `i `uc ]
+"202
+[; ;newmain.c: 202:     glcd_PlotPixel(13,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 14 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"203
+[; ;newmain.c: 203:     glcd_PlotPixel(14,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 15 `i `uc -> -> 42 `i `uc -> -> 1 `i `uc ]
+"204
+[; ;newmain.c: 204:     glcd_PlotPixel(15,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"205
+[; ;newmain.c: 205:     glcd_PlotPixel(16,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"206
+[; ;newmain.c: 206:     glcd_PlotPixel(10,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"207
+[; ;newmain.c: 207:     glcd_PlotPixel(11,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"208
+[; ;newmain.c: 208:     glcd_PlotPixel(12,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 14 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"209
+[; ;newmain.c: 209:     glcd_PlotPixel(13,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 15 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"210
+[; ;newmain.c: 210:     glcd_PlotPixel(14,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"211
+[; ;newmain.c: 211:     glcd_PlotPixel(15,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"212
+[; ;newmain.c: 212:     glcd_PlotPixel(16,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"213
+[; ;newmain.c: 213:     glcd_PlotPixel(16,36,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"214
+[; ;newmain.c: 214:     glcd_PlotPixel(16,37,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 14 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"215
+[; ;newmain.c: 215: 
+[e ( _glcd_PlotPixel (3 , , -> -> 15 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"216
+[; ;newmain.c: 216: 
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"219
+[; ;newmain.c: 219:     glcd_PlotPixel(30,59,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"220
+[; ;newmain.c: 220:     glcd_PlotPixel(30,58,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"221
+[; ;newmain.c: 221:     glcd_PlotPixel(31,60,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"222
+[; ;newmain.c: 222:     glcd_PlotPixel(32,60,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"223
+[; ;newmain.c: 223:     glcd_PlotPixel(33,60,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 14 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"224
+[; ;newmain.c: 224:     glcd_PlotPixel(34,60,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 15 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"225
+[; ;newmain.c: 225:     glcd_PlotPixel(35,60,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"226
+[; ;newmain.c: 226:     glcd_PlotPixel(36,60,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 10 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"227
+[; ;newmain.c: 227:     glcd_PlotPixel(30,57,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 11 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"228
+[; ;newmain.c: 228:     glcd_PlotPixel(31,57,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 12 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"229
+[; ;newmain.c: 229:     glcd_PlotPixel(32,57,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 13 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"230
+[; ;newmain.c: 230:     glcd_PlotPixel(33,57,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 14 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"231
+[; ;newmain.c: 231:     glcd_PlotPixel(34,57,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 15 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"232
+[; ;newmain.c: 232:     glcd_PlotPixel(35,57,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"233
+[; ;newmain.c: 233:     glcd_PlotPixel(36,57,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 36 `i `uc -> -> 1 `i `uc ]
+"234
+[; ;newmain.c: 234:     glcd_PlotPixel(36,58,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 16 `i `uc -> -> 37 `i `uc -> -> 1 `i `uc ]
+"238
+[; ;newmain.c: 238:     glcd_PlotPixel(30,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"239
+[; ;newmain.c: 239:     glcd_PlotPixel(30,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"240
+[; ;newmain.c: 240:     glcd_PlotPixel(30,46,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 58 `i `uc -> -> 1 `i `uc ]
+"241
+[; ;newmain.c: 241:     glcd_PlotPixel(31,45,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 31 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"242
+[; ;newmain.c: 242:     glcd_PlotPixel(32,45,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 32 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"243
+[; ;newmain.c: 243:     glcd_PlotPixel(33,45,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"244
+[; ;newmain.c: 244:     glcd_PlotPixel(33,46,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 34 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"245
+[; ;newmain.c: 245:     glcd_PlotPixel(33,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 35 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"246
+[; ;newmain.c: 246:     glcd_PlotPixel(34,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"247
+[; ;newmain.c: 247:     glcd_PlotPixel(35,46,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 57 `i `uc -> -> 1 `i `uc ]
+"248
+[; ;newmain.c: 248:     glcd_PlotPixel(36,45,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 31 `i `uc -> -> 57 `i `uc -> -> 1 `i `uc ]
+"249
+[; ;newmain.c: 249:     glcd_PlotPixel(31,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 32 `i `uc -> -> 57 `i `uc -> -> 1 `i `uc ]
+"250
+[; ;newmain.c: 250:     glcd_PlotPixel(32,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 57 `i `uc -> -> 1 `i `uc ]
+"251
+[; ;newmain.c: 251:     glcd_PlotPixel(33,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 34 `i `uc -> -> 57 `i `uc -> -> 1 `i `uc ]
+"252
+[; ;newmain.c: 252:     glcd_PlotPixel(34,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 35 `i `uc -> -> 57 `i `uc -> -> 1 `i `uc ]
+"253
+[; ;newmain.c: 253:     glcd_PlotPixel(35,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 57 `i `uc -> -> 1 `i `uc ]
+"254
+[; ;newmain.c: 254:     glcd_PlotPixel(36,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 58 `i `uc -> -> 1 `i `uc ]
+"255
+[; ;newmain.c: 255: 
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"258
+[; ;newmain.c: 258:     glcd_PlotPixel(30,42,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"259
+[; ;newmain.c: 259:     glcd_PlotPixel(30,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"260
+[; ;newmain.c: 260:     glcd_PlotPixel(31,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 46 `i `uc -> -> 1 `i `uc ]
+"261
+[; ;newmain.c: 261:     glcd_PlotPixel(32,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 31 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"262
+[; ;newmain.c: 262:     glcd_PlotPixel(33,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 32 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"263
+[; ;newmain.c: 263:     glcd_PlotPixel(34,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"264
+[; ;newmain.c: 264:     glcd_PlotPixel(35,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 46 `i `uc -> -> 1 `i `uc ]
+"265
+[; ;newmain.c: 265:     glcd_PlotPixel(36,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"266
+[; ;newmain.c: 266:     glcd_PlotPixel(36,42,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 34 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"267
+[; ;newmain.c: 267:     glcd_PlotPixel(36,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 35 `i `uc -> -> 46 `i `uc -> -> 1 `i `uc ]
+"268
+[; ;newmain.c: 268:     glcd_PlotPixel(33,42,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"269
+[; ;newmain.c: 269: 
+[e ( _glcd_PlotPixel (3 , , -> -> 31 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"270
+[; ;newmain.c: 270: 
+[e ( _glcd_PlotPixel (3 , , -> -> 32 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"271
+[; ;newmain.c: 271:     glcd_PlotPixel(30,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"272
+[; ;newmain.c: 272:     glcd_PlotPixel(31,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 34 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"273
+[; ;newmain.c: 273:     glcd_PlotPixel(32,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 35 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"274
+[; ;newmain.c: 274:     glcd_PlotPixel(33,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"277
+[; ;newmain.c: 277:     glcd_PlotPixel(36,37,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"278
+[; ;newmain.c: 278: 
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 42 `i `uc -> -> 1 `i `uc ]
+"279
+[; ;newmain.c: 279: 
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"280
+[; ;newmain.c: 280: 
+[e ( _glcd_PlotPixel (3 , , -> -> 31 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"281
+[; ;newmain.c: 281:     glcd_PlotPixel(41,60,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 32 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"282
+[; ;newmain.c: 282:     glcd_PlotPixel(40,59,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"283
+[; ;newmain.c: 283:     glcd_PlotPixel(41,59,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 34 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"284
+[; ;newmain.c: 284:     glcd_PlotPixel(42,59,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 35 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"285
+[; ;newmain.c: 285:     glcd_PlotPixel(43,59,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"286
+[; ;newmain.c: 286:     glcd_PlotPixel(44,59,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 42 `i `uc -> -> 1 `i `uc ]
+"287
+[; ;newmain.c: 287:     glcd_PlotPixel(45,59,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"288
+[; ;newmain.c: 288:     glcd_PlotPixel(46,59,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 42 `i `uc -> -> 1 `i `uc ]
+"291
+[; ;newmain.c: 291:     glcd_PlotPixel(40,44,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 30 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"292
+[; ;newmain.c: 292:     glcd_PlotPixel(40,45,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 31 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"293
+[; ;newmain.c: 293:     glcd_PlotPixel(40,46,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 32 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"294
+[; ;newmain.c: 294:     glcd_PlotPixel(40,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 33 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"295
+[; ;newmain.c: 295:     glcd_PlotPixel(40,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 34 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"296
+[; ;newmain.c: 296:     glcd_PlotPixel(41,45,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 35 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"297
+[; ;newmain.c: 297:     glcd_PlotPixel(42,45,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 36 `i `uc -> -> 37 `i `uc -> -> 1 `i `uc ]
+"301
+[; ;newmain.c: 301:     glcd_PlotPixel(46,46,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 41 `i `uc -> -> 60 `i `uc -> -> 1 `i `uc ]
+"302
+[; ;newmain.c: 302:     glcd_PlotPixel(46,47,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"303
+[; ;newmain.c: 303:     glcd_PlotPixel(46,48,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 41 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"304
+[; ;newmain.c: 304: 
+[e ( _glcd_PlotPixel (3 , , -> -> 42 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"305
+[; ;newmain.c: 305: 
+[e ( _glcd_PlotPixel (3 , , -> -> 43 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"306
+[; ;newmain.c: 306:     glcd_PlotPixel(40,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 44 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"307
+[; ;newmain.c: 307:     glcd_PlotPixel(40,42,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 45 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"308
+[; ;newmain.c: 308:     glcd_PlotPixel(40,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 59 `i `uc -> -> 1 `i `uc ]
+"311
+[; ;newmain.c: 311:     glcd_PlotPixel(43,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 44 `i `uc -> -> 1 `i `uc ]
+"312
+[; ;newmain.c: 312:     glcd_PlotPixel(44,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"313
+[; ;newmain.c: 313:     glcd_PlotPixel(45,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 46 `i `uc -> -> 1 `i `uc ]
+"314
+[; ;newmain.c: 314:     glcd_PlotPixel(46,43,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"315
+[; ;newmain.c: 315:     glcd_PlotPixel(46,42,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"316
+[; ;newmain.c: 316:     glcd_PlotPixel(46,41,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 41 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"317
+[; ;newmain.c: 317:     glcd_PlotPixel(43,42,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 42 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"318
+[; ;newmain.c: 318: 
+[e ( _glcd_PlotPixel (3 , , -> -> 43 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"319
+[; ;newmain.c: 319: 
+[e ( _glcd_PlotPixel (3 , , -> -> 44 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"320
+[; ;newmain.c: 320:     glcd_PlotPixel(40,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 45 `i `uc -> -> 45 `i `uc -> -> 1 `i `uc ]
+"321
+[; ;newmain.c: 321:     glcd_PlotPixel(41,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 46 `i `uc -> -> 1 `i `uc ]
+"322
+[; ;newmain.c: 322:     glcd_PlotPixel(42,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 47 `i `uc -> -> 1 `i `uc ]
+"323
+[; ;newmain.c: 323:     glcd_PlotPixel(43,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 48 `i `uc -> -> 1 `i `uc ]
+"326
+[; ;newmain.c: 326:     glcd_PlotPixel(46,38,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"327
+[; ;newmain.c: 327:     glcd_PlotPixel(40,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 42 `i `uc -> -> 1 `i `uc ]
+"328
+[; ;newmain.c: 328:     glcd_PlotPixel(41,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"329
+[; ;newmain.c: 329:     glcd_PlotPixel(42,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 41 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"330
+[; ;newmain.c: 330:     glcd_PlotPixel(43,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 42 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"331
+[; ;newmain.c: 331:     glcd_PlotPixel(44,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 43 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"332
+[; ;newmain.c: 332:     glcd_PlotPixel(45,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 44 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"333
+[; ;newmain.c: 333:     glcd_PlotPixel(46,35,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 45 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"334
+[; ;newmain.c: 334:     glcd_PlotPixel(46,36,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 43 `i `uc -> -> 1 `i `uc ]
+"335
+[; ;newmain.c: 335:     glcd_PlotPixel(46,37,1);
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 42 `i `uc -> -> 1 `i `uc ]
+"336
+[; ;newmain.c: 336: }
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 41 `i `uc -> -> 1 `i `uc ]
+"337
+[; ;newmain.c: 337: 
+[e ( _glcd_PlotPixel (3 , , -> -> 43 `i `uc -> -> 42 `i `uc -> -> 1 `i `uc ]
+"340
+[; ;newmain.c: 340:      glcd_FillScreen(0);
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"341
+[e ( _glcd_PlotPixel (3 , , -> -> 41 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"342
+[e ( _glcd_PlotPixel (3 , , -> -> 42 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"343
+[e ( _glcd_PlotPixel (3 , , -> -> 43 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"344
+[e ( _glcd_PlotPixel (3 , , -> -> 44 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"345
+[e ( _glcd_PlotPixel (3 , , -> -> 45 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"346
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 38 `i `uc -> -> 1 `i `uc ]
+"347
+[e ( _glcd_PlotPixel (3 , , -> -> 40 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"348
+[e ( _glcd_PlotPixel (3 , , -> -> 41 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"349
+[e ( _glcd_PlotPixel (3 , , -> -> 42 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"350
+[e ( _glcd_PlotPixel (3 , , -> -> 43 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"351
+[e ( _glcd_PlotPixel (3 , , -> -> 44 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"352
+[e ( _glcd_PlotPixel (3 , , -> -> 45 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"353
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 35 `i `uc -> -> 1 `i `uc ]
+"354
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 36 `i `uc -> -> 1 `i `uc ]
+"355
+[e ( _glcd_PlotPixel (3 , , -> -> 46 `i `uc -> -> 37 `i `uc -> -> 1 `i `uc ]
+"356
+[e :UE 361 ]
+}
+"358
+[v _menuTetris `(v ~T0 @X0 1 ef ]
+"359
+{
+[e :U _menuTetris ]
+[f ]
+"360
+[e ( _glcd_FillScreen (1 -> -> 0 `i `uc ]
+"406
+[; ;newmain.c: 406:     glcd_draw_cube(1,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 1 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"407
+[; ;newmain.c: 407:     glcd_draw_cube(2,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 2 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"408
+[; ;newmain.c: 408:     glcd_draw_cube(3,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 3 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"409
+[; ;newmain.c: 409:     glcd_draw_cube(2,6,1);
+[e ( _glcd_draw_cube (3 , , -> -> 2 `i `uc -> -> 6 `i `uc -> -> 1 `i `uc ]
+"410
+[; ;newmain.c: 410:     glcd_draw_cube(2,7,1);
+[e ( _glcd_draw_cube (3 , , -> -> 2 `i `uc -> -> 7 `i `uc -> -> 1 `i `uc ]
+"411
+[; ;newmain.c: 411:     glcd_draw_cube(2,8,1);
+[e ( _glcd_draw_cube (3 , , -> -> 2 `i `uc -> -> 8 `i `uc -> -> 1 `i `uc ]
+"412
+[; ;newmain.c: 412:     glcd_draw_cube(2,9,1);
+[e ( _glcd_draw_cube (3 , , -> -> 2 `i `uc -> -> 9 `i `uc -> -> 1 `i `uc ]
+"415
+[; ;newmain.c: 415:     glcd_draw_cube(4,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 4 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"416
+[; ;newmain.c: 416:     glcd_draw_cube(5,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 5 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"417
+[; ;newmain.c: 417:     glcd_draw_cube(4,6,1);
+[e ( _glcd_draw_cube (3 , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 1 `i `uc ]
+"418
+[; ;newmain.c: 418:     glcd_draw_cube(4,7,1);
+[e ( _glcd_draw_cube (3 , , -> -> 4 `i `uc -> -> 7 `i `uc -> -> 1 `i `uc ]
+"419
+[; ;newmain.c: 419:     glcd_draw_cube(5,7,1);
+[e ( _glcd_draw_cube (3 , , -> -> 5 `i `uc -> -> 7 `i `uc -> -> 1 `i `uc ]
+"420
+[; ;newmain.c: 420:     glcd_draw_cube(4,8,1);
+[e ( _glcd_draw_cube (3 , , -> -> 4 `i `uc -> -> 8 `i `uc -> -> 1 `i `uc ]
+"421
+[; ;newmain.c: 421:     glcd_draw_cube(4,9,1);
+[e ( _glcd_draw_cube (3 , , -> -> 4 `i `uc -> -> 9 `i `uc -> -> 1 `i `uc ]
+"422
+[; ;newmain.c: 422:     glcd_draw_cube(5,9,1);
+[e ( _glcd_draw_cube (3 , , -> -> 5 `i `uc -> -> 9 `i `uc -> -> 1 `i `uc ]
+"425
+[; ;newmain.c: 425:     glcd_draw_cube(6,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"426
+[; ;newmain.c: 426:     glcd_draw_cube(7,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 7 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"427
+[; ;newmain.c: 427:     glcd_draw_cube(8,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 8 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"428
+[; ;newmain.c: 428:     glcd_draw_cube(7,6,1);
+[e ( _glcd_draw_cube (3 , , -> -> 7 `i `uc -> -> 6 `i `uc -> -> 1 `i `uc ]
+"429
+[; ;newmain.c: 429:     glcd_draw_cube(7,7,1);
+[e ( _glcd_draw_cube (3 , , -> -> 7 `i `uc -> -> 7 `i `uc -> -> 1 `i `uc ]
+"430
+[; ;newmain.c: 430:     glcd_draw_cube(7,8,1);
+[e ( _glcd_draw_cube (3 , , -> -> 7 `i `uc -> -> 8 `i `uc -> -> 1 `i `uc ]
+"431
+[; ;newmain.c: 431:     glcd_draw_cube(7,9,1);
+[e ( _glcd_draw_cube (3 , , -> -> 7 `i `uc -> -> 9 `i `uc -> -> 1 `i `uc ]
+"433
+[; ;newmain.c: 433:     glcd_draw_cube(9,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 9 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"434
+[; ;newmain.c: 434:     glcd_draw_cube(10,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 10 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"435
+[; ;newmain.c: 435:     glcd_draw_cube(11,6,1);
+[e ( _glcd_draw_cube (3 , , -> -> 11 `i `uc -> -> 6 `i `uc -> -> 1 `i `uc ]
+"436
+[; ;newmain.c: 436:     glcd_draw_cube(10,7,1);
+[e ( _glcd_draw_cube (3 , , -> -> 10 `i `uc -> -> 7 `i `uc -> -> 1 `i `uc ]
+"437
+[; ;newmain.c: 437:     glcd_draw_cube(11,8,1);
+[e ( _glcd_draw_cube (3 , , -> -> 11 `i `uc -> -> 8 `i `uc -> -> 1 `i `uc ]
+"438
+[; ;newmain.c: 438:     glcd_draw_cube(11,9,1);
+[e ( _glcd_draw_cube (3 , , -> -> 11 `i `uc -> -> 9 `i `uc -> -> 1 `i `uc ]
+"439
+[; ;newmain.c: 439:     glcd_draw_cube(9,6,1);
+[e ( _glcd_draw_cube (3 , , -> -> 9 `i `uc -> -> 6 `i `uc -> -> 1 `i `uc ]
+"440
+[; ;newmain.c: 440:     glcd_draw_cube(9,7,1);
+[e ( _glcd_draw_cube (3 , , -> -> 9 `i `uc -> -> 7 `i `uc -> -> 1 `i `uc ]
+"441
+[; ;newmain.c: 441:     glcd_draw_cube(9,8,1);
+[e ( _glcd_draw_cube (3 , , -> -> 9 `i `uc -> -> 8 `i `uc -> -> 1 `i `uc ]
+"442
+[; ;newmain.c: 442:     glcd_draw_cube(9,9,1);
+[e ( _glcd_draw_cube (3 , , -> -> 9 `i `uc -> -> 9 `i `uc -> -> 1 `i `uc ]
+"445
+[; ;newmain.c: 445:     glcd_draw_cube(13,5,1);
+[e ( _glcd_draw_cube (3 , , -> -> 13 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc ]
+"446
+[; ;newmain.c: 446:     glcd_draw_cube(13,6,1);
+[e ( _glcd_draw_cube (3 , , -> -> 13 `i `uc -> -> 6 `i `uc -> -> 1 `i `uc ]
+"447
+[; ;newmain.c: 447:     glcd_draw_cube(13,7,1);
+[e ( _glcd_draw_cube (3 , , -> -> 13 `i `uc -> -> 7 `i `uc -> -> 1 `i `uc ]
+"448
+[; ;newmain.c: 448:     glcd_draw_cube(13,8,1);
+[e ( _glcd_draw_cube (3 , , -> -> 13 `i `uc -> -> 8 `i `uc -> -> 1 `i `uc ]
+"449
+[; ;newmain.c: 449:     glcd_draw_cube(13,9,1);
+[e ( _glcd_draw_cube (3 , , -> -> 13 `i `uc -> -> 9 `i `uc -> -> 1 `i `uc ]
+"451
+[; ;newmain.c: 451: }
+[e :UE 362 ]
 }

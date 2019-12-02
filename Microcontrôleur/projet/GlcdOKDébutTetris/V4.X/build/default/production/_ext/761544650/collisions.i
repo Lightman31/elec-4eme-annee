@@ -326,15 +326,33 @@ extern long timezone;
 extern int getdate_err;
 struct tm *getdate (const char *);
 # 4 "../V3.X/data.h" 2
+# 24 "../V3.X/data.h"
+void delay_notes(unsigned int var);
+void la();
+void sib();
+void si();
+void don();
+void re();
+void mib();
+void mi();
+void fa();
+void factest();
+void solb();
+void sol();
+void lab();
+void lao();
+void pause();
+void musique();
+void musiqueperdu();
 # 2 "../V3.X/collisions.h" 2
 
 unsigned short checkCollision(unsigned char tab[22][10], unsigned char forme[4][2]);
 
-void putPiece(unsigned char tab[22][10], unsigned char forme[4][2]);
+void putPiece(unsigned char tab[22][10], unsigned char forme[4][2], unsigned short points);
 
 unsigned short checkLine(unsigned char tab[22][10], unsigned short line);
 
-void eraseLine(unsigned char tab[22][10], unsigned short line);
+void eraseLine(unsigned char tab[22][10], unsigned short line, unsigned short points);
 # 2 "../V3.X/collisions.c" 2
 
 unsigned short checkCollision(unsigned char tab[22][10], unsigned char forme[4][2]){
@@ -348,7 +366,7 @@ unsigned short checkCollision(unsigned char tab[22][10], unsigned char forme[4][
  return result;
 }
 
-void putPiece(unsigned char tab[22][10], unsigned char forme[4][2]){
+void putPiece(unsigned char tab[22][10], unsigned char forme[4][2], unsigned short points){
  for(unsigned short i = 0; i < 4; i++){
   tab[forme[i][0]][forme[i][1]] = 1;
  }
@@ -360,13 +378,13 @@ unsigned short checkLine(unsigned char tab[22][10], unsigned short line){
   if(tab[line][i] == 1)
    nbTrue++;
  }
- if(nbTrue + 1 == 10)
+ if(nbTrue == 10)
   return 1;
  else
   return 0;
 }
 
-void eraseLine(unsigned char tab[22][10], unsigned short line){
+void eraseLine(unsigned char tab[22][10], unsigned short line, unsigned short points){
  for(unsigned short i = line; i > 0; i--){
   for(unsigned short j = 0; j < 10; j++){
    tab[i][j] = tab[i-1][j];
@@ -375,4 +393,5 @@ void eraseLine(unsigned char tab[22][10], unsigned short line){
  for(unsigned short j = 0; j < 10; j++){
    tab[0][j] = 0;
   }
+    points += 1;
 }

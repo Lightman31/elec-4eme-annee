@@ -1,19 +1,19 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F641 `uc ~T0 @X0 -> 10 `i t ]
-[v F642 `uc ~T0 @X0 -> 2 `i t ]
-[v F650 `uc ~T0 @X0 -> 10 `i t ]
-[v F651 `uc ~T0 @X0 -> 2 `i t ]
-[v F658 `uc ~T0 @X0 -> 10 `i t ]
-[v F665 `uc ~T0 @X0 -> 10 `i t ]
+[v F661 `uc ~T0 @X0 -> 10 `i t ]
+[v F662 `uc ~T0 @X0 -> 2 `i t ]
+[v F670 `uc ~T0 @X0 -> 10 `i t ]
+[v F671 `uc ~T0 @X0 -> 2 `i t ]
+[v F679 `uc ~T0 @X0 -> 10 `i t ]
+[v F686 `uc ~T0 @X0 -> 10 `i t ]
 "3 ../V3.X/collisions.c
 [; ;../V3.X/collisions.c: 3: unsigned short checkCollision(unsigned char tab[22][10], unsigned char forme[4][2]){
-[v _checkCollision `(us ~T0 @X0 1 ef2`*F641`*F642 ]
+[v _checkCollision `(us ~T0 @X0 1 ef2`*F661`*F662 ]
 {
 [e :U _checkCollision ]
-[v F644 `uc ~T0 @X0 -> 10 `i t ]
-[v _tab `*F644 ~T0 @X0 1 r1 ]
-[v F646 `uc ~T0 @X0 -> 2 `i t ]
-[v _forme `*F646 ~T0 @X0 1 r2 ]
+[v F664 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `*F664 ~T0 @X0 1 r1 ]
+[v F666 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `*F666 ~T0 @X0 1 r2 ]
 [f ]
 "4
 [; ;../V3.X/collisions.c: 4:  unsigned short result = 0;
@@ -58,14 +58,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 13 ]
 }
 "14
-[; ;../V3.X/collisions.c: 14: void putPiece(unsigned char tab[22][10], unsigned char forme[4][2]){
-[v _putPiece `(v ~T0 @X0 1 ef2`*F650`*F651 ]
+[; ;../V3.X/collisions.c: 14: void putPiece(unsigned char tab[22][10], unsigned char forme[4][2], unsigned short points){
+[v _putPiece `(v ~T0 @X0 1 ef3`*F670`*F671`us ]
 {
 [e :U _putPiece ]
-[v F653 `uc ~T0 @X0 -> 10 `i t ]
-[v _tab `*F653 ~T0 @X0 1 r1 ]
-[v F655 `uc ~T0 @X0 -> 2 `i t ]
-[v _forme `*F655 ~T0 @X0 1 r2 ]
+[v F673 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `*F673 ~T0 @X0 1 r1 ]
+[v F675 `uc ~T0 @X0 -> 2 `i t ]
+[v _forme `*F675 ~T0 @X0 1 r2 ]
+[v _points `us ~T0 @X0 1 r3 ]
 [f ]
 "15
 [; ;../V3.X/collisions.c: 15:  for(unsigned short i = 0; i < 4; i++){
@@ -92,11 +93,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "20
 [; ;../V3.X/collisions.c: 20: unsigned short checkLine(unsigned char tab[22][10], unsigned short line){
-[v _checkLine `(us ~T0 @X0 1 ef2`*F658`us ]
+[v _checkLine `(us ~T0 @X0 1 ef2`*F679`us ]
 {
 [e :U _checkLine ]
-[v F660 `uc ~T0 @X0 -> 10 `i t ]
-[v _tab `*F660 ~T0 @X0 1 r1 ]
+[v F681 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `*F681 ~T0 @X0 1 r1 ]
 [v _line `us ~T0 @X0 1 r2 ]
 [f ]
 "21
@@ -127,8 +128,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 24 ]
 }
 "26
-[; ;../V3.X/collisions.c: 26:  if(nbTrue + 1 == 10)
-[e $ ! == + -> _nbTrue `ui -> -> 1 `i `ui -> -> 10 `i `ui 27  ]
+[; ;../V3.X/collisions.c: 26:  if(nbTrue == 10)
+[e $ ! == -> _nbTrue `ui -> -> 10 `i `ui 27  ]
 "27
 [; ;../V3.X/collisions.c: 27:   return 1;
 [e ) -> -> 1 `i `us ]
@@ -147,13 +148,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 22 ]
 }
 "32
-[; ;../V3.X/collisions.c: 32: void eraseLine(unsigned char tab[22][10], unsigned short line){
-[v _eraseLine `(v ~T0 @X0 1 ef2`*F665`us ]
+[; ;../V3.X/collisions.c: 32: void eraseLine(unsigned char tab[22][10], unsigned short line, unsigned short points){
+[v _eraseLine `(v ~T0 @X0 1 ef3`*F686`us`us ]
 {
 [e :U _eraseLine ]
-[v F667 `uc ~T0 @X0 -> 10 `i t ]
-[v _tab `*F667 ~T0 @X0 1 r1 ]
+[v F688 `uc ~T0 @X0 -> 10 `i t ]
+[v _tab `*F688 ~T0 @X0 1 r1 ]
 [v _line `us ~T0 @X0 1 r2 ]
+[v _points `us ~T0 @X0 1 r3 ]
 [f ]
 "33
 [; ;../V3.X/collisions.c: 33:  for(unsigned short i = line; i > 0; i--){
@@ -210,6 +212,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 37 ]
 }
 "41
-[; ;../V3.X/collisions.c: 41: }
+[; ;../V3.X/collisions.c: 41:     points += 1;
+[e =+ _points -> -> 1 `i `us ]
+"42
+[; ;../V3.X/collisions.c: 42: }
 [e :UE 29 ]
 }
