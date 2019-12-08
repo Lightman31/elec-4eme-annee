@@ -69,22 +69,23 @@ void clicBouton(){
   
   if(prevbuttonState1 == HIGH && buttonState1 == LOW && (tabIndications[partie] == RED || tabIndications[partie] == 5)){
     partie++;
-    
+    delay(20);
   }else if(prevbuttonState2 == HIGH && buttonState2 == LOW && (tabIndications[partie] == GREEN || tabIndications[partie] == 6)){
     partie++;
-    
+    delay(20);
   }else if(prevbuttonState3 == HIGH && buttonState3 == LOW && (tabIndications[partie] == BLUE || tabIndications[partie] == 7)){
     partie++;
-   
+    delay(20);
   }else if(prevbuttonState4 == HIGH && buttonState4 == LOW && (tabIndications[partie] == YELLOW || tabIndications[partie] == 8)){
     partie++;
-    
+    delay(20);
   }else if((prevbuttonState1 == HIGH && buttonState1 == LOW) || (prevbuttonState2 == HIGH && buttonState2 ==LOW) || (prevbuttonState3 == HIGH && buttonState3 ==LOW) || (prevbuttonState4 == HIGH && buttonState4 == LOW)){
     Serial.print(prevbuttonState1);
     Serial.print(prevbuttonState2);
     Serial.print(prevbuttonState3);
     Serial.print(prevbuttonState4);
     reset = 1;
+    delay(20);
   }
   prevbuttonState1 = buttonState1;
   prevbuttonState2 = buttonState2;
