@@ -1,0 +1,19 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Tuesday, December 10, 2019
+Design Path:        C:\Users\Utilisateur\Documents\4eme année\elec 4eme annee\projet technologique\projet\PCB2.0\LED BLINK.pcb
+Design Title:       
+Created:            10/12/2019 14:19:44
+Last Saved:         10/12/2019 14:51:22
+Editing Time:       34 min
+Units:              mm (precision 3)
+
+Disconnected pin "I2C.5" from net "+5V".
+
+Added net "N0158".
+
+Connected pin "FTDI.5" to net "N0158".
+
+
+End Of Report.
