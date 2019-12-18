@@ -68,8 +68,8 @@ char hexaKeys[ROWS][COLS] = {
   {'7','8','9','C'},
   {'*','0','#','D'}
 };
-byte rowPins[ROWS] = {2,3 ,4 ,5 }; //connect to the row pinouts of the keypad
-byte colPins[COLS] = {A0, A1, A2,A3}; //connect to the column pinouts of the keypad
+byte rowPins[ROWS] =  {A0, A1, A2,A3};//connect to the row pinouts of the keypad
+byte colPins[COLS] = {5,4 ,3 ,2 }; //connect to the column pinouts of the keypad
 
 
 LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
@@ -92,6 +92,9 @@ void setup()
 
   SPI.begin();
   monModuleRFID.init();  
+
+  here = bilibip(here);
+  badcard();
 
   
  }
@@ -259,9 +262,6 @@ void board(char customKey)
    Serial.write((saisie - saisie%10000)/10000);
    Serial.write(((saisie - saisie%100)/100)%100);
    Serial.write(saisie%100);
-   //Serial.println((saisie - saisie%10000)/10000);
-   //Serial.println(((saisie - saisie%100)/100)%100);
-   //Serial.println(saisie%100);
    saisie = 0;
    len_saisie = 0;
     
