@@ -15,4 +15,3 @@ typedef struct Entry{
 
 void sendMessage();
 void* receiveMesssage();
-int attente(sem_t *sem, void*ret, char*message);

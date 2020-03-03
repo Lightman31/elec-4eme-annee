@@ -3,6 +3,7 @@
 #define SEMA "/sync2"
 
 
+void attente(t_entry entries[10], int i, sem_t *sem, void*ret, char message[20]);
 
 int main(){
 	int ret;
@@ -32,17 +33,14 @@ int main(){
 ////////////
 // wrapper pour faire des test : pour eviter les redondances dans le ss prog send message
 ////////////
-int attente(sem_t *sem, void*ret, char message[20]){
-	t_entry entry;
-	entry.free = 0;
-	strcpy(entry.msg,message);
-	ret += entry;
-	int test = sem_post(sem);
-	return test;
+void attente(t_entry entries[10], int i, sem_t *sem, void*ret, char message[20]){
+	entries[i].free = 0;
+	strcpy(entries[i].msg,message);
 }
 
 void sendMessage(int fd){
 	void* ret;
+	int test;
 	sem_t *sem=sem_open(SEMA, 0, 0644,0);
 	sem_init(sem,0,0);
 	ret = mmap(NULL,100,PROT_WRITE,MAP_SHARED,fd,0);
@@ -51,40 +49,78 @@ void sendMessage(int fd){
 		shm_unlink(NAME);
 		return;
 	}
-	
-	if(attente(sem, ret, "message0")) return;
-	if(attente(sem, ret, "message1")) return;
-	if(attente(sem, ret, "message2")) return;
-	if(attente(sem, ret, "message3")) return;
-	if(attente(sem, ret, "message4")) return;
-	if(attente(sem, ret, "message5")) return;
-	if(attente(sem, ret, "message6")) return;
-	if(attente(sem, ret, "message7")) return;
-	if(attente(sem, ret, "message8")) return;
-	if(attente(sem, ret, "message9")) return;
+	t_entry entries[10];
+	attente(entries,0, sem, ret, "message0");
+	attente(entries,1, sem, ret, "message1");
+	attente(entries,2, sem, ret, "message2");
+	attente(entries,3, sem, ret, "message3");
+	attente(entries,4, sem, ret, "message4");
+	attente(entries,5, sem, ret, "message5");
+	attente(entries,6, sem, ret, "message6");
+	attente(entries,7, sem, ret, "message7");
+	attente(entries,8, sem, ret, "message8");
+	attente(entries,9, sem, ret, "message9");
+	for(int i = 0; i < 10; i++){
+		strcat(ret, (char*)&(entries[i].free));
+		strcat(ret, entries[i].msg);
+		strcat(ret, "\n");
+		test = sem_post(sem);
+		if(test == -1)
+			return;
+	}
 }
 
 void *receiveMesssage(void *par){
 	int* fd = (int*) par;
 	sem_t *sem=sem_open(SEMA, 0, 0644,0);
-	char message[100], verif[100] = "quit" ;
 	void *ret;
+	int tailleRet, tailleMsg;
+	char ligne [100];
 	int test;
+	int i,j= 0, cara = 0;
+	char chaine[1024];
 	t_entry entries[10];
 	ret = mmap(NULL,100,PROT_READ,MAP_SHARED,*fd,0);
-	sleep(1);
+	sleep(5);
 	if(ret == MAP_FAILED){
 		printf("erreur lors de mmap dans receiveMessage");
 		shm_unlink(NAME);
 		return NULL;
 	}
-	entries = (t_entries) &ret;
-	for(int i = 0; i < 10; i++){
-		printf("message : %s\n", entries[i].msg);
+
+	strcpy(chaine,(char*)ret);
+
+	tailleRet = strlen(chaine);
+    //printf("\ntaille : %d\n",tailleRet);
+	for (i = 0 ; i < tailleRet ; i++)
+	{
+
+		if (chaine[i] == '\n')
+		{
+			entries[j].free = 1;
+			j = j+1;
+			cara = 0;
+
+		}
+		else 
+		{
+			entries[j].msg[cara] = chaine[i];
+			cara = cara + 1;
+		}
+		//if (j == 10) break;
+
+	}
+
+
+	for(i = 0; i < 10; i++){
+
+		printf("%d message : %s\n", entries[i].free,entries[i].msg);
+		entries[i].free = 1;
 		test = sem_wait(sem);
 		if(test == -1)
 			return NULL;
 		
 	}
+	
 
 }
