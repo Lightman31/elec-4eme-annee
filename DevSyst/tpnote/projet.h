@@ -8,6 +8,11 @@
 #include <string.h>
 #include <unistd.h>
 
+typedef struct Entry{
+	int free;
+	char msg[20];
+}t_entry;
+
 void sendMessage();
 void* receiveMesssage();
 int attente(sem_t *sem, void*ret, char*message);
