@@ -1,3 +1,4 @@
+with Text_IO; use Text_IO;
 with Ada.Calendar; use Ada.Calendar;
 procedure Main is
     task type TaskA;
@@ -11,6 +12,8 @@ procedure Main is
                 delay 1.0;
             end loop;
     end TaskA;
+    type taskA_ptr is access TaskA;
+    t1: array(1 .. 2) of taskA_ptr;
     task body TaskB is
         begin
             loop
@@ -20,6 +23,11 @@ procedure Main is
                 delay 1.0;
             end loop;
     end TaskB;
+    type taskB_ptr is access TaskB;
+    t2: array(1 .. 2) of taskB_ptr;
 begin
-    null;
+    for i in 1 .. 1 loop 
+    t1(i):= new TaskA;
+    t2(i):= new TaskB;
+    end loop;
 end Main;
