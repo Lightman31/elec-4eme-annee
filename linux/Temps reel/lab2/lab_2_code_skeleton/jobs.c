@@ -10,15 +10,15 @@ void job(long fet) // fet in nanoseconds
   int exit=0;
 
   // Statements to create a job whose fixed execution time (CPU time) is equal to fet ...
-  clock_gettime(CLOCK_REALIME, &start);
-  clock_gettime(CLOCK_REALIME, &end);
+  clock_gettime(CLOCK_REALTIME, &start);
+  clock_gettime(CLOCK_REALTIME, &end);
   while (!exit){
-  	clock_gettime(CLOCK_REALIME, &end);
+  	clock_gettime(CLOCK_REALTIME, &end);
   	if(fet >= diff(start,end).tv_nsec)
   		exit = 1;
   }
 
-  print("durée du job (en ns) : %ld|prévu : %ld", diff(start,end).tv_nsec, fet);
+  printf("durée du job (en ns) : %ld|prévu : %ld", diff(start,end).tv_nsec, fet);
 
   // Option: print the time (in ns) elapsed between start and end using the function diff below.
   // This printing option is to be avoided during tests since it penalizes deadlines respectfulness ...  

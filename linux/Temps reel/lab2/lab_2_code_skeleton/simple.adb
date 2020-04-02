@@ -4,10 +4,13 @@ with System.Multiprocessors; use System.Multiprocessors;
 
 procedure Simple is
    -- Import the C function stack_prefault defined in prefault.c ...
+   procedure Stack_prefault;
    pragma Import  (C, Stack_prefault, "stack_prefault");
    -- Import the C function lock_memory defined in lock.c ...
+   procedure Lock_memory;
    pragma Import (C, Lock_memory, "lock_memory");
    -- Import the C function job defined in jobs.c ...
+   procedure Job(FET: Long_Integer);
    pragma Import (C, Job, "job");
    
    -- Define a task type RT_Task with the following parameters:
@@ -17,16 +20,16 @@ procedure Simple is
    -- * Itr is the number of iterations
    -- * Aff is the core affinity,
    -- * Pri is the priority. 
-   task type RT_Task (Id, FET, Prd, Itr: Integer; Aff: CPU; Pri: System.Priority) with CPU => Aff, Priority => Pri;
+   task type RT_Task (Id, FET: Long_Integer; Prd, Itr: Integer; Aff: CPU; Pri: System.Priority) with CPU => Aff, Priority => Pri;
       
    -- RT_Task is a periodic task type with implicit deadlines ...
    task body RT_Task is 
       -- Set the period ...
-      Period: constant Time_span := Milliseconds(Prd);
+      Period: constant Time_Span := Milliseconds(Prd);
       -- Set the deadline ...
-      Deadline: constant Time_span := Milliseconds(Prd);
+      Deadline: constant Time_Span := Milliseconds(Prd);
       -- Set the FET in nanoseconds (ns): long integer to be passed to the imported function Job ...
-      FET_ns: constant Long_Integer :=FET * 1_000_000;
+      FET_ns: constant Long_Integer := FET * 1_000_000;
       -- Define the variable Next to save the next release instants of each job ...
       Next: Time;
    begin 
@@ -35,11 +38,11 @@ procedure Simple is
       for J in 1 .. Itr loop
          begin
             -- Start the job ...
-            Job(FET);
+            Job(FET_ns);
             -- Check if the deadline is respected, print a message if not ...
             if Clock - Next > Deadline then
-            	Put_Line(Id'Img + "deadlines ratées");
-            end if
+            	Put_Line(Id'Img & "deadlines ratees");
+            end if;
             -- Set the next release time ...
             Next := Next + Period;
             -- Delay until Next ...
