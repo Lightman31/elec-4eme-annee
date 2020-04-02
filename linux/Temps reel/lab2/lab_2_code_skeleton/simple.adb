@@ -17,44 +17,44 @@ procedure Simple is
    -- * Itr is the number of iterations
    -- * Aff is the core affinity,
    -- * Pri is the priority. 
-   task type RT_Task is
-  		entry Directory_Enquiry(Id : in identifier; FET : in exec_time; Prd: in Period; Itr: in iterations; Aff: in affinity; Pri: in priority);
-   end RT_Task;
+   task type RT_Task (Id, FET, Prd, Itr: Integer; Aff: CPU; Pri: System.Priority) with CPU => Aff, Priority => Pri;
       
    -- RT_Task is a periodic task type with implicit deadlines ...
    task body RT_Task is 
       -- Set the period ...
-      
+      Period: constant Time_span := Milliseconds(Prd);
       -- Set the deadline ...
-      
+      Deadline: constant Time_span := Milliseconds(Prd);
       -- Set the FET in nanoseconds (ns): long integer to be passed to the imported function Job ...
-      
+      FET_ns: constant Long_Integer :=FET * 1_000_000;
       -- Define the variable Next to save the next release instants of each job ...
+      Next: Time;
    begin 
       -- Set the first release time in Next
-      accept Directory_Enquiry(Id : in identifier; FET : in exec_time; Prd: in Period; Itr: in iterations; Aff: in affinity; Pri: in priority) do
+   Next:= Clock;
       for J in 1 .. Itr loop
          begin
             -- Start the job ...
             Job(FET);
             -- Check if the deadline is respected, print a message if not ...
-            
+            if Clock - Next > Deadline then
+            	Put_Line(Id'Img + "deadlines ratées");
+            end if
             -- Set the next release time ...
-            
+            Next := Next + Period;
             -- Delay until Next ...
-            
+            delay until Next;
          end;
       end loop; 
-    end Directory_Enquiry;
    end RT_Task;
    
    -- Declare a named static task Tau_1 (type RT_Task, Id = 1): the parameters FET, Prd, Itr, Aff and Pri are to be adjusted according to the lab instructions ...
-   --task type Tau_1; --pas fini
+   Tau_1 : RT_Task(1,20,60,50,2,System.Priority'Last); 
    -- Declare a named static task Tau_2 (type RT_Task, Id = 2): the parameters FET, Prd, Itr, Aff and Pri are to be adjusted according to the lab instructions ...
-   --task type Tau_2; --pas fini
+   Tau_2 : RT_Task(2,40,60,50,2,System.Priority'Last); 
 begin  
    -- Lock the current and future memory allocations ...
-   
+   Lock_memory;
    -- Pre-fault the stack ...
-   
+   Stack_prefault;
 end Simple;
