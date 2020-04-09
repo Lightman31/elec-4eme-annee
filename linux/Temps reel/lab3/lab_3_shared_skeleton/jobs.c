@@ -10,11 +10,11 @@ void job(long fet) //in ns
   int exit=0;
 
   //Statements to create a job whose fixed execution time (CPU time) is equal to fet ...
-  clock_gettime(CLOCK_REALTIME, &start);
-  clock_gettime(CLOCK_REALTIME, &end);
+  clock_gettime(CLOCK_THREAD_CPUTIME_ID, &start);
+  clock_gettime(CLOCK_THREAD_CPUTIME_ID, &end);
   while (!exit){
-  	clock_gettime(CLOCK_REALTIME, &end);
-  	if(fet >= diff(start,end).tv_nsec)
+  	clock_gettime(CLOCK_THREAD_CPUTIME_ID, &end);
+  	if(fet <= diff(start,end).tv_nsec)
   		exit = 1;
   }
 }
@@ -25,15 +25,15 @@ long job_with_cpu_time_returned(long fet) //in ns
   int exit=0;
   
   //Statements to create a job whose fixed execution time (CPU time) is equal to fet ...
-  clock_gettime(CLOCK_REALTIME, &start);
-  clock_gettime(CLOCK_REALTIME, &end);
+  clock_gettime(CLOCK_THREAD_CPUTIME_ID, &start);
+  clock_gettime(CLOCK_THREAD_CPUTIME_ID, &end);
   while (!exit){
-  	clock_gettime(CLOCK_REALTIME, &end);
-  	if(fet >= diff(start,end).tv_nsec)
+  	clock_gettime(CLOCK_THREAD_CPUTIME_ID, &end);
+  	if(fet <= diff(start,end).tv_nsec)
   		exit = 1;
   }
   // Return the measured CPU time ...
-  printf("durée du job (en ns) : %ld|prévu : %ld", diff(start,end).tv_nsec, fet);
+  printf("durée du job (en ns) : %ld|prévu : %ld\n", diff(start,end).tv_nsec, fet);
 }
 
 

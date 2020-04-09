@@ -7,25 +7,25 @@ procedure Shared_2 is
    procedure Stack_Prefault;
    pragma Import (C, Stack_Prefault, "stack_prefault");
    procedure Lock_Memory;
-   pragma Import (C, Lock_Mem, "lock_memory");
+   pragma Import (C, Lock_Memory, "lock_memory");
    -- Import the C function "job" in jobs.c
    procedure Job(FET: Long_Integer);
    pragma Import (C, Job, "job");
    
    -- Declare a shared protected resource Shared_Data of type Resource ...
-   Shared_Data := Resources(0);
+   Shared_Data : Resource(0);
    -- Declare an anonymous task High_Priority_Task, set its affinity and priority PH ...
    task High_Priority_Task with Priority => System.Priority'Last, CPU => 1;
    -- Declare an anonymous task Low_Priority_Task, set its affinity and priority PL = PH - 1 ...
-   task Low_Priority_Task with Priority => System.Priority'Last-1, CPU => 1;
+   task Low_Priority_Task with Priority => System.Priority'Last-1, CPU => 2;
    
    -- High_Priority_Task is a periodic task of 2 iterations where: 
-   -- * FET = 200ms;
+   -- * FET = 200ms; 
    -- * relative deadline (implicit) = 400ms ...
    task body High_Priority_Task is 
       Next : Ada.Real_Time.Time;
       -- Set the period ...
-      Period : constant Time_Span := Milliseconds(200);
+      Period : constant Time_Span := Milliseconds(400);
       -- Set the deadline ...
       Deadline : constant Time_Span := Milliseconds(400);
       -- The task jobs is split into equal parts of 100ms: 
@@ -38,11 +38,11 @@ procedure Shared_2 is
       for J in 1 .. 2 loop
          begin 
             -- Launch the normal execution ...
-            Job(FET_ns/2)
+            Job(FET_ns/2);
             -- Launch the critical section ...
             Shared_Data.Lock_For(FET_ns/2);
             -- Check if the deadline is respected ...
-          	if Ada.Real_Time.Clock - Next > Deadline then
+          	if (Ada.Real_Time.Clock - Next) > Deadline then
           		Put_Line("deadlines ratees High_Priority_Task");
             end if;
             Next := Next + Period;
@@ -58,7 +58,7 @@ procedure Shared_2 is
    task body Low_Priority_Task is  
       Next : Ada.Real_Time.Time;
       -- Set the period ...
-      Period : constant Time_Span := Milliseconds(500);
+      Period : constant Time_Span := Milliseconds(800);
       -- Set the deadline ...
       Deadline : constant Time_Span := Milliseconds(800);
       -- The job is one critical section of 500ms ...

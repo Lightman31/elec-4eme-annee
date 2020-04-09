@@ -15,6 +15,6 @@ package body Resources is
          -- Lock the resource for a duration Lock_Time ...
          -- Indication: use the functions Write and job_with_cpu_time_returned ...
          Write(Job_With_Cpu_Time_Returned(Lock_Time));
-      end Lock;      
+      end Lock_For;      
    end Resource;
 end Resources;
